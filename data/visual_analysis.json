@@ -1,0 +1,1749 @@
+{
+ "468762977": {
+  "name": "권역외상센터",
+  "floors_above": 5,
+  "floors_below": 2,
+  "base_floors": 5,
+  "parts": [],
+  "wall": {
+   "primary_hex": "#cdd0d2",
+   "primary_material": "light grey aluminium panel",
+   "secondary_hex": "#6f8a96",
+   "secondary_material": "blue-grey glass curtain wall",
+   "secondary_where": "vertical glass bays at corners and the stair core"
+  },
+  "windows": {
+   "style": "punched",
+   "glass_hex": "#5a7280",
+   "frame_hex": "#9aa3a8",
+   "window_height_ratio": 0.62,
+   "bay_width_m": 3.2
+  },
+  "base": {
+   "material": "glass storefront with grey stone",
+   "hex": "#9ea4a6",
+   "floors": 1
+  },
+  "roof": {
+   "features": [
+    "dark brown louvred rooftop box (stair/plant tower)"
+   ]
+  },
+  "floors_basis": "공식 캠퍼스맵: 지하 2층~지상 5층(2016년 준공). 공식 사진에서도 지상 5개 층 확인.",
+  "confidence": {
+   "floors": "high",
+   "massing": "medium",
+   "colors": "high",
+   "outline": "medium"
+  }
+ },
+ "706051510": {
+  "name": "경기남부해바라기센터",
+  "identified_as": "경기남부해바라기센터(거점) — 성폭력피해자 통합지원센터, 병원 부지 동쪽 도로변 소형 건물",
+  "floors_above": 2,
+  "floors_below": 0,
+  "base_floors": 2,
+  "parts": [],
+  "wall": {
+   "primary_hex": "#e6e4de",
+   "primary_material": "painted concrete (no photo; estimate)"
+  },
+  "windows": {
+   "style": "punched",
+   "glass_hex": "#5d6b74",
+   "window_height_ratio": 0.4
+  },
+  "roof": {
+   "hex": "#3f7fa8",
+   "features": [
+    "blue metal roof (imagery)"
+   ]
+  },
+  "floors_basis": "공식 자료 없음. 위성영상의 짧은 그림자와 약 300m² 소형 건물 규모로 2층 추정.",
+  "confidence": {
+   "floors": "low",
+   "massing": "medium",
+   "colors": "low",
+   "outline": "high"
+  }
+ },
+ "468774556": {
+  "name": "국제학사",
+  "floors_above": 9,
+  "floors_below": 0,
+  "base_floors": 9,
+  "parts": [],
+  "wall": {
+   "primary_hex": "#9b5446",
+   "primary_material": "red-brown face brick",
+   "secondary_hex": "#c4c9cc",
+   "secondary_material": "light grey metal panel and glass bays",
+   "secondary_where": "vertical metal/glass bands breaking the brick facade (piers)"
+  },
+  "windows": {
+   "style": "punched",
+   "glass_hex": "#55636d",
+   "frame_hex": "#c9ccce",
+   "window_height_ratio": 0.45,
+   "bay_width_m": 3.0
+  },
+  "base": {
+   "material": "glass and grey panel ground floor with canopy",
+   "hex": "#a9adb0",
+   "floors": 1
+  },
+  "roof": {
+   "features": [
+    "solar panels on east wing"
+   ]
+  },
+  "floors_basis": "공식 캠퍼스맵: 지상 9층(2014년 12월 준공). 공식 사진에서 9개 층 확인.",
+  "confidence": {
+   "floors": "high",
+   "massing": "high",
+   "colors": "high",
+   "outline": "high"
+  }
+ },
+ "415712206": {
+  "name": "남제관",
+  "floors_above": 4,
+  "floors_below": 0,
+  "base_floors": 4,
+  "parts": [],
+  "wall": {
+   "primary_hex": "#eceeef",
+   "primary_material": "white painted concrete",
+   "secondary_hex": "#9db4d6",
+   "secondary_material": "light blue painted projecting window bays",
+   "secondary_where": "vertical pier strips around each window column"
+  },
+  "windows": {
+   "style": "punched",
+   "glass_hex": "#4c5862",
+   "frame_hex": "#e8e8e6",
+   "window_height_ratio": 0.42,
+   "bay_width_m": 3.4
+  },
+  "roof": {
+   "features": [
+    "green-painted roof",
+    "octagonal light well / penthouse at the centre of each square wing"
+   ]
+  },
+  "floors_basis": "공식 캠퍼스맵: 지상 4층(1976년 준공). 공식 사진에서 4개 층 확인.",
+  "confidence": {
+   "floors": "high",
+   "massing": "high",
+   "colors": "high",
+   "outline": "high"
+  }
+ },
+ "9819163": {
+  "name": "다산관",
+  "floors_above": 5,
+  "floors_below": 1,
+  "base_floors": 5,
+  "parts": [],
+  "wall": {
+   "primary_hex": "#8f5a4c",
+   "primary_material": "red-brown face brick",
+   "secondary_hex": "#e9e6df",
+   "secondary_material": "white concrete frame and parapet",
+   "secondary_where": "horizontal floor bands and top parapet (frame)"
+  },
+  "windows": {
+   "style": "ribbon",
+   "glass_hex": "#56626a",
+   "frame_hex": "#d9dcdc",
+   "window_height_ratio": 0.45,
+   "bay_width_m": 3.6
+  },
+  "signage": [
+   {
+    "text": "다산관 Dasan Hall",
+    "where": "white letters on brick wall",
+    "color_hex": "#ffffff"
+   }
+  ],
+  "floors_basis": "공식 층별 안내에 B1~5F가 모두 있음(본문 '지상 3층까지 강의실'은 강의실 용도 범위). ㅁ자 중정형.",
+  "confidence": {
+   "floors": "high",
+   "massing": "medium",
+   "colors": "medium",
+   "outline": "high"
+  }
+ },
+ "622642099": {
+  "name": "산학협력원",
+  "floors_above": 8,
+  "floors_below": 1,
+  "base_floors": 8,
+  "parts": [],
+  "wall": {
+   "primary_hex": "#dcdbd5",
+   "primary_material": "light grey painted concrete frame",
+   "secondary_hex": "#97523f",
+   "secondary_material": "red face brick",
+   "secondary_where": "end walls and ground-floor base"
+  },
+  "windows": {
+   "style": "grid",
+   "glass_hex": "#46606a",
+   "frame_hex": "#cfd2d0",
+   "window_height_ratio": 0.5,
+   "bay_width_m": 3.3
+  },
+  "base": {
+   "material": "red brick",
+   "hex": "#94503f",
+   "floors": 1
+  },
+  "floors_basis": "공식 캠퍼스맵: 지하 1층~지상 8층. 공식 사진에서 8개 층 확인.",
+  "confidence": {
+   "floors": "high",
+   "massing": "medium",
+   "colors": "high",
+   "outline": "high"
+  },
+  "notes": "북동쪽 별동은 높이 근거가 없어 본동과 같은 높이로 둠."
+ },
+ "415528045": {
+  "name": "성호관",
+  "floors_above": 4,
+  "floors_below": 0,
+  "base_floors": 4,
+  "parts": [],
+  "wall": {
+   "primary_hex": "#e4e5e1",
+   "primary_material": "white painted concrete bands",
+   "secondary_hex": "#c9ced2",
+   "secondary_material": "light grey spandrel panel",
+   "secondary_where": "spandrel bands under each window ribbon"
+  },
+  "windows": {
+   "style": "ribbon",
+   "glass_hex": "#4b5a63",
+   "frame_hex": "#dfe1df",
+   "window_height_ratio": 0.5,
+   "bay_width_m": 3.0
+  },
+  "signage": [
+   {
+    "text": "25 성호관 Seongho Hall",
+    "where": "west end wall, upper floor",
+    "color_hex": "#4a5560"
+   }
+  ],
+  "floors_basis": "공식 층별 안내 1F~4F(1982년 8월 준공).",
+  "confidence": {
+   "floors": "high",
+   "massing": "high",
+   "colors": "medium",
+   "outline": "high"
+  }
+ },
+ "415712205": {
+  "name": "송재관",
+  "floors_above": 10,
+  "floors_below": 1,
+  "base_floors": 3,
+  "parts": [
+   {
+    "label": "북쪽 탑",
+    "floors": 10,
+    "polygon": [
+     [
+      92,
+      -212.8
+     ],
+     [
+      162,
+      -212.8
+     ],
+     [
+      162,
+      -231
+     ],
+     [
+      92,
+      -231
+     ]
+    ]
+   }
+  ],
+  "wall": {
+   "primary_hex": "#dedfdb",
+   "primary_material": "light grey painted concrete",
+   "secondary_hex": "#e0b7ba",
+   "secondary_material": "pale pink painted stair-core strips",
+   "secondary_where": "vertical pier strips on the tower (stair cores)"
+  },
+  "windows": {
+   "style": "ribbon",
+   "glass_hex": "#4c5961",
+   "frame_hex": "#d6d8d6",
+   "window_height_ratio": 0.42,
+   "bay_width_m": 3.4
+  },
+  "floors_basis": "공식 캠퍼스맵: 지하 1층~지상 10층. 공식 사진에서 3층 기단 위 7개 층(총 10층) 탑 확인.",
+  "confidence": {
+   "floors": "high",
+   "massing": "medium",
+   "colors": "high",
+   "outline": "high"
+  },
+  "notes": "탑 범위: 위성영상의 기복 변위(북쪽 외벽이 동서 전체 폭에 보임)로 북쪽 덩어리 전체를 탑으로 판정. 사진상 기단이 좌우로 더 넓어 보여 일부 불확실."
+ },
+ "468441871": {
+  "name": "아주대학교병원",
+  "floors_above": 13,
+  "floors_below": 2,
+  "base_floors": 5,
+  "parts": [
+   {
+    "label": "병동 탑",
+    "floors": 13,
+    "polygon": [
+     [
+      108,
+      -366
+     ],
+     [
+      186,
+      -366
+     ],
+     [
+      186,
+      -400
+     ],
+     [
+      108,
+      -400
+     ]
+    ]
+   }
+  ],
+  "wall": {
+   "primary_hex": "#c4b8a5",
+   "primary_material": "beige precast concrete grid",
+   "secondary_hex": "#2f6fb0",
+   "secondary_material": "blue glass curtain wall (east wing)",
+   "secondary_where": "east annex"
+  },
+  "windows": {
+   "style": "grid",
+   "glass_hex": "#3f4b53",
+   "frame_hex": "#b3a894",
+   "window_height_ratio": 0.55,
+   "bay_width_m": 3.6
+  },
+  "roof": {
+   "features": [
+    "rooftop helipad (white square with red cross) on the ward tower"
+   ]
+  },
+  "signage": [
+   {
+    "text": "아주대학교병원",
+    "where": "top of the ward tower",
+    "color_hex": "#ffffff"
+   }
+  ],
+  "floors_basis": "공식 층별 안내 B2~13F(6F~13F 병동). 공식 사진에서 5층 기단 위 병동 탑 확인.",
+  "confidence": {
+   "floors": "high",
+   "massing": "medium",
+   "colors": "high",
+   "outline": "medium"
+  }
+ },
+ "706051509": {
+  "name": "웰빙센터",
+  "floors_above": 8,
+  "floors_below": 3,
+  "base_floors": 8,
+  "parts": [],
+  "wall": {
+   "primary_hex": "#e8e9e8",
+   "primary_material": "white metal panel",
+   "secondary_hex": "#9fb9cb",
+   "secondary_material": "light blue glass",
+   "secondary_where": "horizontal bands on the round tower"
+  },
+  "windows": {
+   "style": "ribbon",
+   "glass_hex": "#7fa3bb",
+   "frame_hex": "#e4e6e6",
+   "window_height_ratio": 0.55,
+   "bay_width_m": 3.0
+  },
+  "signage": [
+   {
+    "text": "아주대학교병원",
+    "where": "crown of the round glass tower",
+    "color_hex": "#4a5560"
+   }
+  ],
+  "floors_basis": "공식 캠퍼스맵: 지하 3층~지상 8층(2012년 8월 준공).",
+  "confidence": {
+   "floors": "high",
+   "massing": "medium",
+   "colors": "high",
+   "outline": "low"
+  },
+  "notes": "원통형 유리 타워(반지름 약 11m)가 OSM 외곽선에 일부만 포함됨."
+ },
+ "471440990": {
+  "name": "장례식장",
+  "floors_above": 3,
+  "floors_below": 1,
+  "base_floors": 3,
+  "parts": [],
+  "wall": {
+   "primary_hex": "#d9d0c3",
+   "primary_material": "beige limestone panel",
+   "secondary_hex": "#5d8aa6",
+   "secondary_material": "blue glass curtain wall",
+   "secondary_where": "entrance block"
+  },
+  "windows": {
+   "style": "few",
+   "glass_hex": "#5f7f93",
+   "frame_hex": "#8f969a",
+   "window_height_ratio": 0.6,
+   "bay_width_m": 3.0
+  },
+  "roof": {
+   "features": [
+    "solar panels"
+   ]
+  },
+  "floors_basis": "공식 층별 안내 B1~3F(2015년 5월 준공).",
+  "confidence": {
+   "floors": "high",
+   "massing": "high",
+   "colors": "high",
+   "outline": "high"
+  }
+ },
+ "591315103": {
+  "name": "약학관",
+  "floors_above": 3,
+  "floors_below": 1,
+  "base_floors": 3,
+  "parts": [],
+  "wall": {
+   "primary_hex": "#a3583f",
+   "primary_material": "red face brick",
+   "secondary_hex": "#e6e2d8",
+   "secondary_material": "cream concrete frame and light grey metal panel entrance block",
+   "secondary_where": "vertical piers / frame between window bays"
+  },
+  "windows": {
+   "style": "grid",
+   "glass_hex": "#4d5c64",
+   "frame_hex": "#d6d6d2",
+   "window_height_ratio": 0.5,
+   "bay_width_m": 3.2
+  },
+  "signage": [
+   {
+    "text": "약학관 31 College of Pharmacy",
+    "where": "metal panel block over the entrance",
+    "color_hex": "#4a4f55"
+   }
+  ],
+  "floors_basis": "공식 캠퍼스맵: 지하 1층~지상 3층(2012년 2월 준공). 공식 사진에서 3개 층 확인.",
+  "confidence": {
+   "floors": "high",
+   "massing": "high",
+   "colors": "high",
+   "outline": "high"
+  }
+ },
+ "415712207": {
+  "name": "에너지센터",
+  "floors_above": 5,
+  "floors_below": 1,
+  "base_floors": 5,
+  "parts": [],
+  "wall": {
+   "primary_hex": "#9d9889",
+   "primary_material": "bronze-grey aluminium frame with horizontal sunshade louvres",
+   "secondary_hex": "#c9c4b4",
+   "secondary_material": "light beige louvre blades",
+   "secondary_where": "horizontal bands at each floor"
+  },
+  "windows": {
+   "style": "ribbon",
+   "glass_hex": "#4a4f53",
+   "frame_hex": "#a7a291",
+   "window_height_ratio": 0.62,
+   "bay_width_m": 3.0
+  },
+  "signage": [
+   {
+    "text": "4 에너지센터 Energy Center",
+    "where": "top-left of the main facade",
+    "color_hex": "#3d3f42"
+   }
+  ],
+  "floors_basis": "공식 캠퍼스맵: 지하 1층~지상 5층(1994년 8월 준공). 공식 사진에서 5개 층과 옥탑 확인.",
+  "confidence": {
+   "floors": "high",
+   "massing": "high",
+   "colors": "high",
+   "outline": "high"
+  }
+ },
+ "415712212": {
+  "name": "용지관",
+  "floors_above": 5,
+  "floors_below": 0,
+  "base_floors": 5,
+  "parts": [],
+  "wall": {
+   "primary_hex": "#a1513f",
+   "primary_material": "red face brick",
+   "secondary_hex": "#ecebe6",
+   "secondary_material": "white concrete floor bands and window frames",
+   "secondary_where": "horizontal spandrel band at each floor"
+  },
+  "windows": {
+   "style": "punched",
+   "glass_hex": "#4f5d66",
+   "frame_hex": "#e9e9e6",
+   "window_height_ratio": 0.45,
+   "bay_width_m": 3.4
+  },
+  "roof": {
+   "features": [
+    "green-painted roof"
+   ]
+  },
+  "floors_basis": "공식 층별 안내 1F~5F.",
+  "confidence": {
+   "floors": "high",
+   "massing": "high",
+   "colors": "medium",
+   "outline": "high"
+  }
+ },
+ "415528047": {
+  "name": "원천관",
+  "floors_above": 5,
+  "floors_below": 0,
+  "base_floors": 5,
+  "parts": [],
+  "wall": {
+   "primary_hex": "#f0efea",
+   "primary_material": "white painted concrete"
+  },
+  "windows": {
+   "style": "punched",
+   "glass_hex": "#3f4b55",
+   "frame_hex": "#3a3e42",
+   "window_height_ratio": 0.45,
+   "bay_width_m": 3.2
+  },
+  "base": {
+   "material": "red brick",
+   "hex": "#a3503d",
+   "floors": 1
+  },
+  "signage": [
+   {
+    "text": "Woncheon Hall 원천관 5",
+    "where": "upper corner of the main facade",
+    "color_hex": "#3a3e42"
+   }
+  ],
+  "floors_basis": "공식 층별 안내 1F~5F(1973년 3월 준공, 개교 초기 본관). 공식 사진에서 5개 층 확인.",
+  "confidence": {
+   "floors": "high",
+   "massing": "medium",
+   "colors": "high",
+   "outline": "high"
+  }
+ },
+ "468355328": {
+  "name": "원천정보관",
+  "floors_above": 3,
+  "floors_below": 0,
+  "base_floors": 3,
+  "parts": [],
+  "wall": {
+   "primary_hex": "#e2e3e3",
+   "primary_material": "light grey ceramic tile panel"
+  },
+  "windows": {
+   "style": "few",
+   "glass_hex": "#5c6c74",
+   "frame_hex": "#6b7176",
+   "window_height_ratio": 0.35,
+   "bay_width_m": 2.4,
+   "notes": "scattered narrow vertical slit windows plus a few larger framed windows"
+  },
+  "base": {
+   "material": "recessed glass ground floor behind columns",
+   "hex": "#8a979c",
+   "floors": 1
+  },
+  "floors_basis": "공식 층별 안내 1F~3F(2015년 11월 준공). 공식 사진에서 3개 층 확인.",
+  "confidence": {
+   "floors": "high",
+   "massing": "high",
+   "colors": "high",
+   "outline": "high"
+  }
+ },
+ "415528042": {
+  "name": "율곡관",
+  "wall": {
+   "primary_hex": "#e8e3d5",
+   "primary_material": "cream painted concrete bands",
+   "secondary_hex": "#9a4a3c",
+   "secondary_material": "red brick spandrel panels",
+   "secondary_where": "spandrel band under every window ribbon"
+  },
+  "windows": {
+   "style": "ribbon",
+   "glass_hex": "#3e464c",
+   "frame_hex": "#d8d6cf",
+   "window_height_ratio": 0.38,
+   "bay_width_m": 3.0
+  },
+  "base": {
+   "material": "dark red brick columns with glass entrance",
+   "hex": "#7e3f35",
+   "floors": 1
+  },
+  "floors_basis": "공식 캠퍼스맵: 지하 1층~지상 5층(본관). 사용자 제보·위성영상: 앞(남쪽) 5층, 뒤 3층.",
+  "confidence": {
+   "floors": "high",
+   "massing": "high",
+   "colors": "high",
+   "outline": "medium"
+  }
+ },
+ "706094950": {
+  "name": "의생명과학관",
+  "floors_above": 3,
+  "floors_below": 0,
+  "base_floors": 3,
+  "parts": [],
+  "wall": {
+   "primary_hex": "#d9dad7",
+   "primary_material": "light grey painted concrete",
+   "secondary_hex": "#2f5f9e",
+   "secondary_material": "blue metal roof trim",
+   "secondary_where": "top parapet edge"
+  },
+  "windows": {
+   "style": "punched",
+   "glass_hex": "#5b6a72",
+   "frame_hex": "#e8e8e6",
+   "window_height_ratio": 0.42,
+   "bay_width_m": 3.0
+  },
+  "roof": {
+   "features": [
+    "blue metal roof"
+   ]
+  },
+  "floors_basis": "공식 층별 안내 1F~3F. 공식 사진에서 3개 층 확인.",
+  "confidence": {
+   "floors": "high",
+   "massing": "high",
+   "colors": "high",
+   "outline": "high"
+  }
+ },
+ "1261397583": {
+  "name": "일신관",
+  "floors_above": 11,
+  "floors_below": 1,
+  "base_floors": 2,
+  "corrected_outline": [
+   [
+    63.9,
+    162.3
+   ],
+   [
+    85.7,
+    178.3
+   ],
+   [
+    97.0,
+    162.2
+   ],
+   [
+    102.7,
+    155.5
+   ],
+   [
+    147.6,
+    157.1
+   ],
+   [
+    148.7,
+    141.1
+   ],
+   [
+    111.4,
+    140.6
+   ],
+   [
+    81.5,
+    135.2
+   ]
+  ],
+  "parts": [
+   {
+    "label": "기숙사 탑",
+    "floors": 11,
+    "polygon": [
+     [
+      69.5,
+      166.5
+     ],
+     [
+      85.7,
+      178.3
+     ],
+     [
+      97.0,
+      162.2
+     ],
+     [
+      102.7,
+      155.5
+     ],
+     [
+      147.6,
+      157.1
+     ],
+     [
+      148.0,
+      146.0
+     ],
+     [
+      104.0,
+      146.0
+     ],
+     [
+      86.5,
+      140.5
+     ]
+    ]
+   }
+  ],
+  "typical_floor_height_m": 3.2,
+  "wall": {
+   "primary_hex": "#bf5a3b",
+   "primary_material": "orange-red face brick piers",
+   "secondary_hex": "#a9b5bb",
+   "secondary_material": "light grey metal panel with blue glass",
+   "secondary_where": "vertical piers between glass columns"
+  },
+  "windows": {
+   "style": "punched",
+   "glass_hex": "#3f5f6c",
+   "frame_hex": "#8d989e",
+   "window_height_ratio": 0.66,
+   "bay_width_m": 2.4
+  },
+  "base": {
+   "material": "glass curtain wall podium with white curved canopy",
+   "hex": "#7d97a3",
+   "floors": 2
+  },
+  "floors_basis": "공식 층별 안내 B1~11F(2022년 2월 준공). 공식 사진에서 유리 기단 위 탑 확인.",
+  "confidence": {
+   "floors": "high",
+   "massing": "medium",
+   "colors": "high",
+   "outline": "high"
+  },
+  "notes": "OSM 외곽선이 실제보다 훨씬 작아 위성영상으로 다시 그림."
+ },
+ "706094949": {
+  "name": "임상수기센터 및 실험동물센터",
+  "floors_above": 5,
+  "floors_below": 1,
+  "base_floors": 5,
+  "parts": [],
+  "wall": {
+   "primary_hex": "#d8d9d7",
+   "primary_material": "light grey metal panel"
+  },
+  "windows": {
+   "style": "few",
+   "glass_hex": "#5d8fae",
+   "frame_hex": "#9aa2a6",
+   "window_height_ratio": 0.3,
+   "bay_width_m": 3.0,
+   "notes": "blue glass ribbon windows on 1-2F, upper floors (animal labs) almost windowless"
+  },
+  "base": {
+   "material": "metal panel with blue glass ribbon windows",
+   "hex": "#cfd3d4",
+   "floors": 2
+  },
+  "floors_basis": "공식 본문: 지하 1층 지상 5층(4,268㎡). 층별 목록은 4F까지만 표기.",
+  "confidence": {
+   "floors": "medium",
+   "massing": "medium",
+   "colors": "high",
+   "outline": "medium"
+  }
+ },
+ "468762974": {
+  "name": "임상시험센터",
+  "identified_as": "아주대학교병원 임상시험센터 (병원 본관 동쪽, 권역외상센터 서쪽)",
+  "floors_above": 4,
+  "floors_below": 0,
+  "base_floors": 4,
+  "parts": [],
+  "wall": {
+   "primary_hex": "#e4e5e3",
+   "primary_material": "white metal panel (no photo; estimate from roof and neighbours)"
+  },
+  "windows": {
+   "style": "punched",
+   "glass_hex": "#5d6f7a",
+   "window_height_ratio": 0.5
+  },
+  "floors_basis": "공식 자료 없음. 위성영상의 북쪽 외벽 변위가 이웃한 5층 권역외상센터보다 조금 짧아 4층 추정.",
+  "confidence": {
+   "floors": "low",
+   "massing": "medium",
+   "colors": "low",
+   "outline": "high"
+  }
+ },
+ "415528050": {
+  "name": "학생회관1",
+  "floors_above": 3,
+  "floors_below": 0,
+  "base_floors": 1,
+  "parts": [
+   {
+    "label": "본동",
+    "floors": 3,
+    "polygon": [
+     [
+      -70.0,
+      103.5
+     ],
+     [
+      -45.5,
+      90.7
+     ],
+     [
+      -33.6,
+      85.8
+     ],
+     [
+      -24.5,
+      87.9
+     ],
+     [
+      -20.9,
+      72.8
+     ],
+     [
+      -52.7,
+      62.4
+     ],
+     [
+      -60.5,
+      85.3
+     ],
+     [
+      -74.5,
+      93.6
+     ]
+    ]
+   }
+  ],
+  "wall": {
+   "primary_hex": "#c8cbcd",
+   "primary_material": "light grey painted concrete"
+  },
+  "windows": {
+   "style": "punched",
+   "glass_hex": "#55636b",
+   "frame_hex": "#b9bec1",
+   "window_height_ratio": 0.45,
+   "bay_width_m": 3.2
+  },
+  "roof": {
+   "features": [
+    "south-west triangle: translucent greenish skylight roof over a 1-storey hall"
+   ]
+  },
+  "signage": [
+   {
+    "text": "23 학생회관1 Student Union 1",
+    "where": "entrance facade",
+    "color_hex": "#6c7a86"
+   }
+  ],
+  "floors_basis": "공식 본문 '지상 1층~3층 규모'. 위성영상: 남서쪽 삼각형은 반투명 지붕 1층, 나머지 본동 3층.",
+  "confidence": {
+   "floors": "high",
+   "massing": "high",
+   "colors": "medium",
+   "outline": "high"
+  }
+ },
+ "415528051": {
+  "name": "학생회관2",
+  "floors_above": 4,
+  "floors_below": 1,
+  "base_floors": 4,
+  "parts": [],
+  "wall": {
+   "primary_hex": "#e3e4e2",
+   "primary_material": "white metal panel",
+   "secondary_hex": "#7c3b2c",
+   "secondary_material": "rust-brown panel",
+   "secondary_where": "entrance block at the base"
+  },
+  "windows": {
+   "style": "ribbon",
+   "glass_hex": "#5e8a8f",
+   "frame_hex": "#d9dcdc",
+   "window_height_ratio": 0.5,
+   "bay_width_m": 3.0
+  },
+  "signage": [
+   {
+    "text": "24 학생회관2 Student Union 2",
+    "where": "upper corner of the west facade",
+    "color_hex": "#5a6168"
+   }
+  ],
+  "floors_basis": "공식 캠퍼스맵: 지하 1층~지상 4층(2007년 7월 준공). 공식 사진에서 4개 층 확인.",
+  "confidence": {
+   "floors": "high",
+   "massing": "high",
+   "colors": "high",
+   "outline": "high"
+  }
+ },
+ "415528044": {
+  "name": "연암관",
+  "official_name": "연암관",
+  "floors_above": 12,
+  "floors_below": 2,
+  "base_floors": 2,
+  "parts": [
+   {
+    "label": "금속패널 탑(서)",
+    "floors": 12,
+    "polygon": [
+     [
+      115.0,
+      -63.1
+     ],
+     [
+      150.0,
+      -61.9
+     ],
+     [
+      150.0,
+      -86.4
+     ],
+     [
+      115.7,
+      -85.1
+     ]
+    ],
+    "wall_hex": "#b6b9b9",
+    "wall_material": "light grey vertical metal panel",
+    "window_style": "punched",
+    "glass_hex": "#5d7680",
+    "window_height_ratio": 0.78
+   },
+   {
+    "label": "수직 핀 날개(동)",
+    "floors": 12,
+    "polygon": [
+     [
+      150.0,
+      -61.9
+     ],
+     [
+      191.4,
+      -60.6
+     ],
+     [
+      190.6,
+      -81.0
+     ],
+     [
+      150.0,
+      -82.4
+     ]
+    ],
+    "wall_hex": "#e8ebeb",
+    "wall_material": "white vertical aluminium fins over glass",
+    "window_style": "curtain_wall",
+    "glass_hex": "#7ea6ae"
+   }
+  ],
+  "wall": {
+   "primary_hex": "#e6e8e8",
+   "primary_material": "white metal panel grid",
+   "secondary_hex": "#3f8f8a",
+   "secondary_material": "teal glass curtain wall",
+   "secondary_where": "podium glazing"
+  },
+  "windows": {
+   "style": "curtain_wall",
+   "glass_hex": "#3f8f8a",
+   "frame_hex": "#e2e5e5",
+   "window_height_ratio": 0.8,
+   "bay_width_m": 3.0
+  },
+  "roof": {
+   "features": [
+    "roof garden with brown paving and planters on the south podium",
+    "pergola frame on the east wing roof"
+   ]
+  },
+  "floors_basis": "공식 캠퍼스맵: 지하 2층~지상 12층(구 종합관, 법학전문대학원). 공식 사진: 유리 기단 위 금속패널 탑과 수직 핀 날개.",
+  "confidence": {
+   "floors": "high",
+   "massing": "medium",
+   "colors": "high",
+   "outline": "high"
+  },
+  "notes": "남쪽 날개는 옥상정원이 있는 2층 기단으로 판정."
+ },
+ "468774587": {
+  "name": "종합설계동",
+  "floors_above": 1,
+  "floors_below": 0,
+  "base_floors": 1,
+  "parts": [],
+  "height_m": 8.5,
+  "wall": {
+   "primary_hex": "#c9cdcf",
+   "primary_material": "silver corrugated metal sandwich panel"
+  },
+  "windows": {
+   "style": "few",
+   "glass_hex": "#7d8b93",
+   "frame_hex": "#e4e6e6",
+   "window_height_ratio": 0.15,
+   "bay_width_m": 4.0
+  },
+  "roof": {
+   "shape": "gable",
+   "hex": "#c4c6b5"
+  },
+  "floors_basis": "공식 사진: 박공지붕 단층 실험·작업동(층고 높음, 2010년 2월 준공).",
+  "confidence": {
+   "floors": "high",
+   "massing": "high",
+   "colors": "high",
+   "outline": "high"
+  }
+ },
+ "15806823": {
+  "name": "중앙도서관",
+  "floors_above": 4,
+  "floors_below": 2,
+  "base_floors": 4,
+  "parts": [],
+  "wall": {
+   "primary_hex": "#9b4a3d",
+   "primary_material": "red face brick",
+   "secondary_hex": "#ece8de",
+   "secondary_material": "cream concrete floor bands and corner frames",
+   "secondary_where": "horizontal spandrel band at each floor"
+  },
+  "windows": {
+   "style": "ribbon",
+   "glass_hex": "#3c474f",
+   "frame_hex": "#e5e2da",
+   "window_height_ratio": 0.45,
+   "bay_width_m": 3.0
+  },
+  "signage": [
+   {
+    "text": "27 중앙도서관 Central Library",
+    "where": "white letters on the brick end wall",
+    "color_hex": "#ffffff"
+   }
+  ],
+  "roof": {
+   "features": [
+    "teal-painted roof on the north part"
+   ]
+  },
+  "floors_basis": "공식 층별 안내 B2~4F. 공식 사진에서 지상 4개 층 확인.",
+  "confidence": {
+   "floors": "high",
+   "massing": "high",
+   "colors": "high",
+   "outline": "high"
+  }
+ },
+ "415528041": {
+  "name": "체육관",
+  "floors_above": 2,
+  "floors_below": 1,
+  "base_floors": 2,
+  "parts": [
+   {
+    "label": "체육관 본동(아치 지붕)",
+    "floors": 2,
+    "height_m": 15.5,
+    "polygon": [
+     [
+      -62.53,
+      -302.8
+     ],
+     [
+      -62.5,
+      -304.1
+     ],
+     [
+      -71.2,
+      -304.3
+     ],
+     [
+      -69.8,
+      -356.1
+     ],
+     [
+      -61.3,
+      -355.9
+     ],
+     [
+      -61.1,
+      -362.1
+     ],
+     [
+      -16.2,
+      -360.9
+     ],
+     [
+      -16.4,
+      -354.6
+     ],
+     [
+      -7.7,
+      -354.4
+     ],
+     [
+      -9.09,
+      -302.8
+     ]
+    ],
+    "roof_shape": "vault",
+    "roof_axis_deg": 0
+   }
+  ],
+  "wall": {
+   "primary_hex": "#646a6e",
+   "primary_material": "dark grey metal panel with exposed truss",
+   "secondary_hex": "#39434a",
+   "secondary_material": "dark glass curtain wall",
+   "secondary_where": "lower facade along the entrance"
+  },
+  "windows": {
+   "style": "curtain_wall",
+   "glass_hex": "#3b454b",
+   "frame_hex": "#7b8286",
+   "window_height_ratio": 0.8,
+   "bay_width_m": 3.0
+  },
+  "roof": {
+   "hex": "#7f9c97",
+   "shape": "vault",
+   "features": [
+    "blue-grey standing-seam barrel-vault roof over the main hall",
+    "flat-roofed 2-storey annex on the north"
+   ]
+  },
+  "floors_basis": "공식 캠퍼스맵: 지하 1층~지상 2층(1999년 6월 준공). 본동은 층고가 높은 아치 지붕 체육관.",
+  "confidence": {
+   "floors": "high",
+   "massing": "high",
+   "colors": "high",
+   "outline": "high"
+  }
+ },
+ "468774585": {
+  "name": "토목실험동",
+  "official_name": "토목실험동",
+  "floors_above": 1,
+  "floors_below": 0,
+  "base_floors": 1,
+  "parts": [],
+  "height_m": 5.5,
+  "wall": {
+   "primary_hex": "#a2a7ab",
+   "primary_material": "grey metal sandwich panel"
+  },
+  "windows": {
+   "style": "punched",
+   "glass_hex": "#6b7a82",
+   "frame_hex": "#e6e7e7",
+   "window_height_ratio": 0.32,
+   "bay_width_m": 3.6
+  },
+  "roof": {
+   "shape": "gable",
+   "hex": "#c6cfc4"
+  },
+  "floors_basis": "공식 사진: 낮은 박공지붕 단층 실험동.",
+  "confidence": {
+   "floors": "high",
+   "massing": "high",
+   "colors": "high",
+   "outline": "high"
+  }
+ },
+ "415528046": {
+  "name": "팔달관",
+  "floors_above": 10,
+  "floors_below": 1,
+  "base_floors": 5,
+  "parts": [
+   {
+    "label": "북쪽 탑",
+    "floors": 10,
+    "polygon": [
+     [
+      -161.7,
+      180.5
+     ],
+     [
+      -161.11,
+      163.5
+     ],
+     [
+      -100.34,
+      163.5
+     ],
+     [
+      -101.0,
+      182.6
+     ],
+     [
+      -138.2,
+      181.3
+     ]
+    ]
+   }
+  ],
+  "wall": {
+   "primary_hex": "#e9e9e6",
+   "primary_material": "white painted concrete frame",
+   "secondary_hex": "#4e5653",
+   "secondary_material": "dark grey-green panel bands",
+   "secondary_where": "horizontal spandrel band under each window row"
+  },
+  "windows": {
+   "style": "grid",
+   "glass_hex": "#3e474d",
+   "frame_hex": "#e4e4e1",
+   "window_height_ratio": 0.5,
+   "bay_width_m": 3.0
+  },
+  "floors_basis": "공식 캠퍼스맵: 지하 1층~지상 10층(1993년 12월 준공). 공식 사진에서 10층 탑과 낮은 날개동 확인.",
+  "confidence": {
+   "floors": "high",
+   "massing": "low",
+   "colors": "high",
+   "outline": "high"
+  },
+  "notes": "탑 위치: 위성영상 북쪽 외벽 변위(약 9m)와 지붕 형태(북쪽 옥상 데크, 남쪽 태양광)로 북쪽 절반을 10층 탑으로 판정. 날개동 5층은 사진 추정."
+ },
+ "415712211": {
+  "name": "학군단",
+  "official_name": "학군단",
+  "floors_above": 2,
+  "floors_below": 1,
+  "base_floors": 2,
+  "parts": [],
+  "wall": {
+   "primary_hex": "#7b7e80",
+   "primary_material": "dark grey granite panel",
+   "secondary_hex": "#e6e6e3",
+   "secondary_material": "white frame around the entrance bay with glass balcony",
+   "secondary_where": "central entrance bay"
+  },
+  "windows": {
+   "style": "punched",
+   "glass_hex": "#6c7a80",
+   "frame_hex": "#e6e6e6",
+   "window_height_ratio": 0.5,
+   "bay_width_m": 3.0
+  },
+  "floors_basis": "공식 층별 안내 B1~2F. 공식 사진: 반지하(B1) 창이 드러난 2층 건물, 정면 계단.",
+  "confidence": {
+   "floors": "high",
+   "massing": "high",
+   "colors": "high",
+   "outline": "high"
+  }
+ },
+ "1168524944": {
+  "name": "혜강관",
+  "floors_above": 7,
+  "floors_below": 2,
+  "base_floors": 2,
+  "corrected_outline": [
+   [
+    197,
+    92
+   ],
+   [
+    197,
+    110
+   ],
+   [
+    249,
+    110
+   ],
+   [
+    249,
+    48
+   ],
+   [
+    205,
+    48
+   ],
+   [
+    205,
+    70
+   ],
+   [
+    222,
+    70
+   ],
+   [
+    222,
+    92
+   ]
+  ],
+  "parts": [
+   {
+    "label": "북쪽 날개",
+    "floors": 7,
+    "polygon": [
+     [
+      197,
+      92
+     ],
+     [
+      197,
+      110
+     ],
+     [
+      249,
+      110
+     ],
+     [
+      249,
+      92
+     ]
+    ]
+   },
+   {
+    "label": "동쪽 날개",
+    "floors": 7,
+    "polygon": [
+     [
+      232,
+      48
+     ],
+     [
+      249,
+      48
+     ],
+     [
+      249,
+      92
+     ],
+     [
+      232,
+      92
+     ]
+    ]
+   }
+  ],
+  "wall": {
+   "primary_hex": "#6f6864",
+   "primary_material": "dark grey-brown brick / stone horizontal bands",
+   "secondary_hex": "#8fbcd8",
+   "secondary_material": "light blue glass curtain wall",
+   "secondary_where": "entrance atrium box and stair core"
+  },
+  "windows": {
+   "style": "ribbon",
+   "glass_hex": "#6d9bc0",
+   "frame_hex": "#4d4f52",
+   "window_height_ratio": 0.4,
+   "bay_width_m": 3.0
+  },
+  "signage": [
+   {
+    "text": "53 혜강관 Hyegang Hall",
+    "where": "upper corner of the west wing",
+    "color_hex": "#ffffff"
+   }
+  ],
+  "floors_basis": "공식 캠퍼스맵: 지하 2층~지상 7층(2022년 9월 준공, 종합실험동). 공식 사진에서 L자 7층 동과 낮은 기단 확인.",
+  "confidence": {
+   "floors": "high",
+   "massing": "medium",
+   "colors": "high",
+   "outline": "medium"
+  },
+  "notes": "OSM 외곽선이 북쪽 날개(y 101~110)를 빠뜨려 위성영상으로 보정."
+ },
+ "485091547": {
+  "name": "홍재관",
+  "floors_above": 4,
+  "floors_below": 1,
+  "base_floors": 4,
+  "parts": [],
+  "wall": {
+   "primary_hex": "#d8dad9",
+   "primary_material": "light grey stone panel grid"
+  },
+  "windows": {
+   "style": "grid",
+   "glass_hex": "#60737c",
+   "frame_hex": "#c9cdcf",
+   "window_height_ratio": 0.62,
+   "bay_width_m": 2.4
+  },
+  "base": {
+   "material": "glass ground floor",
+   "hex": "#7c929b",
+   "floors": 1
+  },
+  "signage": [
+   {
+    "text": "50 홍재관 Hongjae Hall",
+    "where": "upper corner",
+    "color_hex": "#6a7076"
+   }
+  ],
+  "floors_basis": "공식 층별 안내 B1~4F(2018년 9월 준공). 사진상 경사지라 B1 유리층이 드러남.",
+  "confidence": {
+   "floors": "high",
+   "massing": "high",
+   "colors": "high",
+   "outline": "high"
+  }
+ },
+ "468774584": {
+  "name": "화공실험동",
+  "floors_above": 2,
+  "floors_below": 0,
+  "base_floors": 2,
+  "parts": [],
+  "wall": {
+   "primary_hex": "#e8e1d2",
+   "primary_material": "cream painted concrete, mostly blank walls"
+  },
+  "windows": {
+   "style": "few",
+   "glass_hex": "#5c6870",
+   "frame_hex": "#d9d6cf",
+   "window_height_ratio": 0.18,
+   "bay_width_m": 4.0
+  },
+  "features": [
+   "red-brown painted plinth strip",
+   "red tiled entrance steps"
+  ],
+  "floors_basis": "공식 캠퍼스맵: 지상 2층(1982년 준공).",
+  "confidence": {
+   "floors": "high",
+   "massing": "high",
+   "colors": "high",
+   "outline": "high"
+  }
+ },
+ "706094939": {
+  "name": "화홍관",
+  "floors_above": 5,
+  "floors_below": 1,
+  "base_floors": 5,
+  "parts": [],
+  "wall": {
+   "primary_hex": "#ebe5d6",
+   "primary_material": "cream painted concrete frame",
+   "secondary_hex": "#a6594c",
+   "secondary_material": "red brick spandrel panels",
+   "secondary_where": "spandrel band under every window"
+  },
+  "windows": {
+   "style": "punched",
+   "glass_hex": "#47535d",
+   "frame_hex": "#3d4450",
+   "window_height_ratio": 0.5,
+   "bay_width_m": 3.6
+  },
+  "floors_basis": "공식 층별 안내 B1~5F. 공식 사진에서 5개 층 확인.",
+  "confidence": {
+   "floors": "high",
+   "massing": "high",
+   "colors": "high",
+   "outline": "high"
+  }
+ },
+ "468774590": {
+  "identified_as": "용도 미상 소형 건물(녹색 골강판 지붕, 제2학생회관 동쪽)",
+  "floors_above": 1,
+  "floors_below": 0,
+  "base_floors": 1,
+  "parts": [],
+  "height_m": 5,
+  "wall": {
+   "primary_hex": "#d6d6d0",
+   "primary_material": "painted panel (no photo; estimate)"
+  },
+  "windows": {
+   "style": "few",
+   "glass_hex": "#5d6a72",
+   "window_height_ratio": 0.3
+  },
+  "roof": {
+   "hex": "#4f7a64",
+   "features": [
+    "green corrugated metal roof"
+   ]
+  },
+  "floors_basis": "공식 자료 없음. 위성영상 그림자가 짧아 단층 추정.",
+  "confidence": {
+   "floors": "low",
+   "massing": "low",
+   "colors": "low",
+   "outline": "high"
+  }
+ },
+ "580372134": {
+  "identified_as": "창고·작업용 가건물(어두운 금속 박공지붕, 일신관 동쪽)",
+  "floors_above": 1,
+  "floors_below": 0,
+  "base_floors": 1,
+  "parts": [],
+  "height_m": 5,
+  "wall": {
+   "primary_hex": "#b9bcb8",
+   "primary_material": "metal sandwich panel (no photo; estimate)"
+  },
+  "windows": {
+   "style": "few",
+   "glass_hex": "#5d6a72",
+   "window_height_ratio": 0.2
+  },
+  "roof": {
+   "hex": "#556f66",
+   "shape": "gable",
+   "features": [
+    "dark grey-green corrugated metal roof"
+   ]
+  },
+  "floors_basis": "공식 자료 없음. 위성영상: 박공지붕 단층 창고형.",
+  "confidence": {
+   "floors": "medium",
+   "massing": "medium",
+   "colors": "low",
+   "outline": "high"
+  }
+ },
+ "580373350": {
+  "identified_as": "창고·작업용 가건물(어두운 금속 박공지붕, 일신관 동쪽)",
+  "floors_above": 1,
+  "floors_below": 0,
+  "base_floors": 1,
+  "parts": [],
+  "height_m": 5,
+  "wall": {
+   "primary_hex": "#b9bcb8",
+   "primary_material": "metal sandwich panel (no photo; estimate)"
+  },
+  "windows": {
+   "style": "few",
+   "glass_hex": "#5d6a72",
+   "window_height_ratio": 0.2
+  },
+  "roof": {
+   "hex": "#556f66",
+   "shape": "gable",
+   "features": [
+    "dark grey-green corrugated metal roof"
+   ]
+  },
+  "floors_basis": "공식 자료 없음. 위성영상: 박공지붕 단층 창고형.",
+  "confidence": {
+   "floors": "medium",
+   "massing": "medium",
+   "colors": "low",
+   "outline": "high"
+  }
+ },
+ "1168524946": {
+  "remove": true,
+  "identified_as": "건물 아님 — 위성영상상 공터(작은 가설물만 있음)",
+  "confidence": {
+   "floors": "high",
+   "massing": "high",
+   "colors": "low",
+   "outline": "high"
+  }
+ },
+ "1168524947": {
+  "remove": true,
+  "identified_as": "건물 아님 — 위성영상상 숲속 잔디 공터",
+  "confidence": {
+   "floors": "high",
+   "massing": "high",
+   "colors": "low",
+   "outline": "high"
+  }
+ },
+ "415712208": {
+  "name": "제2주차빌딩",
+  "official_name": "제2주차빌딩",
+  "floors_above": 4,
+  "floors_below": 0,
+  "base_floors": 4,
+  "parts": [],
+  "typical_floor_height_m": 3.1,
+  "wall": {
+   "primary_hex": "#cfcbc4",
+   "primary_material": "light grey precast concrete with vertical pleated fins"
+  },
+  "windows": {
+   "style": "ribbon",
+   "glass_hex": "#3a3d40",
+   "frame_hex": "#bdb9b2",
+   "window_height_ratio": 0.35,
+   "bay_width_m": 4.0,
+   "notes": "open parking-deck slots rendered as dark ribbons"
+  },
+  "roof": {
+   "features": [
+    "rooftop parking deck with white stripes"
+   ]
+  },
+  "signage": [
+   {
+    "text": "P",
+    "where": "two round blue P signs on the corner",
+    "color_hex": "#2f5f9e"
+   }
+  ],
+  "floors_basis": "공식 캠퍼스맵 2007년 5월 준공. 공식 사진: 지상 4개 층 주차장(옥상 주차 포함) 추정.",
+  "confidence": {
+   "floors": "medium",
+   "massing": "high",
+   "colors": "high",
+   "outline": "high"
+  }
+ },
+ "468762961": {
+  "identified_as": "병원 부지 기계·연구동(옥상 동쪽에 냉각탑 다수) — 정확한 이름 미확인",
+  "floors_above": 4,
+  "floors_below": 0,
+  "base_floors": 4,
+  "parts": [],
+  "wall": {
+   "primary_hex": "#dcdcd8",
+   "primary_material": "light grey panel (no photo; estimate)"
+  },
+  "windows": {
+   "style": "punched",
+   "glass_hex": "#5a6770",
+   "window_height_ratio": 0.45
+  },
+  "roof": {
+   "features": [
+    "row of cooling towers along the east edge"
+   ]
+  },
+  "floors_basis": "공식 자료 없음. 위성영상 외벽 변위로 4층 안팎 추정.",
+  "confidence": {
+   "floors": "low",
+   "massing": "medium",
+   "colors": "low",
+   "outline": "high"
+  }
+ },
+ "706051508": {
+  "name": "병원별관",
+  "official_name": "병원별관",
+  "floors_above": 5,
+  "floors_below": 1,
+  "base_floors": 5,
+  "parts": [],
+  "wall": {
+   "primary_hex": "#c0b6a4",
+   "primary_material": "exposed beige concrete frame grid",
+   "secondary_hex": "#6f705f",
+   "secondary_material": "dark olive spandrel panels",
+   "secondary_where": "spandrel band under each window"
+  },
+  "windows": {
+   "style": "grid",
+   "glass_hex": "#4e5148",
+   "frame_hex": "#b9af9c",
+   "window_height_ratio": 0.5,
+   "bay_width_m": 3.6
+  },
+  "features": [
+   "glass skywalk bridge to the hospital main building"
+  ],
+  "floors_basis": "공식 캠퍼스맵: 지하 1층~지상 5층. 공식 사진에서 5개 층 확인.",
+  "confidence": {
+   "floors": "high",
+   "massing": "high",
+   "colors": "high",
+   "outline": "medium"
+  }
+ },
+ "1558343497": {
+  "identified_as": "병원 동쪽 9층 건물(OSM: 9층·48m) — 아주대 소속·이름 미확인",
+  "floors_above": 9,
+  "floors_below": 0,
+  "base_floors": 9,
+  "parts": [],
+  "height_m": 48,
+  "wall": {
+   "primary_hex": "#dedcd5",
+   "primary_material": "light stone/panel (no photo; estimate)"
+  },
+  "windows": {
+   "style": "ribbon",
+   "glass_hex": "#5e7682",
+   "window_height_ratio": 0.5
+  },
+  "roof": {
+   "features": [
+    "stepped terraces with solar panels"
+   ]
+  },
+  "floors_basis": "OSM building:levels=9, height=48. 공식 캠퍼스맵에는 없음.",
+  "confidence": {
+   "floors": "medium",
+   "massing": "low",
+   "colors": "low",
+   "outline": "high"
+  }
+ }
+}

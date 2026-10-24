@@ -1,0 +1,1758 @@
+{
+ "415712207": {
+  "buildNo": 58,
+  "name": "에너지센터",
+  "nameEn": "Energy Center",
+  "point": [
+   -287.4,
+   -64.8
+  ],
+  "floors_above": 5,
+  "floors_below": 1,
+  "floors_agree": true,
+  "text_above": 5,
+  "list_top": 5,
+  "year": 1994,
+  "floor_guide": [
+   {
+    "floor": "B1",
+    "use": "공동기기센터"
+   },
+   {
+    "floor": "1F",
+    "use": "광의료 융합기술연구센터, 에너지 공정연구실"
+   },
+   {
+    "floor": "2F",
+    "use": "에너지활용연구실, 전력시스템연구실"
+   },
+   {
+    "floor": "3F",
+    "use": "정보시스템팀, 기계실"
+   },
+   {
+    "floor": "4F",
+    "use": "공동기기센터, NMR실"
+   },
+   {
+    "floor": "5F",
+    "use": "대학원-분자과학기술학과, PC실습실"
+   }
+  ],
+  "summary": "1994년 8월 준공된 건물로, 지하 1층~지상 5층의 규모이다. 각종 첨단 계산설비를 다루는 연구실과 실험실이 위치해 있다.\n아주대학교 공동기기센터, 에너지 기후 변화 연구소, 반도체 공정 실습실 등이 자리잡고 있다.",
+  "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/ZRVvmRBmKLBJteuZjuxT.jpg",
+  "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=58"
+ },
+ "415528047": {
+  "buildNo": 59,
+  "name": "원천관",
+  "nameEn": "Woncheon Hall",
+  "point": [
+   -215.3,
+   0.3
+  ],
+  "floors_above": 5,
+  "floors_below": null,
+  "floors_agree": true,
+  "text_above": null,
+  "list_top": 5,
+  "year": 1973,
+  "floor_guide": [
+   {
+    "floor": "1F",
+    "use": "인쇄소, 연구실 및 실험실"
+   },
+   {
+    "floor": "2F",
+    "use": "자연과학대학 교학팀, 교수연구실"
+   },
+   {
+    "floor": "3F~5F",
+    "use": "전자공학과사무실, 교수연구실"
+   }
+  ],
+  "summary": "1973년 3월 준공된 건물로, 개교 초기 아주대학교의 본관이었다. 건물명은 아주대학교가 위치한 원천동에서 유래했다. 현재는 전자공학과, 물리학과, 생명과학과, 화학과가 사용하고 있다.",
+  "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/tRoRJRMeNLfIFCxQFvXf.jpg",
+  "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=59"
+ },
+ "468355328": {
+  "buildNo": 60,
+  "name": "원천정보관",
+  "nameEn": "Woncheon Haedong Hall",
+  "point": [
+   -188.6,
+   53.7
+  ],
+  "floors_above": 3,
+  "floors_below": null,
+  "floors_agree": true,
+  "text_above": null,
+  "list_top": 3,
+  "year": 2015,
+  "floor_guide": [
+   {
+    "floor": "1F",
+    "use": "지역동반성장센터, 앵커 회의실"
+   },
+   {
+    "floor": "2F",
+    "use": "학술정보실, 멀티미디어실"
+   },
+   {
+    "floor": "3F",
+    "use": "세미나실"
+   }
+  ],
+  "summary": "2015년 11월 준공된 건물로, 해동과학문화재단에서 이공계 학생 전용 도서관 건립을 위해 기부한 5억원으로 만들어 진 학술정보실이 위치해 있다.",
+  "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/szMofeebBYtXwqwNmPoH.JPG",
+  "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=60"
+ },
+ "468774584": {
+  "buildNo": 62,
+  "name": "화공실험동",
+  "nameEn": "Chemical Engineering Laboratory",
+  "point": [
+   -281.3,
+   36.9
+  ],
+  "floors_above": 2,
+  "floors_below": null,
+  "floors_agree": true,
+  "text_above": 2,
+  "list_top": 2,
+  "year": 1982,
+  "floor_guide": [
+   {
+    "floor": "1F",
+    "use": "실험실(화학과, 화학공학과)"
+   },
+   {
+    "floor": "2F",
+    "use": "실험실(화학공학과, 응용화학생명공학과, 분자과학기술학과)"
+   }
+  ],
+  "summary": "1982년 준공된 건물로, 주로 화학, 화학공학 관련 실험을 위한 공간이다. 지상 2층의 건물로, 기업부설연구소와 각종 랩실이 위치해 있다.",
+  "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/ZcUOzNJRZYQUrcpEJlLK.JPG",
+  "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=62"
+ },
+ "415528048": {
+  "buildNo": 63,
+  "name": "서관",
+  "nameEn": "West Hall",
+  "point": [
+   -284.8,
+   81.6
+  ],
+  "floors_above": 3,
+  "floors_below": null,
+  "floors_agree": true,
+  "text_above": null,
+  "list_top": 3,
+  "year": 1973,
+  "floor_guide": [
+   {
+    "floor": "1F",
+    "use": "연구실 (분자과학기술학과, 화학공학과, 환경안전공학과 등)"
+   },
+   {
+    "floor": "2F/3F",
+    "use": "교수 연구실, 연구실(분자과학기술학과, 화학공학과, 환경안정공학과 등)"
+   }
+  ],
+  "summary": "1973년 3월 준공된 건물로, 아주대학교 개교 당시 캠퍼스 가장 서쪽에 위치해 있어 서관으로 불리게 되었다. 분자과학기술연구센터 및 대학원 연구실이 자리잡고 있다. 주로 화학공학과, 기계공학과, 환경안전공학과가 사용하고 있다.",
+  "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/dxyrMYnoLZcwxlTKSuEe.JPG",
+  "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=63"
+ },
+ "415528049": {
+  "buildNo": 64,
+  "name": "동관",
+  "nameEn": "East Hall",
+  "point": [
+   -188.4,
+   90.6
+  ],
+  "floors_above": 3,
+  "floors_below": null,
+  "floors_agree": true,
+  "text_above": 3,
+  "list_top": 3,
+  "year": 1974,
+  "floor_guide": [
+   {
+    "floor": "1F",
+    "use": "창의적공학설계실, 기계진단준비실"
+   },
+   {
+    "floor": "2F/3F",
+    "use": "교수연구실, 연구실(기계공학과)"
+   }
+  ],
+  "summary": "1974년 준공된 지상 3층의 건물로, 기계공학과가 사용하는 공간이다. 자동차동력시스템연구실, 성형가공연구실, 지능형다중스케일설계가공연구실 등의 연구실이 위치해 있다.",
+  "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/oVqtcjBhOUyPXipwPPVk.JPG",
+  "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=64"
+ },
+ "468774587": {
+  "buildNo": 65,
+  "name": "종합설계동",
+  "nameEn": "Capstone Design Laboratory",
+  "point": [
+   -311.2,
+   113.9
+  ],
+  "floors_above": null,
+  "floors_below": null,
+  "floors_agree": false,
+  "text_above": null,
+  "list_top": null,
+  "year": 2010,
+  "floor_guide": [],
+  "summary": "2010년 2월 준공된 컨테이너 건물이다. 공과대학에서 주로 사용하는 연구실 및 실험실이 위치해 있다.",
+  "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/nXTqGNSZorIeqTRjDEqy.jpg",
+  "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=65"
+ },
+ "706051505": {
+  "buildNo": 66,
+  "name": "대형지반연구실험동",
+  "nameEn": "Geotechnical Engineering Laboratory",
+  "point": [
+   -279.2,
+   118.1
+  ],
+  "floors_above": null,
+  "floors_below": null,
+  "floors_agree": false,
+  "text_above": null,
+  "list_top": null,
+  "year": 2009,
+  "floor_guide": [],
+  "summary": "2009년 준공된 484.5㎡의 면적의 건물이다. 56명의 지반공학연구실 출신 졸업생들의 기금을 시드머니로 건립 되었다. 실내실험실, 정밀기기실험실, 실험준비실, 실대형 토조를 갖추고 있다.",
+  "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/iufaxjGJdKzFjNTcgEhW.JPG",
+  "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=66"
+ },
+ "468774585": {
+  "buildNo": 67,
+  "name": "토목실험동",
+  "nameEn": "Civil Engineering Laboratory",
+  "point": [
+   -230.5,
+   144.1
+  ],
+  "floors_above": null,
+  "floors_below": null,
+  "floors_agree": false,
+  "text_above": null,
+  "list_top": null,
+  "year": null,
+  "floor_guide": [],
+  "summary": "미래건설창작소와 창의건설연구소가 위치한 공과대학 연구소 컨테이너 건물이다.",
+  "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/rxxUwGiYzJptHOgorizg.JPG",
+  "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=67"
+ },
+ "415528046": {
+  "buildNo": 68,
+  "name": "팔달관",
+  "nameEn": "Paldal Hall",
+  "point": [
+   -131.9,
+   151.8
+  ],
+  "floors_above": 10,
+  "floors_below": 1,
+  "floors_agree": true,
+  "text_above": 10,
+  "list_top": 10,
+  "year": 1993,
+  "floor_guide": [
+   {
+    "floor": "B1",
+    "use": "기계실"
+   },
+   {
+    "floor": "1F",
+    "use": "연구실(첨단신소재공학과, 분자과학기술학과), 강의실"
+   },
+   {
+    "floor": "2F",
+    "use": "공과대학 교학팀, 공학대학원교학팀"
+   },
+   {
+    "floor": "3F",
+    "use": "소프트웨어창작스튜디오, 소프트웨어교육센터"
+   },
+   {
+    "floor": "4F",
+    "use": "연구실(분자과학기술학과, 수학과 등), 정보통신대학교학팀"
+   },
+   {
+    "floor": "5F",
+    "use": "교수연구실, 대학원 연구실험실"
+   },
+   {
+    "floor": "6F",
+    "use": "교수연구실, 연구실 (수학과, 컴퓨터공학과 등)"
+   },
+   {
+    "floor": "7F",
+    "use": "교수연구실, 연구실 (첨단신소재공학과, 기계공학과 등)"
+   },
+   {
+    "floor": "8F",
+    "use": "교수연구실, 연구실 (산업공학과, 분자과학기술학과 등)"
+   },
+   {
+    "floor": "9F",
+    "use": "교수연구실, 연구실 (컴퓨터공학과, 우주전자정보공학과 등)"
+   },
+   {
+    "floor": "10F",
+    "use": "교수연구실, 연구실 (교통공학과)"
+   }
+  ],
+  "summary": "1993년 12월 준공된 건물로, 이름은 아주대학교가 소재하고 있던 수원시 팔달구에서 유래했다. 지상 10층의 건물로, 아주대학교와 수원시를 조망할 수 있다. 공학교육혁신센터, 현장실습지원센터, CSMC(Cyber Security Multiplex Center) 등이 위치해 있다.",
+  "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/oTCfbsfvZMOGcIVlSkuY.JPG",
+  "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=68"
+ },
+ "415712211": {
+  "buildNo": 69,
+  "name": "학군단",
+  "nameEn": "R.O.T.C Headquarters",
+  "point": [
+   -82.2,
+   251.9
+  ],
+  "floors_above": 2,
+  "floors_below": 1,
+  "floors_agree": true,
+  "text_above": null,
+  "list_top": 2,
+  "year": null,
+  "floor_guide": [
+   {
+    "floor": "B1",
+    "use": "체력단련실, 교보재·공급실, 창고"
+   },
+   {
+    "floor": "1F",
+    "use": "병영생활지도실, 자치근무자실, 강의장, 선행학습실"
+   },
+   {
+    "floor": "2F",
+    "use": "단장실, 훈육관실, 행정실, 강의장, 교보재실"
+   }
+  ],
+  "summary": "학군사관후보생(ROTC)들이 사용하는 공간으로, 학군사관후보생들을 위한 시설들이 위치해 있다.\n학군단만이 단독으로 사용하고 있으며, 선행학습실, 병영생활지도실, 훈육관실, 자치근무자실 등이 위치해 있다.",
+  "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/WeXEejnXfUKGiRqOrNWa.jpg",
+  "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=69"
+ },
+ "622642099": {
+  "buildNo": 70,
+  "name": "산학협력원",
+  "nameEn": "Industry-University Cooperation Building",
+  "point": [
+   -12.3,
+   388.7
+  ],
+  "floors_above": 8,
+  "floors_below": 1,
+  "floors_agree": true,
+  "text_above": 8,
+  "list_top": 8,
+  "year": null,
+  "floor_guide": [
+   {
+    "floor": "B1",
+    "use": "기계실, 전기실, 발전기실"
+   },
+   {
+    "floor": "1F",
+    "use": "평생교육원장실"
+   },
+   {
+    "floor": "2F",
+    "use": "창업보육센터"
+   },
+   {
+    "floor": "3F",
+    "use": "디자인스튜디오"
+   },
+   {
+    "floor": "4F",
+    "use": "애니메이션실, 드로잉실"
+   },
+   {
+    "floor": "5F",
+    "use": "교수연구실, 연구실(컴퓨터공학과, 지식정보공학과 등)"
+   },
+   {
+    "floor": "6F",
+    "use": "교수연구실, 3D영상실, HD편집실"
+   },
+   {
+    "floor": "7F",
+    "use": "교수연구실, 건축학과사무실"
+   },
+   {
+    "floor": "8F",
+    "use": "교수연구실, 연구실(건축공학과, 미디어학과 등)"
+   }
+  ],
+  "summary": "지하 1층 지상 8층의 규모의 건물로 창업지원을 위한 센터와 대학원 연구실이 위치해 있다.",
+  "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/uCNBeTcqtFmsknqJbEmD.JPG",
+  "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=70"
+ },
+ "468774556": {
+  "buildNo": 71,
+  "name": "국제학사",
+  "nameEn": "International House(Dormitory 5)",
+  "point": [
+   125.2,
+   189.2
+  ],
+  "floors_above": 9,
+  "floors_below": null,
+  "floors_agree": true,
+  "text_above": 9,
+  "list_top": 9,
+  "year": 2014,
+  "floor_guide": [
+   {
+    "floor": "1F",
+    "use": "체육실"
+   },
+   {
+    "floor": "2F~8F",
+    "use": "기숙사"
+   },
+   {
+    "floor": "9F",
+    "use": "교원 기숙사"
+   }
+  ],
+  "summary": "2014년 12월 준공된 지상 9층의 건물이다. 기숙사생들을 위한 공동 세탁실, 체력단련실, 무인택배실,명상실 등이 위치해 있다.",
+  "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/QhsvwQvPOoGTtQroVTos.JPG",
+  "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=71"
+ },
+ "706094938": {
+  "buildNo": 72,
+  "name": "광교관",
+  "nameEn": "Gwanggyo Hall(Dormitory 4)",
+  "point": [
+   65.9,
+   267.5
+  ],
+  "floors_above": 5,
+  "floors_below": 1,
+  "floors_agree": true,
+  "text_above": null,
+  "list_top": 5,
+  "year": null,
+  "floor_guide": [
+   {
+    "floor": "B1",
+    "use": "동전 세탁실, 체력단련실"
+   },
+   {
+    "floor": "1F~5F",
+    "use": "기숙사"
+   }
+  ],
+  "summary": "여학생 기숙사로, 광교관의 이름은 수원8경(水原八景)의 광교적설(光敎積雪)에서 유래했다.",
+  "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/nDQpegCMcHOgeffrLxFK.JPG",
+  "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=72"
+ },
+ "706094939": {
+  "buildNo": 73,
+  "name": "화홍관",
+  "nameEn": "Hwahong Hall(Dormitory 3)",
+  "point": [
+   46.4,
+   238.7
+  ],
+  "floors_above": 5,
+  "floors_below": 1,
+  "floors_agree": true,
+  "text_above": null,
+  "list_top": 5,
+  "year": null,
+  "floor_guide": [
+   {
+    "floor": "B1",
+    "use": "체력단련실, 명상실"
+   },
+   {
+    "floor": "1F~5F",
+    "use": "기숙사"
+   }
+  ],
+  "summary": "외국인 학생을 위한 기숙사로, 화홍관이라는 이름은 수원8경(水原八景)의 화홍관창(華虹觀漲)에서 유래했다.",
+  "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/iNwbzipBvrUBUlzaqXvT.JPG",
+  "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=73"
+ },
+ "415712212": {
+  "buildNo": 74,
+  "name": "용지관",
+  "nameEn": "Yongji Hall(Dormitory 2)",
+  "point": [
+   19.9,
+   208.1
+  ],
+  "floors_above": 5,
+  "floors_below": null,
+  "floors_agree": true,
+  "text_above": null,
+  "list_top": 5,
+  "year": null,
+  "floor_guide": [
+   {
+    "floor": "1F~5F",
+    "use": "기숙사"
+   }
+  ],
+  "summary": "남학생 전용 기숙사로, 용지관이라는 이름은 수원8경(水原八景)의 용지대월(龍池待月)에서 유래했다. 장애인 학생들을 위한 기숙사와 법학전문대학원 기숙사가 위치해 있다.",
+  "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/rHtqnSxNfDMdZBXQEmon.JPG",
+  "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=74"
+ },
+ "415712209": {
+  "buildNo": 75,
+  "name": "기숙사식당",
+  "nameEn": "Dormitory Dining Hall",
+  "point": [
+   -15.8,
+   178.8
+  ],
+  "floors_above": 2,
+  "floors_below": 1,
+  "floors_agree": true,
+  "text_above": 2,
+  "list_top": 2,
+  "year": null,
+  "floor_guide": [
+   {
+    "floor": "B1",
+    "use": "세탁소, 빨래방, 남자 기숙사생용 동전 세탁실, 실내 체육실"
+   },
+   {
+    "floor": "1F",
+    "use": "카페테리아, 매점, 기숙사 식당"
+   },
+   {
+    "floor": "2F",
+    "use": "교직원 식당, 생활관 사무실"
+   }
+  ],
+  "summary": "지하 1층, 지상 2층 규모로, 아주대학교를 방문한 외부인도 이용할 수 있다. 지하 1층에는 빨래방과 세탁소, 1층에는 매점과 기숙사식당, 2층에는 교직원 식당과 생활관 사무실이 위치해 있다.",
+  "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/pyNToQhicKicyvIhVIHF.JPG",
+  "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=75"
+ },
+ "415712206": {
+  "buildNo": 76,
+  "name": "남제관",
+  "nameEn": "Namje Hall(Dormitory 1)",
+  "point": [
+   2.2,
+   118.9
+  ],
+  "floors_above": 4,
+  "floors_below": null,
+  "floors_agree": true,
+  "text_above": 4,
+  "list_top": 4,
+  "year": 1976,
+  "floor_guide": [
+   {
+    "floor": "1F-4F",
+    "use": "기숙사"
+   }
+  ],
+  "summary": "1976년 3월 준공, 1978년 6월 증축된 지상 4층 규모의 기숙사이다. 남제관의 이름은 수원8경(水原八景)의 남제장류(南提長柳)에서 유래했다.",
+  "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/iVNzYERLfxaQfCachpcU.JPG",
+  "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=76"
+ },
+ "415528050": {
+  "buildNo": 77,
+  "name": "학생회관1",
+  "nameEn": "Student Union 1",
+  "point": [
+   -77.9,
+   57.5
+  ],
+  "floors_above": 3,
+  "floors_below": null,
+  "floors_agree": false,
+  "text_above": 1,
+  "list_top": 3,
+  "year": null,
+  "floor_guide": [
+   {
+    "floor": "1F",
+    "use": "학생식당, 우편취급국, 은행"
+   },
+   {
+    "floor": "2F",
+    "use": "동아리방"
+   },
+   {
+    "floor": "3F",
+    "use": "동아리방"
+   }
+  ],
+  "summary": "아주공과대학 시절부터 존재한 건물로, 지상 1층~3층 규모이다. 식당, 우체국, 은행 및 동아리방이 위치해 있다.",
+  "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/HqgzsgUcLKdoepVOpMmP.jpg",
+  "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=77"
+ },
+ "415528051": {
+  "buildNo": 78,
+  "name": "학생회관2",
+  "nameEn": "Student Union 2",
+  "point": [
+   5.5,
+   28.2
+  ],
+  "floors_above": 4,
+  "floors_below": 1,
+  "floors_agree": true,
+  "text_above": 4,
+  "list_top": 4,
+  "year": 2007,
+  "floor_guide": [
+   {
+    "floor": "B1",
+    "use": "공용연습실, 동아리방"
+   },
+   {
+    "floor": "1F",
+    "use": "대학일자리센터, 인권센터"
+   },
+   {
+    "floor": "2F",
+    "use": "보건진료소, 동아리방"
+   },
+   {
+    "floor": "3F",
+    "use": "단과대학 학생회의실, 동아리방"
+   },
+   {
+    "floor": "4F",
+    "use": "인권센터, 동아리방"
+   }
+  ],
+  "summary": "2007년 7월 준공했다. 지하1층, 지상 4층으로 구성되어 있으며 1층에는 종합지원센터가 있다. 동아리방, 학생회실, 교내 언론사실, 기초교육대학센터 등이 위치해 있다.",
+  "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/NmCXppKuMhhWKUsMiumj.JPG",
+  "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=78"
+ },
+ "415528045": {
+  "buildNo": 79,
+  "name": "성호관",
+  "nameEn": "Seongho Hall",
+  "point": [
+   -60.6,
+   -26.9
+  ],
+  "floors_above": 4,
+  "floors_below": null,
+  "floors_agree": true,
+  "text_above": null,
+  "list_top": 4,
+  "year": 1982,
+  "floor_guide": [
+   {
+    "floor": "1F",
+    "use": "프린트실, 소극장, PC실, 매점"
+   },
+   {
+    "floor": "2F",
+    "use": "성호대교, 과학영재교육원, 데이터전략팀 사무실"
+   },
+   {
+    "floor": "3F",
+    "use": "교수학습개발센터"
+   },
+   {
+    "floor": "4F",
+    "use": "교수연구실, 다산학부대학교학팀 사무실"
+   }
+  ],
+  "summary": "성호 이익의 호에서 이름을 따온 건물로, 1982년 8월 준공했다. 학교에서 가장 중앙부에 위치한 건물로, 교양과목 강의실로 주로 사용되고 있다.",
+  "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/mBcRyOcEjKWjnOzhsTYE.jpg",
+  "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=79"
+ },
+ "15806823": {
+  "buildNo": 81,
+  "name": "중앙도서관",
+  "nameEn": "Central Library",
+  "point": [
+   -152.1,
+   -173.4
+  ],
+  "floors_above": 4,
+  "floors_below": 2,
+  "floors_agree": true,
+  "text_above": null,
+  "list_top": 4,
+  "year": null,
+  "floor_guide": [
+   {
+    "floor": "B1",
+    "use": "보존서고"
+   },
+   {
+    "floor": "B2",
+    "use": "창고"
+   },
+   {
+    "floor": "1F",
+    "use": "027 Lounge, 멀티미디어 정보실, 소극장"
+   },
+   {
+    "floor": "2F",
+    "use": "토론학습실, 연속간행물실"
+   },
+   {
+    "floor": "3F",
+    "use": "어문자연과학 도서실"
+   },
+   {
+    "floor": "4F",
+    "use": "통신실, 토론학습실"
+   }
+  ],
+  "summary": "아주대학교 중앙도서관은 김우중 회장이 개교 10주년을 기념해 50여 억원(당시 시가)을 투자하여 건립했다. 2017년 리모델링을 완료하여 1층에는 북카페, 2층에는 커뮤니티 라운지를 새로 개관하여 활발한 토론과 소통의 공간으로 재탄생했다.\n소장 자료가 많으며 일요일에도 개관한다. 일반인도 열람증을 발부받아 이용할 수 있다.",
+  "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/CmFiWwZKqbzEqvHzmzdj.jpg",
+  "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=81"
+ },
+ "468669619": {
+  "buildNo": 82,
+  "name": "디아트(노천극장)",
+  "nameEn": "The Art",
+  "point": [
+   -44.7,
+   -138.7
+  ],
+  "floors_above": null,
+  "floors_below": null,
+  "floors_agree": false,
+  "text_above": null,
+  "list_top": null,
+  "year": null,
+  "floor_guide": [],
+  "summary": "아주대학교의 축제 공연 무대이다. 공식적으로는 약 3천 500명 정도의 인원을 수용할 수 있으며, 학교의 주요 행사가 진행된 장소이다. 아주대학교 1대 총장의 연설식도 디아트에서 진행되었으며, 비전선포식 등이 열리기도 한다.",
+  "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/OTswyPirTnTqkJfDvFHF.jpg",
+  "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=82"
+ },
+ "415528042": {
+  "buildNo": 83,
+  "name": "율곡관",
+  "nameEn": "Yulgok Hall",
+  "point": [
+   36.9,
+   -93.4
+  ],
+  "floors_above": 5,
+  "floors_below": 1,
+  "floors_agree": true,
+  "text_above": 5,
+  "list_top": 5,
+  "year": null,
+  "floor_guide": [
+   {
+    "floor": "B1",
+    "use": "혁신공유라운지"
+   },
+   {
+    "floor": "1F",
+    "use": "대강당, PC실, 입학처, 교무혁신처, 국제교류팀"
+   },
+   {
+    "floor": "2F",
+    "use": "법인사무처, 이사장실, 총장실, 대학발전본부, 홍보실"
+   },
+   {
+    "floor": "3F",
+    "use": "대학본부, 사회과학대학 교학팀, 국제학부 교학팀"
+   },
+   {
+    "floor": "4F",
+    "use": "교수연구실, 사회과학연구소"
+   },
+   {
+    "floor": "5F",
+    "use": "교수연구실, 중국정책연구소"
+   }
+  ],
+  "summary": "아주대학교의 본관으로 율곡관이라는 이름은 율곡 이이에서 유래했다. 지하 1층, 지상 5층 규모로, 총장실, 입학처, 교무팀 등 행정실이 위치해 있으며 사회과학대학과 국제학부가 사용하고 있다.",
+  "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/zGDerktlHwsfqaMUZIou.JPG",
+  "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=83"
+ },
+ "9819163": {
+  "buildNo": 84,
+  "name": "다산관",
+  "nameEn": "Dasan Hall",
+  "point": [
+   157.9,
+   -9.3
+  ],
+  "floors_above": 5,
+  "floors_below": 1,
+  "floors_agree": false,
+  "text_above": 3,
+  "list_top": 5,
+  "year": 1995,
+  "floor_guide": [
+   {
+    "floor": "B1",
+    "use": "AMON 스튜디오, 대강당, 상담실"
+   },
+   {
+    "floor": "1F",
+    "use": "카페테리아, 매점, 강의실"
+   },
+   {
+    "floor": "2F",
+    "use": "교수연구실, 인문대학 교학팀, 프랑코포니 전문인력양성사업단"
+   },
+   {
+    "floor": "3F",
+    "use": "교수연구실, 경영대학 교학팀, 경영학과 PC실"
+   },
+   {
+    "floor": "4F",
+    "use": "교수연구실, WCU트레이딩룸, 금융공학과 PC실, 디지털역사연구소"
+   },
+   {
+    "floor": "5F",
+    "use": "교수연구실"
+   }
+  ],
+  "summary": "1995년 8월 준공되었으며, 건물명은 다산 정약용의 호에서 유래했다. 건물형태는 가운데가 비어있는 ㅁ 모양으로, 비어있는 공간에는 정원이 존재한다. 지하 1층부터 지상 3층까지 강의실로 사용되고 있으며, 지하에는 안정환룸이라 불리는 강의실과 강당이 있다.",
+  "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/bxJKDhdhTSkJeKCYoBJe.jpg",
+  "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=84"
+ },
+ "591315103": {
+  "buildNo": 85,
+  "name": "약학관",
+  "nameEn": "College of Pharmacy",
+  "point": [
+   199.7,
+   -8.1
+  ],
+  "floors_above": 3,
+  "floors_below": 1,
+  "floors_agree": true,
+  "text_above": 3,
+  "list_top": 3,
+  "year": 2012,
+  "floor_guide": [
+   {
+    "floor": "B1",
+    "use": "F 약학실습실, Brain Activity Zone"
+   },
+   {
+    "floor": "1F",
+    "use": "실습약국, LINC Freethingking Zone"
+   },
+   {
+    "floor": "2F",
+    "use": "교수연구실, 특성화연구실"
+   },
+   {
+    "floor": "3F",
+    "use": "교수연구실, 동물실험실, 약품분석학연구실"
+   }
+  ],
+  "summary": "지하 1층, 지상 3층 규모의 건물로, 2012년 2월 준공되었다. 내부에는 강의실, 실습실, 교수연구실, 전공연구실, 동물처치 및 수술실 등이 있다. 2012년 준공된 건물이지만, 20년 전에 지어진 다산관과 쌍둥이 동생 같은 모습을 하고 있는 것이 특징이다.",
+  "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/RMYEdLEMCZmfgKpXEDro.JPG",
+  "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=85"
+ },
+ "706094949": {
+  "buildNo": 86,
+  "name": "임상수기센터 및 실험동물센터",
+  "nameEn": "Clinical Skills Laboratory and Animal Research Center",
+  "point": [
+   224.6,
+   -60.4
+  ],
+  "floors_above": 5,
+  "floors_below": 1,
+  "floors_agree": false,
+  "text_above": 5,
+  "list_top": 4,
+  "year": null,
+  "floor_guide": [
+   {
+    "floor": "B1",
+    "use": "간호대학 학생회실 등"
+   },
+   {
+    "floor": "1F",
+    "use": "학생교육실, 표준화 환자 교육실 등"
+   },
+   {
+    "floor": "2F",
+    "use": "간호대학 교수연구실, 강의실 등"
+   },
+   {
+    "floor": "3F/4F",
+    "use": "실험동물연구센터"
+   }
+  ],
+  "summary": "ACE센터로 불리우며, 지하 1층 지상 5층 4,268.39㎡ 면적의 건물이다. 의과대학생이 환자 진료에 필수적인 임상수기와 태도를 교육받을 수 있는 임상수기센터 및 윤리적인 동물실험을 위한 실험동물연구센터 기능 등을 갖추고 있다.\n1층과 2층에는 임상종합실습을 위한 교수실과 강의실, 세미나실 등이 위치해 있으며, 3층과 4층에는 보다 효과적이고 윤리적인 동물실험을 위한 실험실과 사육실, 부검실 등을 갖추고 있다. 4층에 위치한 감염동물실험실은 이전까지 하지 못했던 동물 감염실험이 가능해져 연구 및 교육에 큰 도움이 될 것으로 사료된다.",
+  "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/yzpVTcEQNzvxIMqFZKRo.JPG",
+  "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=86"
+ },
+ "415528044": {
+  "buildNo": 87,
+  "name": "연암관",
+  "nameEn": "Yeonam Hall",
+  "point": [
+   159.8,
+   -92.8
+  ],
+  "floors_above": 12,
+  "floors_below": 2,
+  "floors_agree": true,
+  "text_above": 12,
+  "list_top": 12,
+  "year": null,
+  "floor_guide": [
+   {
+    "floor": "B2/B1",
+    "use": "지하주차장"
+   },
+   {
+    "floor": "1F",
+    "use": "대강당, 도구박물관, 아주역사전시실, 매점"
+   },
+   {
+    "floor": "2F",
+    "use": "법학도서관, 정보검색실, 24시간 학습실"
+   },
+   {
+    "floor": "3F",
+    "use": "법학연구소, 법학전문대학원 교학팀, 24시간 열람실"
+   },
+   {
+    "floor": "4F",
+    "use": "교수연구실"
+   },
+   {
+    "floor": "5F",
+    "use": "교수연구실, 학생지도센터, 모의법정"
+   },
+   {
+    "floor": "6F",
+    "use": "교수연구실, 모의법정"
+   },
+   {
+    "floor": "7F",
+    "use": "교수연구실, 교육대학원교학팀, 멀티미디어제작실"
+   },
+   {
+    "floor": "8F",
+    "use": "교수연구실, 임용고시반, 수업준비실"
+   },
+   {
+    "floor": "9F",
+    "use": "교수연구실, 정보통신대학원교학팀"
+   },
+   {
+    "floor": "10F",
+    "use": "교수연구실, 공공정책대학원교학팀"
+   },
+   {
+    "floor": "11F",
+    "use": "산학협력단, 앵커사업단, 기술지주회사"
+   },
+   {
+    "floor": "12F",
+    "use": "코너스톤(레스토랑), 옥상정원"
+   }
+  ],
+  "summary": "지하 2층~지상 12층 규모의 건물로, 법학전문대학원(로스쿨)이 위치해 있다. 법학전문대학원 외에도 교육대학원, 정보통신대학원, 공공정책대학원 등 특수대학원들이 입주해있다.\n또한, 도구박물관, 아주역사전시실과 같은 전시관이 위치해 있으며, 2층에는 법학전문도서관과 로스쿨생을 위한 세미나실 및 컴퓨터실이 위치해 있다. 건물 12층에는 스카이라운지를 갖춘 식당인 코너스톤이 위치해 있어 학교 행사나 모임 등이 이뤄진다.",
+  "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/LHrRqYPeiNOVGFhvfGHH.jpg",
+  "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=87"
+ },
+ "706094950": {
+  "buildNo": 89,
+  "name": "의생명과학관",
+  "nameEn": "School of Medicine-Research Building",
+  "point": [
+   216.6,
+   -108.1
+  ],
+  "floors_above": 3,
+  "floors_below": null,
+  "floors_agree": true,
+  "text_above": null,
+  "list_top": 3,
+  "year": null,
+  "floor_guide": [
+   {
+    "floor": "1F",
+    "use": "제1연구실, 현미경실 등"
+   },
+   {
+    "floor": "2F",
+    "use": "제2연구실, 세포치료센터 등"
+   },
+   {
+    "floor": "3F",
+    "use": "임상역학센터, 간호대학 강의실 등"
+   }
+  ],
+  "summary": "의생명과학대학원의 연구실이다. 1층에 1연구실과 현미경실이 있고, 2층에 2연구실과 세포치료센터가 있다. 3층엔 임상역학센터가 있다.",
+  "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/kXNhXLSjopYmxNqVOXxC.JPG",
+  "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=89"
+ },
+ "415528041": {
+  "buildNo": 91,
+  "name": "체육관",
+  "nameEn": "Gymnasium",
+  "point": [
+   -43.4,
+   -329.8
+  ],
+  "floors_above": 2,
+  "floors_below": 1,
+  "floors_agree": true,
+  "text_above": 2,
+  "list_top": 2,
+  "year": 1999,
+  "floor_guide": [
+   {
+    "floor": "B1",
+    "use": "스쿼시장, 대기실"
+   },
+   {
+    "floor": "1F",
+    "use": "샤워실, 선수대기실, 의전실, 관리실, PC119센터"
+   },
+   {
+    "floor": "2F",
+    "use": "관람석, 헬스장, 에어로빅, 태권도, 테니스 연습실"
+   }
+  ],
+  "summary": "1999년 6월 준공된 체육관에서는 입학식, 졸업식, 논술고사 등의 행사가 개최되며, 외부 컨퍼런스나 기업들의 전시행사와 같은 박람회가 열리기도 한다. 규모는 지하 1층~지상 2층이다.",
+  "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/qHRfroVNyPsUUVhxZivQ.JPG",
+  "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=91"
+ },
+ "415712205": {
+  "buildNo": 94,
+  "name": "송재관",
+  "nameEn": "Songjae Hall",
+  "point": [
+   124.2,
+   -250.4
+  ],
+  "floors_above": 10,
+  "floors_below": 1,
+  "floors_agree": true,
+  "text_above": 10,
+  "list_top": 10,
+  "year": null,
+  "floor_guide": [
+   {
+    "floor": "B1",
+    "use": "학생식당(선인재), 카페테리아, 의과대학 학생회실, 동문회, 라운지 살구나무숲, 의과대학 전용 체력단련실"
+   },
+   {
+    "floor": "1F",
+    "use": "해부학실습실, 세미나실 등"
+   },
+   {
+    "floor": "2F",
+    "use": "의대학장실, 명예교수실, 의과대학 교학팀, 혁신학습실, 백합서재 등"
+   },
+   {
+    "floor": "3F",
+    "use": "의학문헌정보센터, 생화학교실, 해부학교실, 유전체불안정제어연구센터"
+   },
+   {
+    "floor": "4F",
+    "use": "생리학, 약리학교실"
+   },
+   {
+    "floor": "5F",
+    "use": "의학유전학과, 유전체불안정성제어연구센터, 공동연구 LAB"
+   },
+   {
+    "floor": "6F",
+    "use": "뇌과학과, 세포사멸조절신약개발센터"
+   },
+   {
+    "floor": "7F",
+    "use": "미생물학교실, 만성염증질환센터"
+   },
+   {
+    "floor": "8F",
+    "use": "의학통계실, 보건대학원, 의료정보학과 등"
+   },
+   {
+    "floor": "9F/10F",
+    "use": "학과교실"
+   }
+  ],
+  "summary": "의과대학과 간호대학에서 사용하는 건물로, 규모는 지하 1층~지상 10층 규모이다. 건물명의 유래는 독립운동가 송재 서재필. 송재관 1층에는 아주대 2대 총장으로서 아주대 의대와 병원을 짓는 데 결정적인 역할을 한 김효규 박사의 반신상이 있다.",
+  "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/OuPQNFwoJEOMWmuuvPtX.JPG",
+  "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=94"
+ },
+ "468441871": {
+  "buildNo": 95,
+  "name": "아주대학교병원",
+  "nameEn": "Ajou University Hospital",
+  "point": [
+   149.9,
+   -390.6
+  ],
+  "floors_above": 13,
+  "floors_below": 2,
+  "floors_agree": true,
+  "text_above": null,
+  "list_top": 13,
+  "year": null,
+  "floor_guide": [
+   {
+    "floor": "B2",
+    "use": "인체유전체지원센터, 지역의약품안전센터, 수치료실 등"
+   },
+   {
+    "floor": "B1",
+    "use": "방사선종양학과, 핵의학과, 약제팀, 감마나이프센터, 신경계검사실 등"
+   },
+   {
+    "floor": "1F",
+    "use": "고객안내센터, 고객상담실, 원무팀, 입퇴원창구 등"
+   },
+   {
+    "floor": "2F",
+    "use": "소화기병센터, 간센터, 간암센터, 위암센터, 대장암센터 등"
+   },
+   {
+    "floor": "3F",
+    "use": "심혈관센터, 내분비센터, 아주난청센터, 심장혈관외과 등"
+   },
+   {
+    "floor": "4F",
+    "use": "신생아실, 신생아집중치료실, 분만실 등"
+   },
+   {
+    "floor": "5F",
+    "use": "신경계집중치료실, 내과계집중치료실 등"
+   },
+   {
+    "floor": "6F/7F/8F/9F/10F/11F/12F/13F",
+    "use": "병동, 검사치료실 등"
+   }
+  ],
+  "summary": "1994년 개원한 아주대학교 의과대학 부속병원이다. 상급종합병원이며, 경기 남부권 권역응급의료센터, 권역외상센터를 보유하고 있다. 아주대학교병원은 규모로는 전국 7위, 경기도에서는 분당서울대병원 다음 가는 규모를 자랑한다.",
+  "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/xZMjRuuEiyXJGsrOjrtY.JPG",
+  "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=95"
+ },
+ "706051508": {
+  "buildNo": 96,
+  "name": "병원별관",
+  "nameEn": "University Hospital Annex",
+  "point": [
+   53.4,
+   -410.6
+  ],
+  "floors_above": 5,
+  "floors_below": 1,
+  "floors_agree": true,
+  "text_above": 5,
+  "list_top": 5,
+  "year": null,
+  "floor_guide": [
+   {
+    "floor": "B1",
+    "use": "대강당, 지역임상시험센터, 병원 연결통로 등"
+   },
+   {
+    "floor": "1F",
+    "use": "치과진료센터, 임상치의학대학원 실습실"
+   },
+   {
+    "floor": "3F",
+    "use": "교육수련부, 전공의협의회"
+   },
+   {
+    "floor": "4F",
+    "use": "간호행정교육팀, 총무팀 등"
+   },
+   {
+    "floor": "5F",
+    "use": "기획팀, 홍보팀, 감사팀, 대외협력팀 등"
+   }
+  ],
+  "summary": "지상 5층 규모의 건물로, 의료원 본부, 치과진료센터가 위치해 있다. 아주대학교병원 본관과 브릿지로 연결되어 있다.",
+  "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/pvepXqwErojQjOCDyXsc.jpg",
+  "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=96"
+ },
+ "706051509": {
+  "buildNo": 97,
+  "name": "웰빙센터",
+  "nameEn": "Well-Being Center",
+  "point": [
+   35.1,
+   -465.5
+  ],
+  "floors_above": 8,
+  "floors_below": 3,
+  "floors_agree": true,
+  "text_above": 8,
+  "list_top": 8,
+  "year": 2012,
+  "floor_guide": [
+   {
+    "floor": "B3/B2",
+    "use": "지하주차장"
+   },
+   {
+    "floor": "B1",
+    "use": "ATM, 식당가, 은행, 병원 연결 통로"
+   },
+   {
+    "floor": "1F",
+    "use": "검사실, 외래 접수 수납, VIP클리닉"
+   },
+   {
+    "floor": "2F",
+    "use": "진료과, 클리닉, 놀이방, 외래 접수 수납 등"
+   },
+   {
+    "floor": "3F",
+    "use": "진료과, 클리닉, 외래 접수 수납, 병원 연결 통로 등"
+   },
+   {
+    "floor": "4F",
+    "use": "건강증진센터, 정보관리팀 등"
+   },
+   {
+    "floor": "5F",
+    "use": "건강증진센터"
+   },
+   {
+    "floor": "6F",
+    "use": "아주푸른공간, 경기지역암센터, 아주스포츠의학센터 등"
+   },
+   {
+    "floor": "7F/8F",
+    "use": "교수연구실"
+   }
+  ],
+  "summary": "아주대병원 부속센터로, 2012년 8월에 준공되었다. 지하 3층~지상 8층, 연 면적 2만6012㎡ 규모이다. 11개 진료과와 건강증진센터, 아주스포츠의학센터 등으로 조성되어 있다.",
+  "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/ojqvbzZSKbxtsYnRepqh.jpg",
+  "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=97"
+ },
+ "415712208": {
+  "buildNo": 90,
+  "name": "제2주차빌딩",
+  "nameEn": "Parking Garage 2",
+  "point": [
+   236.4,
+   -204.9
+  ],
+  "floors_above": null,
+  "floors_below": null,
+  "floors_agree": false,
+  "text_above": null,
+  "list_top": null,
+  "year": 2007,
+  "floor_guide": [],
+  "summary": "2007년 5월에 준공된 건물. 2018년 증축을 통해 규모가 확대되었다.",
+  "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/xkLRJEOzTZPYFqlSemxg.JPG",
+  "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=90"
+ },
+ "471440990": {
+  "buildNo": 99,
+  "name": "장례식장",
+  "nameEn": "Funeral Hall",
+  "point": [
+   304.3,
+   -201.1
+  ],
+  "floors_above": 3,
+  "floors_below": 1,
+  "floors_agree": true,
+  "text_above": null,
+  "list_top": 3,
+  "year": 2015,
+  "floor_guide": [
+   {
+    "floor": "B1",
+    "use": "상례전시실, 매점, 빈소시설 등"
+   },
+   {
+    "floor": "1F",
+    "use": "관리실, 조리장, 빈소시설 등"
+   },
+   {
+    "floor": "2F/3F",
+    "use": "빈소시설"
+   }
+  ],
+  "summary": "2015년 5월 준공된 장례식장으로, 국내 최고 수준의 시설을 갖추고 있다.",
+  "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/IiguSQnPoZUVhBzRVpoq.JPG",
+  "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=99"
+ },
+ "468762977": {
+  "buildNo": 102,
+  "name": "권역외상센터",
+  "nameEn": "Trauma Center",
+  "point": [
+   233.1,
+   -360.3
+  ],
+  "floors_above": 5,
+  "floors_below": 2,
+  "floors_agree": true,
+  "text_above": 5,
+  "list_top": 5,
+  "year": 2016,
+  "floor_guide": [
+   {
+    "floor": "1F",
+    "use": "외상환자 진료구역, 외상소생실, 외상집중치료실A 등"
+   },
+   {
+    "floor": "2F",
+    "use": "외상집중치료실B, 외상집중치료실C"
+   },
+   {
+    "floor": "3F",
+    "use": "외상수술실"
+   },
+   {
+    "floor": "4F/5F",
+    "use": "외상병동"
+   }
+  ],
+  "summary": "2016년에 준공되었으며, 규모는 지하 2층 ~ 지상 5층, 100 병상 규모이다.\n권역외상센터는 외상진료구역, 외상소생실 2개, 수술실 3개, 중환자실 40 병상, 일반병동 60 병상, CT검사실, 혈관조영실 등을 바탕으로, 국내에서 가장 많은 중증외상환자 치료 경험을 보유하고 있다. 또한, 미국과 영국의 선진화된 외상치료시스템을 국내에 맞게 도입하여 체계적인 외상치료시스템을 구축하고, 중증외상 환자 생존율 향상 및 국내 외상외과 발전에 선도적인 역할을 담당해 가고 있다.",
+  "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/aTixOHiSYfEkQDQoJpii.JPG",
+  "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=102"
+ },
+ "485091547": {
+  "buildNo": 104,
+  "name": "홍재관",
+  "nameEn": "Hongjae Hall",
+  "point": [
+   180.5,
+   -153.5
+  ],
+  "floors_above": 4,
+  "floors_below": 1,
+  "floors_agree": true,
+  "text_above": null,
+  "list_top": 4,
+  "year": 2018,
+  "floor_guide": [
+   {
+    "floor": "B1",
+    "use": "강의실, 학생회실, 학생휴게실, 주차장"
+   },
+   {
+    "floor": "1F",
+    "use": "강의실, 자율학습실"
+   },
+   {
+    "floor": "2F",
+    "use": "간호학실습실, 교학팀, 실습준비실2"
+   },
+   {
+    "floor": "3F",
+    "use": "세미나실, 대학원생자율학습실"
+   },
+   {
+    "floor": "4F",
+    "use": "학장실, 교수연구실, 간호과학연구소, 조교실, 회의실"
+   }
+  ],
+  "summary": "2018년 9월 준공한 건물로, 간호대학과 첨단의학RD센터가 위치해 있다. 건물명은 정조대왕의 호인 홍재를 사용했다.",
+  "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/punENZXDWBsknjNuahVa.jpg",
+  "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=104"
+ },
+ "1261397583": {
+  "buildNo": 106,
+  "name": "일신관",
+  "nameEn": "Illsin Hall(Dormitory 6)",
+  "point": [
+   106.6,
+   143.1
+  ],
+  "floors_above": 11,
+  "floors_below": 1,
+  "floors_agree": true,
+  "text_above": null,
+  "list_top": 11,
+  "year": 2022,
+  "floor_guide": [
+   {
+    "floor": "B1",
+    "use": "공동세탁실, 공동취사실, 카페, 편의점"
+   },
+   {
+    "floor": "1F",
+    "use": "체력단련실, 무인택배실, 휴게실"
+   },
+   {
+    "floor": "2F~11F",
+    "use": "기숙사"
+   }
+  ],
+  "summary": "2022년 2월 준공된 기숙사로 800명 이상의 학생을 수용한다. 건물의 명칭에는 날로 새로워진다는 의미의 ‘일신(日新)’이라는 뜻을 담았다. 기숙사생과 아주 구성원들을 위한 카페, 편의점 등 편의시설이 위치해 있다.",
+  "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/mIWnenVTLfTNpPHRfuxy.jpg",
+  "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=106"
+ },
+ "1168524944": {
+  "buildNo": 107,
+  "name": "혜강관",
+  "nameEn": "Hyegang Hall",
+  "point": [
+   220.4,
+   67.4
+  ],
+  "floors_above": 7,
+  "floors_below": 2,
+  "floors_agree": true,
+  "text_above": 7,
+  "list_top": 7,
+  "year": 2022,
+  "floor_guide": [
+   {
+    "floor": "B1/B2",
+    "use": "지하주차장"
+   },
+   {
+    "floor": "1F",
+    "use": "교수연구실(AI모빌리티공학과), 강의실, 실습실 등"
+   },
+   {
+    "floor": "2F",
+    "use": "교수연구실(지능형반도체공학과) 강의실, 실습실 등"
+   },
+   {
+    "floor": "3F",
+    "use": "교수연구실, 실험실(약학과)"
+   },
+   {
+    "floor": "4F/5F",
+    "use": "교수연구실, 실험실(응용화학생명공학과)"
+   },
+   {
+    "floor": "6F",
+    "use": "교수연구실, 실험실(응용화학생명공학과, 환경안전공학과)"
+   },
+   {
+    "floor": "7F",
+    "use": "교수연구실, 실험실(환경안전공학과)"
+   }
+  ],
+  "summary": "2022년 9월에 준공된 혜강관(종합실험동)은 지하 2층, 지상 7층 규모의 건물이다. 실험실과 교수 연구실, 강의실로 구성되어 있으며, 지능형반도체공학과, AI모빌리티공학과, 환경안전공학과, 응용화학생명공학과, 약학과가 함께 사용하고 있다.",
+  "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/iXMSBlcxYEeiVBYGewVr.jpg",
+  "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=107"
+ },
+ "unmatched": [
+  {
+   "buildNo": 55,
+   "name": "정문",
+   "nameEn": "Main Entrance",
+   "point": [
+    -193.3,
+    -336.3
+   ],
+   "floors_above": null,
+   "floors_below": null,
+   "floors_agree": false,
+   "text_above": null,
+   "list_top": null,
+   "year": null,
+   "floor_guide": [],
+   "summary": "",
+   "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/JlhdJrmfNbogqsvIIqlb.jpg",
+   "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=55"
+  },
+  {
+   "buildNo": 56,
+   "name": "버스정류장",
+   "nameEn": "Bus Station",
+   "point": [
+    -212.0,
+    -173.7
+   ],
+   "floors_above": null,
+   "floors_below": null,
+   "floors_agree": false,
+   "text_above": null,
+   "list_top": null,
+   "year": null,
+   "floor_guide": [],
+   "summary": "",
+   "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/xeXZYkcWVkNHelerZHHp.jpg",
+   "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=56"
+  },
+  {
+   "buildNo": 57,
+   "name": "선구자상",
+   "nameEn": "Statue of Pioneer",
+   "point": [
+    -211.7,
+    -62.4
+   ],
+   "floors_above": null,
+   "floors_below": null,
+   "floors_agree": false,
+   "text_above": null,
+   "list_top": null,
+   "year": null,
+   "floor_guide": [],
+   "summary": "아주대학교의 상징으로, 과거 흑룡강까지 국토를 넓힌 옛 선조들의 기상을 모티브로 이 시대의 지도자상을 표현하고 있다. 선구자의 손에 들린 횃불은 아주대학교의 교표를 형상화한 것으로 지도자의 비전과 열정을 나타낸다.",
+   "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/PROLnZEqzBpahflltQNt.jpg",
+   "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=57"
+  },
+  {
+   "buildNo": 61,
+   "name": "북문",
+   "nameEn": "North Gate",
+   "point": [
+    -156.3,
+    250.8
+   ],
+   "floors_above": null,
+   "floors_below": null,
+   "floors_agree": false,
+   "text_above": null,
+   "list_top": null,
+   "year": null,
+   "floor_guide": [],
+   "summary": "",
+   "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/JClJfuaqrMiJQmrLxrhC.JPG",
+   "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=61"
+  },
+  {
+   "buildNo": 80,
+   "name": "더테라스",
+   "nameEn": "The Terrace",
+   "point": [
+    -172.4,
+    -77.1
+   ],
+   "floors_above": null,
+   "floors_below": null,
+   "floors_agree": false,
+   "text_above": null,
+   "list_top": null,
+   "year": null,
+   "floor_guide": [],
+   "summary": "성호관과 중앙도서관 사이에 있는 휴게장소. 더테라스 옆의 쉼터는 벚꽃축제 등 교내 축제에 노점이나 동아리 부스를 설치해 사용하는 목적으로 쓰이고 있다.",
+   "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/vQYmEJDMCkdItZlnzaTc.jpg",
+   "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=80"
+  },
+  {
+   "buildNo": 88,
+   "name": "테니스장",
+   "nameEn": "Tennis Courts",
+   "point": [
+    271.1,
+    -115.2
+   ],
+   "floors_above": null,
+   "floors_below": null,
+   "floors_agree": false,
+   "text_above": null,
+   "list_top": null,
+   "year": null,
+   "floor_guide": [],
+   "summary": "",
+   "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/wphOdOEVKxbTWezSfrOv.JPG",
+   "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=88"
+  },
+  {
+   "buildNo": 111,
+   "name": "제3주차빌딩",
+   "nameEn": "Parking Garage 3",
+   "point": [
+    10.7,
+    -324.7
+   ],
+   "floors_above": null,
+   "floors_below": null,
+   "floors_agree": false,
+   "text_above": null,
+   "list_top": null,
+   "year": null,
+   "floor_guide": [],
+   "summary": "체육관 옆에 위치해 있는 철골 구조의 주차장.",
+   "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/jjkEKBndvGRsiCiVwGrl.JPG",
+   "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=111"
+  },
+  {
+   "buildNo": 92,
+   "name": "운동장",
+   "nameEn": "Athletic Field",
+   "point": [
+    -135.7,
+    -268.3
+   ],
+   "floors_above": null,
+   "floors_below": null,
+   "floors_agree": false,
+   "text_above": null,
+   "list_top": null,
+   "year": null,
+   "floor_guide": [],
+   "summary": "예약제로 운영되는 일반운동장과 축구장으로 구획이 나뉘어 있다.\n일반운동장의 경우, 운동장 주변으로 트랙이 조성되어 있어 학생이나 인근 주민들이 운동을 하는데 사용되고 있다. 축구장은 축구부의 연습 경기나 대학축구리그 경기에 사용한다. 축구부 외에 일반 학생들도 사용 가능하나 예약을 해야한다.",
+   "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/NvUqjtZLRqtaggTrMBDm.jpg",
+   "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=92"
+  },
+  {
+   "buildNo": 93,
+   "name": "캠퍼스플라자",
+   "nameEn": "Campus Plaza",
+   "point": [
+    -165.5,
+    -401.3
+   ],
+   "floors_above": 9,
+   "floors_below": 3,
+   "floors_agree": false,
+   "text_above": 9,
+   "list_top": 8,
+   "year": null,
+   "floor_guide": [
+    {
+     "floor": "B1~B3",
+     "use": "주차장"
+    },
+    {
+     "floor": "1F",
+     "use": "문서고, 예비창업자 사무공간"
+    },
+    {
+     "floor": "2F",
+     "use": "강의실, 휴게실"
+    },
+    {
+     "floor": "3F",
+     "use": "창업동아리실, 전문랩(Lab)"
+    },
+    {
+     "floor": "4F",
+     "use": "창업보육센터"
+    },
+    {
+     "floor": "5F",
+     "use": "아주심리상담센터, LINC창업지원동아리"
+    },
+    {
+     "floor": "6F",
+     "use": "기업지원센터, 고등기술연구원"
+    },
+    {
+     "floor": "7F",
+     "use": "아주통일연구소, 세계학연구소"
+    },
+    {
+     "floor": "8F",
+     "use": "전력전자연구실"
+    }
+   ],
+   "summary": "지상 9층 규모의 건물로, 기업지원센터, 크리에이티브 팩토리가 입주해 있다. 크리에이티브 팩토리 입주로 3D프린터, 레이저커터기 등 다양한 장비를 이용할 수 있으며, 창업이나 공학 분야 프로젝트에 이용되고 있다.",
+   "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/ZsovRFrEmZWZgEUcTzTV.JPG",
+   "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=93"
+  },
+  {
+   "buildNo": 103,
+   "name": "남문",
+   "nameEn": "South Gate",
+   "point": [
+    -24.1,
+    -447.2
+   ],
+   "floors_above": null,
+   "floors_below": null,
+   "floors_agree": false,
+   "text_above": null,
+   "list_top": null,
+   "year": null,
+   "floor_guide": [],
+   "summary": "",
+   "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/lvRyOlBDyjrNTNJMtEWC.JPG",
+   "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=103"
+  },
+  {
+   "buildNo": 100,
+   "name": "병원정문",
+   "nameEn": "University Hospital Main Gate",
+   "point": [
+    143.2,
+    -553.3
+   ],
+   "floors_above": null,
+   "floors_below": null,
+   "floors_agree": false,
+   "text_above": null,
+   "list_top": null,
+   "year": null,
+   "floor_guide": [],
+   "summary": "",
+   "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/ImYuZJoSNptWhDcNDohf.JPG",
+   "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=100"
+  },
+  {
+   "buildNo": 101,
+   "name": "동문",
+   "nameEn": "East Gate",
+   "point": [
+    303.0,
+    -304.9
+   ],
+   "floors_above": null,
+   "floors_below": null,
+   "floors_agree": false,
+   "text_above": null,
+   "list_top": null,
+   "year": null,
+   "floor_guide": [],
+   "summary": "",
+   "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/ITGVMGPkRIoXttCDQRQb.JPG",
+   "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=101"
+  },
+  {
+   "buildNo": 105,
+   "name": "가온마당",
+   "nameEn": "Gaon Garden",
+   "point": [
+    -20.7,
+    -233.0
+   ],
+   "floors_above": null,
+   "floors_below": null,
+   "floors_agree": false,
+   "text_above": null,
+   "list_top": null,
+   "year": null,
+   "floor_guide": [],
+   "summary": "'가온'은 순우리말인 '가온대'에서 따온 말로, 중앙공원과 같은 의미를 지니고 있다. 학생들 사이에서는 '텔레토비 동산'으로 불리기도 한다. 아주대학교 내 에서 가장 넓은 녹지로, 많은 사람들이 산책을 하거나 휴식을 취하는 장소이다. 인터내셔널 데이 등 학교 내 축제 겸 행사 장소로도 이용된다.",
+   "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/cxPipOcfSBSiWfPDkSlm.JPG",
+   "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=105"
+  },
+  {
+   "buildNo": 110,
+   "name": "커넥팅 스퀘어",
+   "nameEn": "Connecting Square",
+   "point": [
+    -46.3,
+    24.8
+   ],
+   "floors_above": null,
+   "floors_below": null,
+   "floors_agree": false,
+   "text_above": null,
+   "list_top": null,
+   "year": null,
+   "floor_guide": [],
+   "summary": "2021년에 조성된 커넥팅 스퀘어(Connecting Square)는 융복합 산학협력 공간으로, 학생들이 서로 소통하고 교류할 수 있는 야외 커뮤니티 제공을 위해 만들어졌다.",
+   "photo": "https://www.ajou.ac.kr/_attach/file/campusmap/gWRMbcbltDELSYqFYXeE.jpg",
+   "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=110"
+  }
+ ]
+}

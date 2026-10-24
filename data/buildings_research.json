@@ -1,0 +1,759 @@
+{
+ "471315226": {
+  "id": "471315226",
+  "name": "시약 수거동",
+  "identified_as": "A small single-storey storage shed for collecting waste lab reagents (the name means \"reagent collection building\"). It sits on the main campus right next to 화공실험동 (Chemical Engineering Laboratory), on its east side, and across the service road north of 원천관. It is not listed on the official Ajou campus map (ajou.ac.kr campus map buildList API, building numbers 55-111).",
+  "floors_above": 1,
+  "floors_below": 0,
+  "base_floors": 1,
+  "height_m": 4.2,
+  "typical_floor_height_m": 3.8,
+  "floors_evidence": [
+   {
+    "value": "1",
+    "source": "OpenStreetMap way 471315226 tags (api.openstreetmap.org/api/0.6/way/471315226 and /history)",
+    "quote": "building:levels=1, name=시약 수거동 (unchanged from v1 2017-02-02 by Kaliron through v5 2026-03-17)",
+    "reliability": "medium: crowd-sourced. It is very plausible for a 114 m² shed, but no source is cited."
+   },
+   {
+    "value": "1 (about 3-5 m tall)",
+    "source": "VWorld z19 imagery shadow analysis (refs/471315226/zoom8.jpg, my own N-S transects)",
+    "quote": "North shadow on gravel and grass is about 0.8-1.4 m (longest near the centreline x≈-254). The north wing of neighbouring 원천관 (about 5 floors, roughly 19-21 m) casts about 5.6 m of shadow onto asphalt (ratio about 0.27-0.30). That gives about 3-5 m for this building, and 화공실험동 (1.9 m shadow) comes out about 6-7 m.",
+    "reliability": "medium: the sun angle depends on an assumed 원천관 height, and the ground surface north of the building is mixed."
+   },
+   {
+    "value": "no data",
+    "source": "Ajou official campus map building list (https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildList)",
+    "quote": "Building not listed. Nearby entries are 62 화공실험동, 59 원천관, 60 원천정보관.",
+    "reliability": "n/a: absence only"
+   }
+  ],
+  "wall": {
+   "primary_hex": "#d8d2c4",
+   "primary_material": "UNKNOWN, no photo found. Best estimate: painted sandwich panel or painted concrete block in light ivory/grey-beige, typical for Korean campus chemical storage sheds.",
+   "secondary_hex": "#b3a581",
+   "secondary_material": "light beige concrete strip seen from above (apron, step or eave flashing)",
+   "secondary_where": "Full-width strip about 1 m deep along the south (road-facing) edge, y≈23.3-24.3. It sits inside the outline and probably marks the entrance or loading side."
+  },
+  "windows": {
+   "style": "few",
+   "glass_hex": "#5a6670",
+   "frame_hex": "#c8c8c8",
+   "window_height_ratio": 0.2,
+   "bay_width_m": 3,
+   "notes": "No photos found, so this is an estimate. A reagent or waste-chemical store usually has few or no windows, with ventilation louvers and a steel door (probably on the south side facing the road and loading apron). Model it as a mostly blank wall with 1-2 small high louvers per side and a door on the south facade."
+  },
+  "roof": {
+   "shape": "low-pitch gable or near-flat. The ridge probably runs N-S at x≈-253.8: the east half is slightly brighter than the west half (mean grey 151 vs 145) under a south-east sun, and three vents sit on that centreline.",
+   "hex": "#cb9162",
+   "features": [
+    "3 roof ventilators (dark round spots, likely turbine or exhaust caps) on the centreline at about (-253.8,26.6), (-253.8,30.5), (-253.8,34.5)",
+    "orange/terracotta roof, most likely coloured steel sheet roofing (sampled median RGB 203,145,98)",
+    "light concrete strip along the south edge"
+   ]
+  },
+  "base": {
+   "floors": 1,
+   "hex": "#b3a581",
+   "material": "concrete slab or apron (south side visible in imagery). Plinth not observed."
+  },
+  "parts": [],
+  "corrected_outline": [
+   [
+    -258.3,
+    36.5
+   ],
+   [
+    -258,
+    23.3
+   ],
+   [
+    -249.3,
+    23.4
+   ],
+   [
+    -249.6,
+    36.6
+   ]
+  ],
+  "features": [
+   "single-storey rectangular shed about 8.8 m (E-W) x 13.2 m (N-S), long axis N-S",
+   "3 roof ventilators in a N-S line",
+   "south-side concrete apron or strip facing the service road (likely the loading and entrance side)",
+   "directly east of 화공실험동 (gap about 8 m with a path), with paved parking bays (pavers in white grid lines) running east from its east wall",
+   "small white sheds or tanks about 12 m to the north at (-257,48) and (-250,49): separate structures, not part of this building"
+  ],
+  "uses": [
+   "chemical / waste reagent collection and temporary storage (inferred from the name 시약 수거동)"
+  ],
+  "signage": [],
+  "photos": [
+   {
+    "url": "C:/Users/김소울/AppData/Local/Temp/claude/C--Users-----OneDrive-----------------/a5642546-f6e9-4da8-bd08-5d9a82b0a003/scratchpad/refs/471315226/zoom8.jpg",
+    "depicts": "VWorld satellite crop at 8x with a 1 m grid: roof, vents, south strip, north shadow",
+    "floors_counted": 1,
+    "license": "VWorld imagery (reference only)"
+   },
+   {
+    "url": "C:/Users/김소울/AppData/Local/Temp/claude/C--Users-----OneDrive-----------------/a5642546-f6e9-4da8-bd08-5d9a82b0a003/scratchpad/refs/471315226/wide.jpg",
+    "depicts": "Wider satellite context (-300..-200, -10..70) with 화공실험동 to the west and 원천관 to the south, used for shadow comparison",
+    "license": "VWorld imagery (reference only)"
+   }
+  ],
+  "confidence": {
+   "floors": "medium",
+   "massing": "medium",
+   "colors": "low",
+   "outline": "medium"
+  },
+  "notes": "RESEARCH LIMITS: Korean web searches (\"아주대 시약 수거동\", \"아주대학교 시약수거동 폐시약 보관\", a quoted-name search, and searches about lab waste storage and the campus map) found nothing about this building: no floor guide, completion year or photos. The shared web-search budget then ran out (200 calls per turn across all agents), so no English searches, blog searches or photo searches were possible. More searches can be run in a follow-up message. namu.wiki /시설 is rendered by JavaScript and its content could not be read. The official Ajou campus-map API (way01.do?mode=buildList) does not list this building. OSM is the only written source: building=school, building:levels=1, unchanged since 2017.\n\nIMAGERY FINDINGS (VWorld z19): The roof is a clean orange/terracotta rectangle, sampled median #cb9162 (task-sampled #cd9060 agrees). The east half is slightly brighter than the west, which suggests a very low-pitch gable with a N-S ridge at x≈-253.8, where three round vents sit at y≈26.6, 30.5 and 34.5. If the model does not support gables, use a flat roof with a ridge-line vent row.\n\nA beige concrete-coloured strip (#b3a581) about 1 m deep runs along the full south edge (y 23.3-24.3). 화공실험동 shows no comparable facade-lean strip, so this is probably a real feature (concrete apron, step or eave flashing) rather than parallax.\n\nThe north shadow is about 0.8-1.4 m, against about 5.6 m for 원천관's north wing (assumed about 19-21 m) and about 1.9 m for 화공실험동. That implies a total height of roughly 3-5 m. My best estimate is about 4.2 m (eave about 3.5 m, low ridge about 4.2 m), which fits a single storey.\n\nOUTLINE: OSM is close. The west and south edges agree within about 0.3 m and the east edge matches. The roof's north edge, however, sits at y≈36.5-36.6 versus OSM's 35.7-35.9, about 0.8 m further north. Registration was checked against 화공실험동, whose OSM and imagery edges agree within about 0.25 m. corrected_outline follows the roof edge seen in the imagery (about 116 m²). The extra 0.8 m could partly be a north eave overhang.\n\nUNKNOWN (no photos): wall colour and material, door and window layout, signage, completion year. The wall hex, window values and frame colour are generic estimates for a Korean campus chemical storage shed, not observations. Floors: 1 above ground, 0 below (no evidence of a basement; a basement would be very unlikely for a building of this type and size).",
+  "_stage": "research"
+ },
+ "415528049": {
+  "id": "415528049",
+  "name": "동관",
+  "official_name": "동관 (East Hall), building no. 64",
+  "identified_as": "Ajou University 동관 (East Hall). It is a long east-west 3-storey 1974 slab used by the Department of Mechanical Engineering. The OSM outline matches the official point (-188.4, 90.6) and the official photo of a south facade facing a parking lot.",
+  "floors_above": 3,
+  "floors_below": 0,
+  "base_floors": 3,
+  "floors_basis": "The official text says 지상 3층. The official floor list (1F, 2F/3F) also tops out at 3F; the parsed floor_list_top=2 comes from reading '2F/3F' and is not a real conflict. The official photo of the south facade shows 3 window rows under one continuous flat parapet, and OSM building:levels=3 agrees. No basement is listed and none is visible, so floors_below is 0 (not confirmed). The roof is at one level across the whole footprint: the N-S line at x≈-171 is an expansion joint or parapet and casts no step shadow.",
+  "floors_evidence": [
+   {
+    "value": "3",
+    "source": "official description text",
+    "quote": "1974년 준공된 지상 3층의 건물"
+   },
+   {
+    "value": "3 (1F, 2F/3F)",
+    "source": "official floor list",
+    "quote": "2F/3F 교수연구실, 연구실(기계공학과)"
+   },
+   {
+    "value": "3",
+    "source": "official photo 64.jpg (south facade from SE)",
+    "quote": "3 window rows counted across all bays, one flat parapet line"
+   },
+   {
+    "value": "3",
+    "source": "OSM building:levels"
+   }
+  ],
+  "height_m": 11.5,
+  "typical_floor_height_m": 3.6,
+  "year_completed": 1974,
+  "uses": [
+   "Department of Mechanical Engineering",
+   "1F: 창의적공학설계실 (creative engineering design lab), 기계진단준비실 (machine diagnostics prep room)",
+   "2F/3F: faculty offices and research labs (e.g. 자동차동력시스템연구실, 성형가공연구실, 지능형다중스케일설계가공연구실)"
+  ],
+  "official_photo_side": "south (long facade facing the parking lot). Taken from near the SE corner looking WNW along the facade, so the east end is near the right of the frame and the west end recedes to the left, where the access road curves.",
+  "wall": {
+   "primary_hex": "#e2e0da",
+   "primary_material": "painted concrete / render, off-white, weathered with grey streaks and exposed downpipes",
+   "secondary_hex": "#8fb0cc",
+   "secondary_material": "light-blue painted flat panels (cladding boards)",
+   "secondary_where": "Spandrel band between 1F and 2F in most wide bays, about 1.5-1.8 m tall, set below the 2F windows. Not on the narrow stair/service bays."
+  },
+  "base": {
+   "material": "red brick plinth below the 1F window sills, about 0.6-0.9 m high (estimated from photo)",
+   "hex": "#84453a",
+   "floors": 0
+  },
+  "windows": {
+   "style": "ribbon",
+   "glass_hex": "#5b6068",
+   "frame_hex": "#a9aaa8",
+   "window_height_ratio": 0.55,
+   "bay_width_m": 7.5,
+   "notes": "Each wide bay has one continuous window group of about 7 aluminium sashes with upper transom lights, about 6-6.5 m wide. Groups are separated by narrow white piers (~0.8-1 m) carrying downpipes, so the facade reads as ribbons broken at regular intervals. A few narrow single-column bays (stairs/toilets) have small punched windows. 1F has larger glazing in some bays, including workshop-style glazed fronts and wall-mounted AC grilles. Some panes are frosted or curtained. The bay width (~7.5 m) is an estimate from the photo's pane count, not measured. Window height ratio was measured at the facade plane (window ~130 px of a ~250 px floor pitch)."
+  },
+  "roof": {
+   "shape": "flat with low parapet (hidden from ground)",
+   "hex": "#456253",
+   "features": [
+    "Green roof finish with regular E-W striping about every 1.2 m. It may be green waterproof coating or low-slope sheet covering; not verified from the ground.",
+    "N-S white expansion joint / parapet line at x≈-171 dividing the roof into a west section (~48 m) and an east section (~20 m), both at the same height",
+    "Thin antenna mast near the middle of the south edge (visible in the official photo)",
+    "Small white rooftop units/vents along the north edge (x≈-205 to -175) and along the south parapet",
+    "Light teal repaired/painted patch around x -178..-174, y 90-98"
+   ]
+  },
+  "parts": [],
+  "corrected_outline": [
+   [
+    -218.9,
+    104.3
+   ],
+   [
+    -218.6,
+    93.3
+   ],
+   [
+    -218.4,
+    85.3
+   ],
+   [
+    -186.3,
+    86.1
+   ],
+   [
+    -150.7,
+    87
+   ],
+   [
+    -150.8,
+    96.5
+   ],
+   [
+    -150.9,
+    106
+   ]
+  ],
+  "features": [
+   "Long, narrow 3-storey slab, about 68 x 19 m, oriented E-W",
+   "South facade faces a service road and parking lot. Vehicles on lift ramps at the east end suggest automotive lab use outside.",
+   "Light-blue spandrel panels between 1F and 2F",
+   "Red brick plinth at ground level",
+   "Large white panel service doors under a thin concrete ledge in one bay toward the west part of the south facade",
+   "Exposed vertical downpipes and conduits on the white facade",
+   "No pilotis, no prominent entrance canopy visible on the south side, no signage visible",
+   "Thin antenna mast on the roof",
+   "Possible small low annex or entrance structure at the west end (light-grey patches at x -222.5..-220, y ~95-106). Unverified; may be the west wall seen obliquely, so it is not modeled."
+  ],
+  "signage": [],
+  "photos": [
+   {
+    "url": "C:/Users/김소울/AppData/Local/Temp/claude/C--Users-----OneDrive-----------------/a5642546-f6e9-4da8-bd08-5d9a82b0a003/scratchpad/official/photos/64.jpg",
+    "depicts": "Official photo: south facade seen from near the SE corner looking WNW, with parking lot in front. Overcast light.",
+    "floors_counted": 3
+   }
+  ],
+  "conflicts": [
+   "The official floor list was parsed as top=2, but the list reads '2F/3F', so it agrees with the text (3 floors). This is a parse artifact.",
+   "OSM outline east edge is at x≈-144.6. In the imagery the roof clearly ends at x≈-150.7: a colour profile shows the transition at -150.7, an east parapet line is visible at y 91-99, and a path/curb runs south from that corner. Dense tree canopy covers x > -150.7, so a hidden low extension cannot be fully excluded. The corrected_outline moves the east edge to -150.7 (length ~68 m instead of ~74 m).",
+   "The roof in the imagery sits about 1 m north of the OSM outline (south parapet y≈86.5-87.5, north edge y≈105.3-107.2). This is consistent with slight building lean, so the OSM north/south lines were kept."
+  ],
+  "confidence": {
+   "floors": "high",
+   "massing": "high",
+   "colors": "medium",
+   "outline": "medium"
+  },
+  "notes": "Uniform 3-storey flat-roofed slab: base_floors = floors_above = 3, no parts. Height of 11.5 m is an estimate, not measured: 3 floors x ~3.6 m (typical for a 1970s Korean campus lab building) plus a ~0.7 m parapet. Shadow calibration was not possible because the north side is crowded by a separate low white-roofed building (y≈108-118, ~1 m gap) and trees.\n\nColours were sampled from the overcast official photo and corrected for its slight magenta cast. Raw samples: wall #dad5d5 → #e2e0da; blue panels #89a1b5/#a2b7c7 → #8fb0cc; brick #663734 → #84453a; frames #a8a1ab → #a9aaa8; glass #52494f-#858691 → #5b6068. The roof colour #456253 comes from imagery profiles, close to the provided #405c50.\n\nThe official photo shows only the south facade. The north, east and west sides were not seen; a web search found no extra photos, so they are assumed to be similar painted concrete with window bands.\n\nEast-end correction: the roof ends at x≈-150.7 in VWorld imagery, versus OSM -144.6. This is medium confidence because tall trees border the east end.",
+  "_stage": "bldg"
+ },
+ "415528048": {
+  "id": "415528048",
+  "name": "서관",
+  "official_name": "서관 (West Hall), Ajou campus-map building no. 63",
+  "identified_as": "Ajou University 서관 / West Hall (no. 63, completed March 1973). OSM 415528048 matches the official point (-284.8, 81.6), and the imagery shows a single long flat-roofed slab of about 87 x 20 m.",
+  "floors_above": 3,
+  "floors_below": 0,
+  "base_floors": 3,
+  "floors_basis": "3 above-ground storeys throughout. The official floor list reads \"1F ...\" and \"2F/3F ...\", so 3F exists. The parsed floor_list_top=2 comes from the combined \"2F/3F\" line and is a parsing artifact. The official photo of the south facade shows exactly 3 window rows along the whole visible length. OSM building:levels=3 agrees. The imagery shows one uniform roof level apart from two small white-roofed rooftop structures, which are treated as penthouses and not counted as floors. The official list shows no basement, and the photo shows no basement windows on the south side, so floors_below=0. The ground rises toward the east end (grass slope in the photo), so a partly buried 1F on the north/east sides cannot be ruled out. That is unknown.",
+  "floors_evidence": [
+   {
+    "value": "3",
+    "source": "official description floor list",
+    "quote": "2F/3F 교수 연구실, 연구실"
+   },
+   {
+    "value": "2 (parse artifact)",
+    "source": "official floor_list_top field",
+    "quote": "floor_list_top: 2 (derived from combined '2F/3F' line)"
+   },
+   {
+    "value": "3",
+    "source": "official photo 63.jpg (south facade from SW)",
+    "quote": "3 window rows counted along entire visible facade"
+   },
+   {
+    "value": "3",
+    "source": "OSM building:levels"
+   }
+  ],
+  "height_m": 11.5,
+  "typical_floor_height_m": 3.5,
+  "year_completed": 1973,
+  "uses": [
+   "research laboratories (분자과학기술학과, 화학공학과, 환경안전공학과)",
+   "professor offices",
+   "graduate research labs",
+   "분자과학기술연구센터 (Molecular Science & Technology research centre)"
+  ],
+  "official_photo_side": "South facade, taken from the parking lot south-west of the building looking ENE. In the foreground (left) are the west-end bays at about x -324 to -301 and the main entrance with its canopy and stair at about x -301 to -286. The east half recedes to the right toward the tree-covered slope. The north and east facades are not shown.",
+  "wall": {
+   "primary_hex": "#dcd6ce",
+   "primary_material": "painted concrete / cement render, cream off-white (horizontal spandrel bands, parapet band, vertical piers)",
+   "secondary_hex": "#7c3e42",
+   "secondary_material": "dark red (maroon) brick tile",
+   "secondary_where": "Spandrel panels below the 1F and 2F windows in the west-end bays, plus a low brick plinth (about 1 m, estimated) under the 1F windows there. Small brick spandrel panels sit under several 2F windows east of the entrance canopy and next to the 1F east of the entrance."
+  },
+  "windows": {
+   "style": "mixed",
+   "glass_hex": "#5f8588",
+   "frame_hex": "#43494d",
+   "window_height_ratio": 0.6,
+   "bay_width_m": 3,
+   "notes": "Dark grey-bronze aluminium frames with teal-green tinted glass. Each window has a fixed upper transom row and sliding sashes below. In the west-end bays, wide windows are framed by deep cream piers and bands with red-brick spandrels under them (punched in a frame grid). From the entrance east, the window bands are separated only by narrow cream piers and alternate wide (3-sash) and narrow (2-sash) openings (near-ribbon). bay_width_m is a rough estimate of about 3 m per window module, based on sash counts and an assumed sash width of about 0.9-1 m. It was not measured. Window height ratio is about 0.6, estimated from the photo proportions."
+  },
+  "base": {
+   "floors": 0,
+   "hex": "#6e4146",
+   "material": "There is no distinct plinth storey. A low red brick-tile base (about 1 m, estimated) sits under the 1F windows in the west-end bays. The main entrance stands on a raised terrace reached by a wide stair of about 8 steps (about 1.2-1.4 m, estimated) from the parking lot."
+  },
+  "roof": {
+   "shape": "flat roof with low parapet and light coping",
+   "hex": "#4f5d52",
+   "features": [
+    "Roof finish is dark grey-green waterproofing (#4f5d52 sampled from imagery), with a light cream/grey parapet coping around the edge.",
+    "Probable stair penthouse with a white/light-grey roof (about #e5e3dc), about 7.5 x 11.5 m, against the north edge directly behind the main entrance. Imagery coordinates are x -297.1..-289.3, y 82.4..93.8; shifted about 0.9 m west to fit the OSM outline, they are x -297.9..-290.1. It is not visible in the official photo.",
+    "Penthouse or raised core with a white roof, about 6.6 x 9.3 m, at the south-east corner. Imagery coordinates are x -243.6..-236.2, y 76.3..85.6. It casts a shadow about 1.2 m deep onto the main roof on its north side, so it stands above the roof. Its height is unknown and estimated at about 3 m.",
+    "Many small vents and exhaust caps are scattered over the roof (white dots in the imagery). In the east half they connect to the exterior lab exhaust ducts that run up the south facade."
+   ]
+  },
+  "parts": [
+   {
+    "label": "west rooftop stair penthouse (not a storey)",
+    "floors": 3,
+    "height_m": 14.5,
+    "polygon": [
+     [
+      -297.6,
+      82.4
+     ],
+     [
+      -290.1,
+      82.6
+     ],
+     [
+      -290.4,
+      94.1
+     ],
+     [
+      -297.9,
+      93.9
+     ]
+    ],
+    "wall_hex": "#dcd6ce",
+    "wall_material": "assumed painted concrete like main body (not seen in photo)",
+    "window_style": "few",
+    "note": "White-roofed rooftop structure behind the main entrance. height_m is an estimate (assumed about 3 m above the roof slab). Only the roof is visible in the imagery. Polygon shifted about 0.9 m west from the imagery to match the OSM outline."
+   },
+   {
+    "label": "south-east rooftop penthouse / raised core (not a storey)",
+    "floors": 3,
+    "height_m": 14.5,
+    "polygon": [
+     [
+      -244.7,
+      76.3
+     ],
+     [
+      -238.4,
+      76.5
+     ],
+     [
+      -238.4,
+      85.8
+     ],
+     [
+      -244.8,
+      85.6
+     ]
+    ],
+    "wall_hex": "#dcd6ce",
+    "wall_material": "assumed painted concrete like main body (not seen in photo)",
+    "window_style": "few",
+    "note": "White-roofed block with a visible shadow on the main roof to its north. height_m is an estimate (about 3 m above the roof, from the short shadow under high summer sun). In the imagery it sits flush with or about 0.5 m beyond the east roof edge. The polygon is clamped inside the OSM footprint."
+   }
+  ],
+  "features": [
+   "A long, narrow 3-storey slab of about 87 x 20 m, rotated about 1.9 deg CCW from east, with a flat roof and parapet. This is a 1973 lab/research building.",
+   "Main entrance on the south facade at about x -301 to -286. The fully glazed 1F storefront entrance (dark frames, glass doors) is recessed under a deep cantilevered canopy formed by the 2F slab, which has a solid cream upturned parapet face. One cream column supports the canopy mid-span, and the canopy projects an estimated 2-3 m.",
+   "A wide approach stair of about 8 steps (stone/concrete, with cream side cheek walls) leads from the parking lot up to the entrance terrace.",
+   "The west-end bays (about x -324 to -301) have a framed-grid look: deep cream piers and bands with dark red brick-tile spandrels.",
+   "The south facade of the east half carries many vertical exterior lab exhaust ducts (galvanized steel, about #7c8891) and white PVC pipes, running from about 1F/2F up past the parapet. Brown downpipes are also visible.",
+   "Outdoor AC condenser units stand at grade along the south facade east of the entrance.",
+   "A monument sign at the foot of the entrance stair has a white face with a blue frame, the Ajou emblem, and the text '서관 / West Hall'.",
+   "Faculty parking lies south and south-west. Dense trees line the north side. The ground rises to a wooded slope at the east end.",
+   "North and east facades: not documented (dense trees; not in the official photo)."
+  ],
+  "signage": [
+   {
+    "text": "서관 / West Hall (with Ajou emblem)",
+    "where": "free-standing monument sign at the east foot of the main entrance stair, south side",
+    "color_hex": "#1e5aa8"
+   },
+   {
+    "text": "교수전용",
+    "where": "small blue plates on the south wall of the west-end bays at 1F (faculty-only parking)",
+    "color_hex": "#1f4fa0"
+   }
+  ],
+  "photos": [
+   {
+    "url": "C:/Users/김소울/AppData/Local/Temp/claude/C--Users-----OneDrive-----------------/a5642546-f6e9-4da8-bd08-5d9a82b0a003/scratchpad/official/photos/63.jpg",
+    "depicts": "Official photo: south facade from the south-west parking lot looking ENE. Shows the west-end bays, the main entrance with canopy and stair, and the long east half receding toward the trees.",
+    "floors_counted": 3
+   }
+  ],
+  "confidence": {
+   "floors": "high",
+   "massing": "medium",
+   "colors": "medium",
+   "outline": "high"
+  },
+  "conflicts": [
+   "The official floor_list_top was parsed as 2, but the list says '2F/3F' and the photo shows 3 storeys, so 3 floors were used.",
+   "The imagery roof edges sit about 0.6-1.2 m east of the OSM outline (east edge about -236.8 vs -238.0; west edge about -323.7 vs -324.3). This is within orthophoto registration and relief-displacement error, so the OSM outline is kept. Penthouse polygons were shifted to match.",
+   "Two web searches for extra photos of the other sides returned nothing relevant, so the north and east facades remain undocumented."
+  ],
+  "notes": "Evidence used: the official text and photo (south side only, overcast light with a neutral white sky, so the colours need little correction) and the VWorld imagery (summer, full foliage). The OSM outline fits the imagery well and no correction is needed.\n\nThe building is one uniform 3-storey mass, so base_floors = floors_above = 3. Two white-roofed rooftop structures appear in the imagery. They are given as parts with floors=3 (not storeys) and an estimated height_m only, so they can be modelled as penthouses. The south-east one is confirmed raised by the shadow it casts on the roof. The west one is inferred from its position behind the main entrance or stair and its white roof. Both heights are unknown and estimated at about 3 m above the roof.\n\nheight_m 11.5 is an estimate: 3 storeys x about 3.5 m plus about 1 m parapet. It is based on the photo's door-to-storey proportions and the typical floor heights of a 1970s Korean lab building. No shadow measurement was possible, because tree canopy covers the north side.\n\nThe 1F floor is about 1.2-1.4 m above the parking-lot grade at the entrance, estimated from about 8 steps. The terrain rises to the east, so the grade at the east end is likely higher. Exact levels are unknown.\n\nWall colours: cream #dcd6ce (sampled #dddad7 to #e2dfdd, warmed slightly for overcast light) and maroon brick #7c3e42 (lit samples about #88484d, shaded about #652e30). Glass is teal-green and reflective (lit panes about #94b8b5, shaded about #4d6068), averaged to #5f8588. Frames are dark grey-bronze.",
+  "_stage": "bldg"
+ },
+ "706051505": {
+  "id": "706051505",
+  "name": "대형지반연구실험동",
+  "official_name": "대형지반연구실험동 (Geotechnical Engineering Laboratory), official buildNo 66",
+  "identified_as": "Ajou official campus-map building no. 66, 대형지반연구실험동. The official point (-279.2, 118.1) lies inside the OSM outline. The imagery shows a single light-grey gable-roofed shed matching the outline.",
+  "year_completed": 2009,
+  "uses": [
+   "research laboratory (geotechnical engineering)",
+   "indoor test lab, precision-instrument lab, test-preparation room, full-scale soil tank (실대형 토조) per official text"
+  ],
+  "floors_above": 1,
+  "floors_below": 0,
+  "base_floors": 1,
+  "floors_basis": "The official data has no floor list. The text gives an area of 484.5 m², which is about the same as the 509 m² OSM/imagery footprint, so the stated area matches one storey. The official photo shows one tall high-bay steel shed with no exterior floor line. It has a single row of small windows at about 5–6 m above the floor and a door about 4 m high. Result: 1 storey (high bay). Possible interior mezzanine: the windows sit high, and the north part of the east side has an external ledge/walkway with a railing at about 4.5 m. This cannot be confirmed, and the 484.5 m² area argues against a full second floor. The ground slopes up to the north along the east side. The floor sits about 1 m above the service road to the south. No basement is indicated.",
+  "floors_evidence": [
+   {
+    "value": "1 (area ≈ footprint)",
+    "source": "official description (ajou.ac.kr campus map, buildNo 66)",
+    "quote": "484.5㎡의 면적의 건물이다"
+   },
+   {
+    "value": "1 high-bay storey (single upper window row, ~4 m door, no floor line)",
+    "source": "official photo official/photos/66.jpg (SE corner view)"
+   },
+   {
+    "value": "unknown",
+    "source": "OSM building:levels (absent)"
+   }
+  ],
+  "height_m": 7.5,
+  "typical_floor_height_m": 7.5,
+  "wall": {
+   "primary_hex": "#b1b7bb",
+   "primary_material": "silver/light-grey vertically ribbed (corrugated) colour-steel sandwich panels on all visible walls, running down to grade with no plinth",
+   "secondary_hex": "#a2a8ae",
+   "secondary_material": "grey metal eave gutter/fascia, rake flashing and door canopy; light/white panel low wall (about #d9dbd6, ivy-covered) along the north part of the east side",
+   "secondary_where": "Eave gutter along the east (and presumably west) eave, flashing along the gable rakes, and the canopy over the east door. There is also a low white wall below the external ledge on the north part of the east side."
+  },
+  "windows": {
+   "style": "few",
+   "glass_hex": "#8796a0",
+   "frame_hex": "#e2e5e6",
+   "window_height_ratio": 0.13,
+   "bay_width_m": 3.9,
+   "notes": "These are small white-framed two-pane sliding windows, about 1.0 × 1.0–1.1 m. South gable end: 5 windows in one row at about 4.9–5.9 m above the floor, about 3.5–4.5 m apart, at roughly 2, 5.5, 9.5, 14 and 17.5 m from the SE corner (perspective estimate). East side: 2 windows side by side above the door canopy at the south end, and 1–2 windows at the same height behind the external ledge/railing at the north end. No ground-level windows are visible (vegetation may hide some). The glass is clear and reflects an overcast sky."
+  },
+  "base": {
+   "material": "no plinth (metal panels run to grade); concrete slab with a patterned concrete apron in front of the east door; building platform about 1 m above the south service road, edged by a dark red-brown concrete-block retaining wall/planter",
+   "floors": 0,
+   "hex": "#c8c2ba"
+  },
+  "roof": {
+   "shape": "symmetric gable, ridge running N–S along the centreline (x ≈ -278.2); pitch estimated at about 13–17° (ridge about 2.4–2.9 m above the eaves, from photo perspective)",
+   "hex": "#d3d8d6",
+   "features": [
+    "light-grey metal roof sheets (imagery sample #d7ded5)",
+    "slightly darker ridge-cap line visible in the imagery along the N–S centreline",
+    "eave gutters on the long east/west sides; the gable ends face south and north",
+    "no rooftop equipment or penthouse visible",
+    "NW quarter of the roof is overhung by tree canopy in the imagery",
+    "estimated ridge height about 9.5–10 m above the floor (height_m = eave height)"
+   ]
+  },
+  "parts": [],
+  "signage": [],
+  "features": [
+   "Single-storey high-bay steel-frame lab shed, rectangular, about 18.7 m (E–W) × 27.2 m (N–S), with a gable roof whose ridge runs N–S",
+   "South face is the gable end with 5 small windows in one row high on the wall (about 5–6 m)",
+   "East side, south end: large two-leaf metal door, about 3–3.5 m wide × about 4 m high, with a horizontal top rail. A grey metal canopy (about 3 m wide, 0.8 m deep) sits above it at about 4.2 m, with two white-framed windows above the canopy",
+   "Stainless-steel downpipe at the SE corner from the east eave gutter",
+   "East side, north part: external ledge/walkway at about 4.5 m with white planter boxes and a metal railing, with windows behind it. A light/white panel wall below is covered in ivy along the uphill road, and the railing/stair descends toward the higher road ground to the north",
+   "Concrete access road along the east side rises northward; a patterned concrete apron lies in front of the door",
+   "Building floor about 1 m above the south service road; brick-block retaining wall and planting along the south edge",
+   "Large concrete test ring/mould and containers stand on the apron (site objects, not part of the building)",
+   "No signage visible on the building (the 주차금지/아주대학교 cones are free-standing)"
+  ],
+  "official_photo_side": "SE corner, taken from the lower service road. The left of the photo shows the south gable end (5 high windows). The right shows the east long side (door with canopy, two windows, and the external ledge/railing at the north end beside the uphill road). Matched to imagery: the blue tarp in the photo, beyond the east side's north end, appears in the imagery at about (-274, 147), just north of the NE corner.",
+  "photos": [
+   {
+    "url": "C:\\Users\\김소울\\AppData\\Local\\Temp\\claude\\C--Users-----OneDrive-----------------\\a5642546-f6e9-4da8-bd08-5d9a82b0a003\\scratchpad\\official\\photos\\66.jpg",
+    "depicts": "Official photo from the SE: south gable end and east long side of a light-grey ribbed metal shed",
+    "floors_counted": 1
+   }
+  ],
+  "confidence": {
+   "floors": "medium",
+   "massing": "high",
+   "colors": "medium",
+   "outline": "high"
+  },
+  "conflicts": [
+   "OSM has no building:levels, and the official floor list is empty. Floors come from the official area plus the photo.",
+   "Official area 484.5 m² vs OSM/imagery footprint about 509 m² (about 5% difference, within outline/wall-line tolerance). This suggests a single storey of floor area.",
+   "The external upper ledge/walkway with windows at about 4.5–6 m on the north part of the east side hints at an interior mezzanine. It cannot be verified and is not counted as a floor.",
+   "Photo perspective alone puts the visible east-eave end only about 19–25 m from the SE corner (depending on the assumed principal point and lens distortion), while the imagery shows 27.2 m. The imagery outline is kept as authoritative.",
+   "One web search found no extra data on this building."
+  ],
+  "notes": "The OSM outline matches the imagery within about 0.3 m: roof edges at x -287.5/-268.6 and y 112.7/140.6. No corrected_outline is needed, and the building is a uniform single mass (parts = []). The NW part of the roof is under tree canopy, but the rectangle is still consistent.\n\nHeight is an estimate, not measured. It comes from perspective analysis of the official photo: vanishing points from the window rows, gutter and door rail, and the 18.7 m south-face width from the imagery. That gives an eave of about 7.0 m (lens principal point at the image centre) to about 8.5 m (shifted principal point). A door-latch-height cross-check gives about 6.8–8 m. I chose an eave of 7.5 m; the ridge is about 2.4–2.9 m higher, so about 9.5–10 m total. height_m = eave height.\n\nColours were corrected from an overcast, slightly blue-cast photo. The walls are neutral silver-grey colour-steel: shaded south face sampled at #6a7479, lit east-face door at #afb6b8.\n\nThere is no building signage. The site slopes: the floor is about 1 m above the south service road, and the east access road rises northward along the long side.",
+  "_stage": "bldg"
+ },
+ "706094938": {
+  "id": "706094938",
+  "name": "광교관",
+  "official_name": "광교관(기숙사) / Gwanggyo Hall (Dormitory 4)",
+  "identified_as": "광교관, a women's dormitory and the northernmost building of the 원천학사 dorm group. It is a bent, double-loaded-corridor slab: a NW wing about 57–60 m long and a S wing about 29 m long, with a bend of about 29°. Both wings are about 14.5–15 m deep. The 5-storey 화홍관 is the similar bent slab to the SW.",
+  "floors_above": 5,
+  "floors_below": 1,
+  "base_floors": 5,
+  "floors_basis": "All sources agree on 5 storeys above grade plus a partial B1. (1) The official campus-map floor list is B1 + 1F–5F. (2) The official dorm page (ajou.ac.kr/dorm building-sketch04) calls it a '5층 건물'. (3) The dorm floor plans (구조도) show 1층–5층 over the whole bent footprint and a 지하1층 only under the western part of the NW wing. (4) The official photo 72.jpg shows 5 window rows on the SE end wall and on the SW face of the S wing, with the bottom row at parking-lot grade. No storey shows below it there, which fits the plan having no basement under the S wing. B1 is not visible in any photo, so it is treated as below grade. OSM building:levels=5 agrees. The shadow band on the NE side is about as wide as the one from the 5-storey 화홍관 next door, but this is weak evidence because terrain and trees confound it. The rooftop stair penthouses are not counted as floors.",
+  "floors_evidence": [
+   {
+    "value": "B1 + 1F–5F",
+    "source": "official campus-map record buildNo 72 (input JSON)",
+    "quote": "B1 동전 세탁실, 체력단련실 / 1F ~ 5F 기숙사"
+   },
+   {
+    "value": "5",
+    "source": "ajou.ac.kr/dorm/sketch/building-sketch04.do (official dorm page, saved as refs/706094938/page04.txt)",
+    "quote": "5층 건물로 2인실 32실, 4인실 122실"
+   },
+   {
+    "value": "1층–5층 full footprint + partial 지하1층",
+    "source": "dorm 구조도 floor plans, local file refs/706094938/diagram.png (from the Ajou dorm site, downloaded earlier; source URL not re-verified)"
+   },
+   {
+    "value": "5 above grade at SE end",
+    "source": "official photo official/photos/72.jpg",
+    "quote": "5 window rows counted on SE end wall and S-wing SW facade"
+   },
+   {
+    "value": "5",
+    "source": "OSM building:levels"
+   }
+  ],
+  "height_m": 16,
+  "typical_floor_height_m": 3,
+  "year_completed": 1997,
+  "uses": [
+   "dormitory (female students only, about 552 residents per the official dorm page)",
+   "1F: kitchenette (취사실), lounge, admin/staff room, parcel room, rooms",
+   "2F–5F: 2- and 4-person rooms, lounges, study rooms, shared toilets/showers",
+   "B1 (partial): coin laundry, fitness/stretching zone, seminar rooms, reading room (official list and dorm plan)"
+  ],
+  "official_photo_side": "The photo was taken from the parking lot at the SE end of the building, looking roughly NW. The right face is the SE end wall: the short brick face, about 14 m wide, between (88.2,239.6) and (99.9,247.6), facing SSE, with cars in front. The left face receding is the SW (concave) facade of the S wing. Beyond the bend at the far left, the SW facade of the NW wing turns toward the camera.",
+  "wall": {
+   "primary_hex": "#8c5049",
+   "primary_material": "red-brown face brick (masonry infill). It covers almost all of both end walls and the spandrel panels under every window on the long facades.",
+   "secondary_hex": "#d8d4c8",
+   "secondary_material": "cream/ivory painted concrete frame",
+   "secondary_where": "On the long facades it forms a deep frame grid: a vertical pier between every window bay plus a horizontal floor-slab band (about 0.4–0.5 m) with a sill at each floor. On the end walls it appears as horizontal bands at each floor level and as full-height corner piers. A cream parapet/top band about 1 m tall runs around the whole roof edge."
+  },
+  "windows": {
+   "style": "grid",
+   "glass_hex": "#44515f",
+   "frame_hex": "#3d4350",
+   "window_height_ratio": 0.5,
+   "bay_width_m": 3.9,
+   "notes": "Long facades have one dark-framed window per room bay per floor. Each window sits in a deep cream concrete frame, with a brick spandrel panel below it and a cream sill. The ground floor uses the same grid, with no separate plinth. The bay width of about 3.9 m is an estimate: 57 m of NW-wing SW facade divided by about 14.5 room bays in the official plan. It is cross-checked by 7 windows per floor counted on the 28.7 m S-wing SW facade, which matches 7 rooms in the plan. The SE end wall shows a single vertical column of windows, one per floor, about 1.2 m wide (likely the corridor-end window, position about mid-wall but partly out of frame). The NW end wall in the official 서측면 photo shows brick and cream bands with no windows in its visible part. Glass is dark blue-grey and many windows have curtains. Colours are corrected from an overcast photo: brick sampled #7e4946–#94656c, cream sampled about #cecbc4–#d6d6d2."
+  },
+  "parts": [],
+  "roof": {
+   "shape": "flat",
+   "hex": "#bfcbc6",
+   "features": [
+    "Continuous metal guard railing on top of the cream parapet around the whole roof edge (visible in the official photo).",
+    "Stair penthouse 1, over the NW stair core on the NE side. Estimated polygon after correcting the about-2 m roof displacement in the imagery: [[34.9,299.7],[42.1,295.0],[39.6,290.3],[32.9,293.8]]. Height about 3 m above the roof (estimate, not measured).",
+    "Stair penthouse 2, over the middle stair core on the NE side, about 5 × 6 m: [[63.3,285.2],[67.3,283.2],[64.9,278.1],[60.5,280.0]]. Height about 3 m (estimate).",
+    "Stair penthouse 3, over the S-wing stair core on the NE side: [[86.3,258.3],[89.7,260.4],[96.2,253.9],[90.3,250.7]]. Height about 3 m (estimate).",
+    "The three boxes match the three stair cores in the official floor plans. In the imagery they have dark rims on several sides, so their actual height is uncertain; they could also be low parapet-enclosed roof-access structures.",
+    "Small antenna/mast near the bend."
+   ]
+  },
+  "features": [
+   "Bent slab with a double-loaded corridor. The NW wing runs at a bearing of about -27° from east and the S wing at about -56°. The concave side faces SW toward 화홍관, the convex side faces NE toward a wooded uphill slope with a retaining wall about 5 m away.",
+   "Three stair cores on the NE side (two in the NW wing, one in the S wing). Per the plan they protrude about 1 m beyond the NE wall; OSM omits this.",
+   "Entrances are on the SW (concave) side, per the official 1F plan. The main entrance (주출입구) is a vestibule with steps at about (56,272). A secondary vestibule is at about (30.5,285). A third, on the S wing, is near the SE end at about (84,246); in the imagery a paved path leads to it.",
+   "No building-name signage is visible in the official photos. The only sign in view is a freestanding red '차량출입금지' traffic sign in front of the S wing.",
+   "Covered walkway with a brown/bronze barrel-vault translucent canopy on grey steel posts leads to an entrance (official 입구 and 정면 photos). Its exact position was not located in the imagery.",
+   "No pilotis. The ground floor uses the same cream grid and brick spandrels as the upper floors; one recessed ground-floor bay on the S wing has a brick back wall (likely the entrance vestibule).",
+   "Parking lot directly at the SE end; garden with paths and terraces between 광교관 and 화홍관 on the SW side."
+  ],
+  "confidence": {
+   "floors": "high",
+   "massing": "high",
+   "colors": "medium",
+   "outline": "high"
+  },
+  "photos": [
+   {
+    "url": "C:/Users/김소울/AppData/Local/Temp/claude/C--Users-----OneDrive-----------------/a5642546-f6e9-4da8-bd08-5d9a82b0a003/scratchpad/official/photos/72.jpg",
+    "depicts": "Official campus-map photo: SE end wall (brick with cream floor bands) and the SW facades of the S wing and NW wing, seen from the SE parking lot.",
+    "floors_counted": 5
+   },
+   {
+    "url": "https://www.ajou.ac.kr/_res/ajou/dorm/img/sketch/img-building-sketch04-01.png",
+    "depicts": "Official dorm page '광교관 입구': covered walkway canopy leading to the ground-floor entrance (cream piers, dark windows)."
+   },
+   {
+    "url": "https://www.ajou.ac.kr/_res/ajou/dorm/img/sketch/img-building-sketch04-02.png",
+    "depicts": "Official '광교관 전경': long facade (cream grid and brick spandrels) seen from below a slope with stone steps. Four upper window rows are visible; the bottom row is hidden by trees."
+   },
+   {
+    "url": "https://www.ajou.ac.kr/_res/ajou/dorm/img/sketch/img-building-sketch04-03.png",
+    "depicts": "Official '광교관 서측면': NW end wall in brick with cream horizontal floor bands and a cream corner pier; no windows in the visible part."
+   },
+   {
+    "url": "https://www.ajou.ac.kr/_res/ajou/dorm/img/sketch/img-building-sketch04-04.png",
+    "depicts": "Official '광교관 정면': long facade receding, with the covered walkway canopy leading to the entrance."
+   }
+  ],
+  "conflicts": [
+   "None on floors: the official list, the dorm page text, the floor plans and the photo all give 5 storeys above grade plus B1.",
+   "The B1 uses differ slightly. The campus map lists coin laundry and a fitness room. The dorm floor plan shows laundry (세탁실), stretching zone (스트레칭 존), seminar rooms (세미나실) and a reading room (열람실). The two lists are compatible.",
+   "Room counts differ between dorm-site pages (4-person rooms given as 122 vs 155, per the search result summary). This does not affect the massing."
+  ],
+  "notes": "The OSM outline matches the imagery roof to within about 2 m. The roof appears shifted about (0.1, +1.9) m north of OSM at all corners, consistent with roof lean in the imagery. No corrected outline is needed. The only omission is the stair-core protrusions of about 1 m on the NE side, which are too small to model.\n\nThe massing is uniform at 5 storeys over the whole footprint, so parts is empty.\n\nB1 is a partial basement. From the official plan it lies under the western part of the NW wing, from the NW end wall to just past the middle stair core. Estimated polygon (plan not to scale, ±5 m along the axis): [[21.6,289.8],[28.6,303.1],[66.8,283.3],[59.8,270.0]]. It appears to be below grade: on the SW side, 1F is reached by a few entrance steps, and B1 is not visible in any photo.\n\nHeight: about 16 m is an estimate (5 × about 3.0 m typical dorm floor height plus about 1 m parapet). It was not measured.\n\nYear: 1997 comes from the Ajou dorm history page (ajou.ac.kr/dorm/intro/history.do) as quoted in a web-search summary: in March 1997 the two buildings 화홍관 and 광교관 were completed together, 3,787평 in total for about 1,000 residents. I did not open the page itself. As a sanity check, 광교관 at about 1,327 m² × 5 plus the partial B1 (about 7,300 m²) fits that combined total.\n\nColours: the official photo is overcast, so the brick shades from mauve at the top of the wall to red-brown at the bottom. The values given are daylight-corrected estimates.\n\nStair-penthouse heights are estimates, and their imagery appearance is ambiguous.",
+  "_stage": "bldg"
+ },
+ "415712209": {
+  "id": "415712209",
+  "name": "기숙사식당",
+  "official_name": "기숙사식당 (Dormitory Dining Hall), official campus-map building no. 75",
+  "identified_as": "Ajou dormitory dining hall (기숙사 식당동). A rectangular block about 44 x 23 m with a flat green roof, among the dormitories in the east part of the main campus. It matches official record no. 75 (the official point at (-15.8,178.8) falls inside the outline).",
+  "floors_above": 2,
+  "floors_below": 1,
+  "base_floors": 2,
+  "floors_basis": "The official description text ('지하 1층, 지상 2층 규모') and the official floor list (B1, 1F, 2F) agree, and OSM building:levels=2 also agrees, so there is no conflict to resolve. The official photo shows only the ground-floor entrance bay, so window rows cannot be counted from it. In the imagery the NE wall casts a ground shadow of about 2.5 m. That fits a low 2-storey block (summer, high sun), but it was not used to derive the count. The rooftop ring structure is not counted as a floor.",
+  "floors_evidence": [
+   {
+    "value": "B1 + 2 above",
+    "source": "official campus-map description (buildNo 75)",
+    "quote": "지하 1층, 지상 2층 규모"
+   },
+   {
+    "value": "B1, 1F, 2F",
+    "source": "official floor list",
+    "quote": "B1 세탁소, 빨래방 … / 1F 카페테리아, 매점, 기숙사 식당 / 2F 교직원 식당, 생활관 사무실"
+   },
+   {
+    "value": "2",
+    "source": "OSM building:levels"
+   },
+   {
+    "value": "B1 exists (laundry, table-tennis room)",
+    "source": "ajou.ac.kr/dorm facilities pages",
+    "quote": "기숙사식당 지하"
+   }
+  ],
+  "height_m": 9.5,
+  "typical_floor_height_m": 4.2,
+  "uses": [
+   "B1: dry cleaner (세탁소), self-service laundromat (빨래방), coin laundry for male dorm residents, indoor exercise / table-tennis room",
+   "1F: cafeteria, convenience store (매점), dormitory dining hall; 'COFFEE GAM' coffee stand",
+   "2F: staff/faculty dining hall (교직원 식당), dormitory administration office (생활관 사무실)"
+  ],
+  "official_photo_side": "Not reliably determinable. The photo is a close, tree-obscured view of a ground-level entrance bay: a cantilevered white concrete canopy over a recessed glass storefront, with a blank red-brick wall carrying the 'COFFEE GAM' sign on the right and a sunlit brick wall with a corbelled cornice set further back on the left. Best guess, low confidence: the NW short end, facing WNW toward the footpath at x≈-45. A grey ~4x7 m stair/ramp-like element adjoins that face in the imagery, and the photo shows a ramp and a garden slope. The SE end (paved apron plus a small light structure at about (9..12,174..177)) is the alternative.",
+  "wall": {
+   "primary_hex": "#8e4b3f",
+   "primary_material": "red face brick, running bond, grey mortar. Photo median of brick pixels is #7e433b in shade; the hex is lifted for daylight. Seen from a distance with the mortar blended in, it reads about #8a5449",
+   "secondary_hex": "#e2e4df",
+   "secondary_material": "white/off-white painted concrete (entrance canopy slab and fascia, parapet coping)",
+   "secondary_where": "Entrance canopy and roof-parapet coping. The coping is seen as a light rim (#bcc9bc) around the whole roof in the imagery. The base, planter walls, entrance steps and ramp curbs are grey granite, about #a19c95 (estimated in daylight; shaded parts photograph about #4b4c46)."
+  },
+  "windows": {
+   "style": "punched",
+   "glass_hex": "#9db3b4",
+   "frame_hex": "#c4c7c7",
+   "window_height_ratio": 0.35,
+   "notes": "Only one window type is documented: the ground-floor entrance, a recessed aluminium-framed clear-glass storefront with sliding glass doors and a full-height glazed bay about 4-5 m wide, with an interior stair visible behind. The brick wall beside it (the signage wall) shows no windows over the visible ~5-6 m height. No photo shows the upper-floor fenestration on any façade, so the 'punched' style and the 0.35 ratio are assumptions for a brick 2-storey campus building, not observations. Bay width is unknown."
+  },
+  "roof": {
+   "shape": "flat",
+   "hex": "#3a705e",
+   "features": [
+    "green urethane waterproof coating (imagery median #346b59; the input file's sample was #4e6459) with light-grey concrete parapet coping all round",
+    "rooftop ring-walled enclosure or slightly raised roof section near the NW end, about 7 x 12 m, corners approx. (-32.2,189.0), (-26.6,199.6), (-19.6,196.2), (-24.9,185.6). Shadow profiles give a wall/rise of roughly 1.5-3 m above the main roof (low precision). Not a habitable storey. An inner L-shaped low wall and a small dark square hatch/vent at about (-26,198.4) are inside it",
+    "white rooftop equipment/HVAC units along the NE edge around x -22..-14, y 197..202, and small units near (0..2, 187..189)",
+    "white linear duct or curb running from the NE edge at about x -12, y 192..196",
+    "rust-brown staining on the roof near the NE edge (x -20..-12)"
+   ]
+  },
+  "corrected_outline": [
+   [
+    -39.3,
+    183.8
+   ],
+   [
+    -0.1,
+    163.3
+   ],
+   [
+    10.8,
+    183.7
+   ],
+   [
+    -28.4,
+    204.3
+   ]
+  ],
+  "parts": [],
+  "features": [
+   "entrance with a cantilevered white concrete canopy (flat slab, ~4-5 m projection, ceiling lights in the soffit) over a recessed aluminium/glass storefront entrance",
+   "granite-paved entrance terrace raised slightly above the footpath, with granite planter walls, low granite steps, and a ramp edged with yellow-black safety striping",
+   "red-brick walls with decorative stepped/corbelled header courses framing recessed brick panels; corbelled brick cornice on the wall left of the entrance",
+   "vertical recessed slot in the brick wall next to the entrance, filled with vertical steel bars (grille/vent chase)",
+   "pink-painted rainwater downpipe on the brick wall left of the entrance",
+   "signage panel 'COFFEE GAM' with a cup logo, plus a 'Coffee & Beverage' sign below it, on the brick wall right of the entrance",
+   "about 3 m x 18 m strip along the NE wall between x≈-25 and x≈-8 (included in OSM). Its outer wall casts no real shadow on the north yard, so it is most likely a sunken areaway/dry area (light and air for B1) or service pit with a low guard wall, not an above-ground wing",
+   "grey ~4 x 7 m stair/ramp-like element against the outside of the NW end wall (about x -37..-35, y 192..199), outside the OSM outline; function unknown",
+   "paved service yard / open ground on the north side; dense trees on the S and SW sides"
+  ],
+  "signage": [
+   {
+    "text": "COFFEE GAM (with coffee-cup logo)",
+    "where": "entrance façade: brick wall right of the entrance canopy, about 2.5-3 m above grade",
+    "color_hex": "#4e4760"
+   },
+   {
+    "text": "Coffee & Beverage",
+    "where": "small brushed-silver panel (#c8c8c8) directly below the COFFEE GAM sign",
+    "color_hex": "#a8342c"
+   }
+  ],
+  "photos": [
+   {
+    "url": "C:\\Users\\김소울\\AppData\\Local\\Temp\\claude\\C--Users-----OneDrive-----------------\\a5642546-f6e9-4da8-bd08-5d9a82b0a003\\scratchpad\\official\\photos\\75.jpg",
+    "depicts": "Official photo: ground-floor entrance bay with a white concrete canopy, glass storefront doors, red-brick walls, the COFFEE GAM sign, a granite terrace and a ramp. Heavily obscured by a maple tree. Side uncertain (best guess NW end). Upper floors not visible."
+   }
+  ],
+  "confidence": {
+   "floors": "high",
+   "massing": "medium",
+   "colors": "medium",
+   "outline": "medium"
+  },
+  "conflicts": [
+   "The OSM outline (1079 m²) includes a 3 x 18 m strip on the NE side. Imagery shadow analysis suggests it is a sunken areaway or low walled pit, not an above-ground mass. corrected_outline gives the clean 44.2 x 23.1 m main rectangle (about 1021 m²), and all of its other vertices coincide with OSM.",
+   "The official record gives no completion year (year=null). Web searches found none, so year_completed is unknown and omitted.",
+   "The official photo's side cannot be matched to the imagery with confidence (NW vs SE short end)."
+  ],
+  "notes": "Floors: B1 + 2 above ground. The official text, the official floor list and OSM all agree, so base_floors = floors_above = 2 and parts = []. The B1 is not visible in the imagery. It is probably lit and ventilated through the NE-side areaway; whether B1 is exposed anywhere because of the terrain is unknown. Massing: the main block is a single uniform 2-storey rectangle. Use corrected_outline [(-39.3,183.8),(-0.1,163.3),(10.8,183.7),(-28.4,204.3)], with the long axis about -27.6° from east. The NE strip in the OSM outline should be modelled at most as a low wall or a sunken pit, not as a building volume. The ring-walled rooftop structure (about 7 x 12 m) near the NW end rises roughly 1.5-3 m above the main roof. That figure is a shadow-width estimate at 0.24 m/px and is only coarse. It is described under roof.features and is not a floor. Heights: height_m 9.5 and typical_floor_height_m 4.2 are estimates, not measurements. They assume about 4.2 m storeys typical for a dining hall plus an ~1 m parapet. Appearance: red face brick with grey mortar, white concrete canopy and coping, grey granite base, terrace and planters, and a green urethane-coated flat roof. The colours come from one shaded official photo, lifted for daylight, and the roof colour is from imagery. Upper-floor window layout is undocumented: no photo shows it, and web searches (ajou.ac.kr dorm pages, blogs) gave no exterior photos. The 'punched' window style is therefore an assumption. Completion year is unknown.",
+  "_stage": "bldg"
+ }
+}

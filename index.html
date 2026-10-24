@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>아주대 3D 캠퍼스</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #eef0ec;
+    --panel: rgba(255, 255, 255, 0.92);
+    --panel-solid: #ffffff;
+    --text: #1d2430;
+    --muted: #6a7280;
+    --line: rgba(29, 36, 48, 0.1);
+    --accent: #0a4da2;      /* 아주 블루 */
+    --accent-soft: rgba(10, 77, 162, 0.1);
+    --warn: #b06a00;
+    --shadow: 0 8px 30px rgba(20, 30, 50, 0.12);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #151a21; --panel: rgba(26, 31, 40, 0.92); --panel-solid: #1a1f28;
+      --text: #e8ebf0; --muted: #98a1ae; --line: rgba(255, 255, 255, 0.1);
+      --accent: #6aa4ff; --accent-soft: rgba(106, 164, 255, 0.14); --warn: #f0b04a;
+      --shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #151a21; --panel: rgba(26, 31, 40, 0.92); --panel-solid: #1a1f28;
+    --text: #e8ebf0; --muted: #98a1ae; --line: rgba(255, 255, 255, 0.1);
+    --accent: #6aa4ff; --accent-soft: rgba(106, 164, 255, 0.14); --warn: #f0b04a;
+    --shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; overflow: hidden; }
+  body { background: var(--bg); color: var(--text); font-family: "Noto Sans KR", system-ui, sans-serif; font-size: 14px; }
+  #scene { position: fixed; inset: 0; }
+  button { font: inherit; color: inherit; cursor: pointer; }
+
+  .panel { background: var(--panel); backdrop-filter: blur(12px); border: 1px solid var(--line); border-radius: 14px; box-shadow: var(--shadow); }
+
+  #sidebar { position: fixed; top: 16px; left: 16px; bottom: 16px; width: 300px; display: flex; flex-direction: column; overflow: hidden; z-index: 2; }
+  #sidebar header { padding: 18px 18px 12px; border-bottom: 1px solid var(--line); }
+  #sidebar h1 { margin: 0; font-size: 18px; font-weight: 700; letter-spacing: -0.02em; }
+  #sidebar h1 span { color: var(--accent); }
+  #sidebar .sub { margin: 4px 0 12px; color: var(--muted); font-size: 12px; }
+  #search { width: 100%; padding: 9px 12px; border-radius: 9px; border: 1px solid var(--line); background: var(--panel-solid); color: var(--text); font: inherit; outline: none; }
+  #search:focus { border-color: var(--accent); }
+  #list { list-style: none; margin: 0; padding: 6px; overflow-y: auto; flex: 1; }
+  #list li { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding: 8px 10px; border-radius: 8px; cursor: pointer; }
+  #list li:hover { background: var(--accent-soft); }
+  #list li.active { background: var(--accent); color: #fff; }
+  #list li.active .meta { color: rgba(255,255,255,.8); }
+  #list .meta { color: var(--muted); font-size: 12px; white-space: nowrap; }
+  #sidebar footer { padding: 12px 14px; border-top: 1px solid var(--line); display: grid; gap: 8px; }
+  .toggles { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip { padding: 6px 10px; border-radius: 999px; border: 1px solid var(--line); background: transparent; font-size: 12px; }
+  .chip[aria-pressed="true"] { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
+  #explore { padding: 10px; border-radius: 10px; border: 1px dashed var(--line); background: transparent; color: var(--muted); }
+  .credit { color: var(--muted); font-size: 11px; }
+  .credit a { color: inherit; }
+
+  #info { position: fixed; top: 16px; right: 16px; width: 300px; padding: 16px 18px; z-index: 2; display: none; }
+  #info.show { display: block; }
+  #info h2 { margin: 0 24px 2px 0; font-size: 18px; }
+  #info .en { color: var(--muted); font-size: 12px; margin-bottom: 12px; }
+  #info dl { display: grid; grid-template-columns: auto 1fr; gap: 6px 14px; margin: 0; }
+  #info dt { color: var(--muted); }
+  #info dd { margin: 0; text-align: right; font-variant-numeric: tabular-nums; }
+  #info .est { color: var(--warn); font-size: 11px; margin-top: 10px; }
+  #info .official { margin-top: 12px; font-size: 12px; line-height: 1.55; max-height: 34vh; overflow-y: auto; }
+  #info .official p { margin: 0 0 6px; }
+  #info .official details summary { cursor: pointer; color: var(--accent); font-weight: 500; }
+  #info .official ul { margin: 6px 0; padding-left: 16px; }
+  #info .official li { margin: 2px 0; }
+  #info .official .src, #info .official a { color: var(--accent); font-size: 11.5px; }
+  #info .basis { margin-top: 12px; font-size: 11.5px; color: var(--muted); line-height: 1.5; max-height: 30vh; overflow-y: auto; }
+  #info .basis p { margin: 6px 0 0; }
+  #info .basis a { color: var(--accent); }
+  #info .conf { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: 11px; border: 1px solid currentColor; }
+  #info .conf-high { color: #1f8a4c; } #info .conf-medium { color: var(--warn); } #info .conf-low { color: #c0392b; }
+  #info .close { position: absolute; top: 10px; right: 10px; border: 0; background: transparent; font-size: 18px; color: var(--muted); }
+
+  #hud { position: fixed; right: 16px; bottom: 16px; display: flex; gap: 8px; align-items: center; z-index: 2; }
+  #hud button { width: 40px; height: 40px; border-radius: 10px; display: grid; place-items: center; }
+  #compass svg { transition: none; }
+  #hint { position: fixed; left: 50%; bottom: 16px; transform: translateX(-50%); padding: 7px 14px; font-size: 12px; color: var(--muted); z-index: 1; white-space: nowrap; }
+
+  .label { font-family: "Noto Sans KR", sans-serif; font-size: 11.5px; font-weight: 500; color: #1d2430; background: rgba(255,255,255,.88); padding: 2px 7px; border-radius: 6px; border: 1px solid rgba(29,36,48,.12); white-space: nowrap; pointer-events: none; transition: opacity .2s; }
+  .label.sel { background: #0a4da2; color: #fff; border-color: #0a4da2; }
+  .labels-off .label { opacity: 0; }
+
+  /* ---- 폭파 모드 ---- */
+  #demolish { padding: 10px; border-radius: 10px; border: 1px solid #c0392b; background: rgba(192,57,43,.08); color: #c0392b; font-weight: 500; }
+  #demolish:hover { background: #c0392b; color: #fff; }
+  body.demolishing #sidebar, body.demolishing #hint, body.demolishing #info { display: none !important; }
+  body.demolishing #scene canvas { cursor: crosshair; }
+  #demo-hud[hidden] { display: none; }
+  .demo-top { position: fixed; top: 16px; left: 16px; padding: 14px 16px; z-index: 3; display: grid; gap: 10px; min-width: 260px; }
+  .demo-row { display: flex; align-items: center; gap: 6px; }
+  .demo-label { color: var(--muted); font-size: 12px; margin-right: 4px; }
+  .demo-btn { font: inherit; padding: 7px 14px; border-radius: 8px; border: 1px solid #c0392b; background: #c0392b; color: #fff; }
+  .demo-btn.ghost { background: transparent; color: var(--text); border-color: var(--line); }
+  .demo-hint { position: fixed; left: 50%; bottom: 16px; transform: translateX(-50%); padding: 7px 14px; font-size: 12px; color: var(--muted); z-index: 3; white-space: nowrap; }
+
+  /* ---- 탐험 모드 ---- */
+  #explore:not(:disabled) { border-style: solid; border-color: var(--accent); color: var(--accent); background: var(--accent-soft); font-weight: 500; }
+  #explore:not(:disabled):hover { background: var(--accent); color: #fff; }
+  body.exploring #sidebar, body.exploring #hud, body.exploring #hint { display: none; }
+  #explore-hud[hidden] { display: none; }
+  #explore-hud .crosshair { position: fixed; left: 50%; top: 50%; width: 18px; height: 18px; margin: -9px 0 0 -9px; z-index: 3; pointer-events: none; }
+  #explore-hud .crosshair::before, #explore-hud .crosshair::after { content: ""; position: absolute; background: rgba(255,255,255,.9); box-shadow: 0 0 2px rgba(0,0,0,.6); }
+  #explore-hud .crosshair::before { left: 8px; top: 0; width: 2px; height: 18px; }
+  #explore-hud .crosshair::after { top: 8px; left: 0; height: 2px; width: 18px; }
+  .hud-top { position: fixed; top: 16px; left: 16px; display: flex; gap: 8px; padding: 8px; z-index: 3; }
+  .hud-top select, .hud-top button { font: inherit; padding: 7px 10px; border-radius: 8px; border: 1px solid var(--line); background: var(--panel-solid); color: var(--text); }
+  .hud-top button { background: var(--accent); color: #fff; border-color: var(--accent); }
+  #near { position: fixed; left: 50%; top: calc(50% + 26px); transform: translateX(-50%); padding: 5px 12px; font-size: 13px; font-weight: 500; z-index: 3; pointer-events: none; white-space: nowrap; }
+  #minimap { position: fixed; right: 16px; bottom: 16px; width: 200px; height: 200px; border-radius: 50%; z-index: 3; box-shadow: var(--shadow); border: 3px solid var(--panel-solid); background: var(--panel-solid); }
+  .hud-help { position: fixed; left: 16px; bottom: 16px; padding: 7px 12px; font-size: 12px; color: var(--muted); z-index: 3; }
+  #explore-pause { position: fixed; inset: 0; display: grid; place-items: center; background: rgba(10, 16, 28, .35); z-index: 4; }
+  #explore-pause .panel { padding: 20px 24px; text-align: center; max-width: 320px; }
+  #explore-pause p { color: var(--muted); margin: 8px 0 14px; }
+  #explore-pause button { font: inherit; padding: 9px 16px; border-radius: 9px; border: 0; background: var(--accent); color: #fff; }
+  #explore-hud:not(.paused) #explore-pause { display: none; }
+  #explore-pause .pause-actions { display: flex; gap: 8px; justify-content: center; }
+  #explore-pause button.ghost { background: transparent; color: var(--text); border: 1px solid var(--line); }
+  #explore-hud .look-drag { display: none; }
+  #explore-hud.drag-look .look-drag { display: inline; }
+  #explore-hud.drag-look .look-lock { display: none; }
+  #explore-hud.drag-look canvas, body.exploring #scene canvas { cursor: grab; }
+  #joystick { display: none; position: fixed; left: 24px; bottom: 24px; width: 120px; height: 120px; border-radius: 50%; background: rgba(255,255,255,.25); border: 2px solid rgba(255,255,255,.6); z-index: 4; touch-action: none; }
+  #joystick .knob { position: absolute; left: 50%; top: 50%; width: 52px; height: 52px; margin: -26px 0 0 -26px; border-radius: 50%; background: rgba(255,255,255,.85); box-shadow: 0 2px 8px rgba(0,0,0,.3); }
+  @media (pointer: coarse) {
+    #joystick { display: block; }
+    #explore-pause, .hud-help { display: none; }
+    #minimap { width: 130px; height: 130px; top: 76px; bottom: auto; }
+  }
+
+  #loading { position: fixed; inset: 0; display: grid; place-items: center; background: var(--bg); z-index: 10; color: var(--muted); transition: opacity .4s; }
+
+  @media (max-width: 720px) {
+    #sidebar { top: auto; left: 16px; right: 16px; bottom: 16px; width: auto; height: 42vh; }
+    #info { left: 16px; right: 16px; width: auto; }
+    #hud { bottom: calc(42vh + 28px); }
+    #hint { display: none; }
+  }
+</style>
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+} }
+</script>
+<script src="campus-data.js"></script>
+<script src="terrain-data.js"></script>
+</head>
+<body>
+<div id="loading">3D 캠퍼스 불러오는 중…</div>
+<div id="scene"></div>
+
+<aside id="sidebar" class="panel">
+  <header>
+    <h1><span>아주대학교</span> 3D 캠퍼스</h1>
+    <p class="sub">경기도 수원시 영통구 월드컵로 206 · 건물 <b id="count">0</b>동 · 나무 <b id="tree-count">0</b>그루</p>
+    <input id="search" type="search" placeholder="건물 검색 (예: 다산관)" autocomplete="off">
+  </header>
+  <ul id="list"></ul>
+  <footer>
+    <div class="toggles">
+      <button class="chip" id="t-labels" aria-pressed="true">이름표</button>
+      <button class="chip" id="t-edges" aria-pressed="true">외곽선</button>
+      <button class="chip" id="t-top" aria-pressed="false">평면 도면</button>
+      <button class="chip" id="t-theme" aria-pressed="false">밤</button>
+    </div>
+    <div class="toggles" role="group" aria-label="계절">
+      <button class="chip season" data-season="spring" aria-pressed="false">🌸 봄</button>
+      <button class="chip season" data-season="summer" aria-pressed="false">🌳 여름</button>
+      <button class="chip season" data-season="autumn" aria-pressed="true">🍁 가을</button>
+    </div>
+    <button id="explore" title="사람 눈높이로 캠퍼스를 걸어 다닙니다. 건물을 선택한 상태라면 그 건물 앞에서 시작해요.">🚶 캠퍼스 탐험 모드</button>
+    <button id="demolish" title="클릭한 곳에 폭탄을 떨어뜨려 건물을 무너뜨리는 놀이 모드. 나가면 원래대로 복구돼요.">💥 캠퍼스 폭파 모드</button>
+    <div class="credit">지도 데이터 © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors · 건물 정보: <a href="https://www.ajou.ac.kr/kr/intro/way01.do" target="_blank" rel="noopener">아주대 공식 캠퍼스맵</a> · 위성영상 판독: VWorld · 지형: Copernicus DEM · 사진: <a href="https://commons.wikimedia.org/wiki/Category:Ajou_University" target="_blank" rel="noopener">Wikimedia Commons</a></div>
+  </footer>
+</aside>
+
+<section id="info" class="panel" aria-live="polite">
+  <button class="close" aria-label="닫기">×</button>
+  <h2 id="i-name"></h2>
+  <div class="en" id="i-en"></div>
+  <dl id="i-rows"></dl>
+  <div class="est" id="i-est">※ 층수 정보가 없어 추정한 값입니다</div>
+  <div class="official" id="i-official"></div>
+  <div class="basis" id="i-basis"></div>
+</section>
+
+<div id="hud">
+  <button class="panel" id="compass" title="북쪽 보기"><svg width="22" height="22" viewBox="0 0 24 24"><path d="M12 2 L16 12 L12 10.5 L8 12 Z" fill="#d23c3c"/><path d="M12 22 L8 12 L12 13.5 L16 12 Z" fill="currentColor" opacity=".45"/></svg></button>
+  <button class="panel" id="reset" title="처음 시점으로"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg></button>
+</div>
+<div id="explore-hud" hidden>
+  <div class="crosshair"></div>
+  <div class="hud-top panel">
+    <select id="tp" aria-label="건물로 이동"><option value="">📍 건물로 이동…</option></select>
+    <button id="explore-exit">탐험 종료 (Q)</button>
+  </div>
+  <div id="near" class="panel" hidden></div>
+  <canvas id="minimap" width="200" height="200" aria-label="미니맵"></canvas>
+  <div class="hud-help panel">WASD·방향키 이동 · <span class="look-lock">마우스로 둘러보기 · ESC 일시정지</span><span class="look-drag">마우스 드래그로 둘러보기</span> · Shift 달리기 · 클릭: 건물 정보 · Q 종료</div>
+  <div id="explore-pause"><div class="panel"><b>일시정지</b><p>마우스 잠금이 풀렸어요. 계속하면 다시 둘러볼 수 있어요.</p><div class="pause-actions"><button id="explore-resume">계속 둘러보기</button><button id="explore-pause-exit" class="ghost">탐험 종료</button></div></div></div>
+  <div id="joystick" aria-hidden="true"><div class="knob"></div></div>
+</div>
+<div id="demo-hud" hidden>
+  <div class="demo-top panel">
+    <b>💥 캠퍼스 폭파 모드</b>
+    <div class="demo-row">
+      <span class="demo-label">폭탄</span>
+      <button class="chip bomb-type" data-bomb="small" aria-pressed="true">소형</button>
+      <button class="chip bomb-type" data-bomb="large" aria-pressed="false">대형</button>
+      <button class="chip" id="demo-sound" aria-pressed="true">🔊 소리</button>
+    </div>
+    <div class="demo-row"><span class="demo-label">무너진 건물</span><b id="demo-count">0 / 0</b></div>
+    <div class="demo-row">
+      <button id="demo-restore" class="demo-btn ghost">↺ 복구</button>
+      <button id="demo-exit" class="demo-btn">나가기</button>
+    </div>
+  </div>
+  <div class="demo-hint panel">땅이나 건물을 클릭하면 폭탄이 떨어져요 · 드래그: 시점 이동 · 큰 건물은 여러 번 맞혀야 무너져요</div>
+</div>
+<div id="hint" class="panel">왼쪽 드래그: 이동 · 오른쪽 드래그: 회전 · 휠: 확대/축소 · 건물 클릭: 정보</div>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

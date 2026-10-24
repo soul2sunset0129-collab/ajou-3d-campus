@@ -1,0 +1,12 @@
+{
+ "415528042": {
+  "name": "율곡관",
+  "floors_above": 5,
+  "base_floors": 3,
+  "parts": [
+   {"label": "앞부분(남쪽)", "floors": 5, "polygon": [[8.5, -119.6], [72.6, -118.6], [72.2, -97.4], [8.4, -97.4]]}
+  ],
+  "floors_basis": "사용자 제보: 앞부분 5층, 뒷부분 3층. 위성영상에서 남쪽 덩어리의 그림자가 북쪽 지붕에 떨어지는 것과 일치.",
+  "confidence": {"floors": "high", "massing": "high", "colors": "low", "outline": "medium"}
+ }
+}

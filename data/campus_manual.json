@@ -1,0 +1,159 @@
+{
+ "_note": "사진·위성영상으로 직접 판독한 캠퍼스 요소. OSM에 없는 공식 건물과 교문.",
+ "extra_buildings": [
+  {
+   "name": "제3주차빌딩",
+   "campus": "main",
+   "kind": "parking",
+   "polygon": [
+    [
+     -6,
+     -285
+    ],
+    [
+     33,
+     -285
+    ],
+    [
+     33,
+     -334
+    ],
+    [
+     -6,
+     -334
+    ]
+   ],
+   "floors_above": 4,
+   "floors_below": 0,
+   "typical_floor_height_m": 3.1,
+   "wall": {
+    "primary_hex": "#a9adb0",
+    "primary_material": "silver perforated metal panel"
+   },
+   "windows": {
+    "style": "ribbon",
+    "glass_hex": "#33373a",
+    "window_height_ratio": 0.4,
+    "bay_width_m": 4.0
+   },
+   "floors_basis": "아주대 공식 캠퍼스맵 111번(Parking Garage 3). 공식 사진: 지상 3개 층 + 옥상 주차. OSM 외곽선 없음 — 위성영상으로 그림.",
+   "floors_evidence": [
+    {
+     "value": "공식 캠퍼스맵",
+     "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=111"
+    }
+   ],
+   "confidence": {
+    "floors": "medium",
+    "massing": "high",
+    "colors": "high",
+    "outline": "medium"
+   }
+  },
+  {
+   "name": "캠퍼스플라자",
+   "campus": "other",
+   "kind": "commercial",
+   "polygon": [
+    [
+     -180.4,
+     -404.6
+    ],
+    [
+     -178.4,
+     -436.2
+    ],
+    [
+     -158.1,
+     -435.0
+    ],
+    [
+     -124.7,
+     -403.7
+    ],
+    [
+     -148.1,
+     -390.1
+    ]
+   ],
+   "floors_above": 9,
+   "floors_below": 1,
+   "wall": {
+    "primary_hex": "#eef0f0",
+    "primary_material": "white ceramic tile",
+    "secondary_hex": "#5ea5a8",
+    "secondary_material": "teal glass curtain wall",
+    "secondary_where": "vertical piers / bays"
+   },
+   "windows": {
+    "style": "punched",
+    "glass_hex": "#5e9aa0",
+    "window_height_ratio": 0.55,
+    "bay_width_m": 3.0
+   },
+   "floors_basis": "아주대 공식 캠퍼스맵 93번: 지상 9층(정문 앞 상업건물). 외곽선은 OSM way 422649688.",
+   "floors_evidence": [
+    {
+     "value": "공식 캠퍼스맵",
+     "source": "https://www.ajou.ac.kr/kr/intro/way01.do?mode=buildInfo&id=93"
+    }
+   ],
+   "confidence": {
+    "floors": "high",
+    "massing": "medium",
+    "colors": "high",
+    "outline": "high"
+   }
+  }
+ ],
+ "gates": [
+  {
+   "name": "정문",
+   "type": "portal",
+   "pos": [
+    -193.3,
+    -336.3
+   ]
+  },
+  {
+   "name": "북문",
+   "type": "booth",
+   "pos": [
+    -156.3,
+    250.8
+   ]
+  },
+  {
+   "name": "남문",
+   "type": "booth",
+   "pos": [
+    -24.1,
+    -447.2
+   ]
+  },
+  {
+   "name": "동문",
+   "type": "canopy",
+   "pos": [
+    303.0,
+    -304.9
+   ]
+  },
+  {
+   "name": "병원정문",
+   "type": "canopy",
+   "pos": [
+    143.2,
+    -553.3
+   ]
+  }
+ ],
+ "statue": {
+  "center": [
+   -211.4,
+   -58.0
+  ],
+  "facing_deg_from_north": 90,
+  "basis": "공식 캠퍼스맵 57번 사진(남쪽에서 촬영, 말 머리가 오른쪽=동쪽) + 위성영상 수조 중심"
+ }
+}

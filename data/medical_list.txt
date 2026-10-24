@@ -1,0 +1,13 @@
+way 297874790 아주대학교병원 | None hospital lv= h=
+way 415712205 송재관 | university  lv= h=
+way 415712208  | yes parking lv= h=
+way 468441871 아주대의료원 | hospital  lv= h=
+way 468762961  | yes  lv= h=
+way 468762974 임상시험센터 | hospital  lv= h=
+way 468762977 경기남부외상센터 | hospital  lv= h=
+way 471440990 아주대학교병원 장례식장 | hospital  lv= h=
+way 706051508  | hospital  lv= h=
+way 706051509 아주대학교병원 웰빙센터 | hospital  lv= h=
+way 706051510 경기남부해바라기센터(거점) | yes  lv= h=
+way 1558343497  | yes  lv=9 h=48
+Counter({'highway': 26, 'building': 11, 'bicycle': 7, 'amenity': 6, 'leisure': 5, 'bus': 2, 'indoor': 2, 'foot': 2, 'barrier': 1, 'addr:city': 1})
