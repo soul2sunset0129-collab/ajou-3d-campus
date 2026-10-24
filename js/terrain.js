@@ -23,7 +23,7 @@ function pca(pts) {
   return { u, v, len: u1 - u0, wid: v1 - v0, c: [cu * u[0] + cv * v[0], cu * u[1] + cv * v[1]] };
 }
 
-export function createTerrain(T, data) {
+export function createTerrain(T, data, { res = 0.6 } = {}) {
   // ---- 높이 격자 ----
   const bin = atob(T.h);
   const heights = new Float32Array(T.nx * T.ny);
@@ -46,7 +46,7 @@ export function createTerrain(T, data) {
   }
 
   // ---- 지면 텍스처 ----
-  const RES = 0.6; // m/px
+  const RES = res; // m/px (모바일은 더 거칠게)
   const cw = Math.min(4096, Math.ceil(W / RES)), ch = Math.min(4096, Math.ceil(H / RES));
   const canvas = document.createElement('canvas');
   canvas.width = cw; canvas.height = ch;

@@ -14,11 +14,13 @@ const $ = (s) => document.querySelector(s);
 
 // ---------- 기본 장면 ----------
 const container = $('#scene');
-const renderer = new THREE.WebGLRenderer({ antialias: true });
-renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+// 휴대폰 · 태블릿: 해상도 배율 · 그림자 · 나무 수 · 지면 텍스처를 낮춰 부드럽게
+const MOBILE = matchMedia('(pointer: coarse)').matches || Math.min(screen.width, screen.height) < 768;
+const renderer = new THREE.WebGLRenderer({ antialias: !MOBILE || devicePixelRatio < 2, powerPreference: 'high-performance' });
+renderer.setPixelRatio(Math.min(devicePixelRatio, MOBILE ? 1.5 : 2));
 renderer.setSize(innerWidth, innerHeight);
 renderer.shadowMap.enabled = true;
-renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+renderer.shadowMap.type = MOBILE ? THREE.PCFShadowMap : THREE.PCFSoftShadowMap;
 renderer.outputColorSpace = THREE.SRGBColorSpace;
 renderer.toneMapping = THREE.ACESFilmicToneMapping;
 renderer.toneMappingExposure = 1.05;
@@ -75,7 +77,7 @@ scene.add(hemi);
 const sun = new THREE.DirectionalLight(0xfff4e2, 2);
 sun.position.set(-320, 520, 260);
 sun.castShadow = true;
-sun.shadow.mapSize.set(4096, 4096);
+sun.shadow.mapSize.set(MOBILE ? 2048 : 4096, MOBILE ? 2048 : 4096);
 Object.assign(sun.shadow.camera, { left: -720, right: 720, top: 720, bottom: -720, near: 10, far: 1700 });
 sun.shadow.bias = -0.0004;
 sun.shadow.normalBias = 0.6;
@@ -90,7 +92,7 @@ const mats = {
 };
 const BOUNDARIES = DATA.boundaries ?? [{ name: '아주대학교', pts: DATA.boundary }];
 const terrain = window.TERRAIN
-  ? createTerrain(window.TERRAIN, DATA)
+  ? createTerrain(window.TERRAIN, DATA, { res: MOBILE ? 0.9 : 0.6 })
   : { heightAt: () => 0, paint() {}, setNight() {}, minH: 0, maxH: 0, ref: 0, mesh: null, skirt: null };
 const groundY = (x, y) => terrain.heightAt(x, y);
 if (terrain.mesh) scene.add(terrain.mesh, terrain.skirt);
@@ -446,7 +448,7 @@ function nearestRoad(pos) {
 }
 
 // ---------- 나무 ----------
-const vegetation = createVegetation(DATA, { landmarks: statue?.blockers ?? [], pines: statue?.pines ?? [], avenues: DATA.avenues ?? [], heightAt: groundY });
+const vegetation = createVegetation(DATA, { landmarks: statue?.blockers ?? [], pines: statue?.pines ?? [], avenues: DATA.avenues ?? [], heightAt: groundY, density: MOBILE ? 0.55 : 1 });
 scene.add(vegetation.group);
 $('#tree-count').textContent = vegetation.count.toLocaleString();
 
@@ -505,6 +507,7 @@ const explorer = createExplorer({
     edgeLines.forEach((l) => (l.visible = false));
     fly = null;
     $('#info').classList.remove('show');
+    document.body.classList.remove('info-open');
     fitViewport();
   },
   onExit() {
@@ -545,6 +548,10 @@ const demolition = createDemolition({
   onExit() { fitViewport(); },
 });
 $('#demolish').addEventListener('click', () => demolition.enter());
+if (MOBILE) {
+  $('.demo-hint').textContent = '건물이나 땅을 탭하면 폭탄이 떨어져요 · 한 손가락: 이동 · 두 손가락: 회전·확대';
+  $('#hint').textContent = '한 손가락: 이동 · 두 손가락: 회전·확대 · 건물 탭: 정보';
+}
 
 // ---------- 테마 · 계절 적용 ----------
 function applyTheme(name) {
@@ -633,6 +640,8 @@ function showInfo({ name, nameEn, rows, estimated, basis, sources, confidence, o
       + `<p class="src"><a href="${esc(official.source)}" target="_blank" rel="noopener">아주대 공식 캠퍼스맵</a>${official.photo ? ` · <a href="${esc(official.photo)}" target="_blank" rel="noopener">공식 사진</a>` : ''}</p>`
     : '';
   $('#info').classList.add('show');
+  document.body.classList.add('info-open');
+  fitViewport();
 }
 
 function select(mesh, { fly: doFly = true } = {}) {
@@ -641,7 +650,7 @@ function select(mesh, { fly: doFly = true } = {}) {
   refreshHighlights();
   const id = mesh?.userData.b?.id;
   document.querySelectorAll('#list li').forEach((li) => li.classList.toggle('active', id !== undefined && li.dataset.id === String(id)));
-  if (!mesh) { $('#info').classList.remove('show'); return; }
+  if (!mesh) { $('#info').classList.remove('show'); document.body.classList.remove('info-open'); fitViewport(); return; }
 
   if (statue && mesh === statue.hit) {
     statue.labelEl.classList.add('sel');
@@ -688,13 +697,14 @@ renderer.domElement.addEventListener('pointermove', (e) => {
 });
 let downAt = null;
 renderer.domElement.addEventListener('pointerdown', (e) => { downAt = [e.clientX, e.clientY]; });
+const tapSlop = (e) => (e.pointerType === 'touch' ? 10 : 5);   // 손가락 탭은 약간 흔들려도 탭으로
 renderer.domElement.addEventListener('pointerup', (e) => {
   if (explorer.active) return;
   if (demolition.active) {   // 드래그가 아닌 클릭 = 폭탄 투하
-    if (downAt && Math.hypot(e.clientX - downAt[0], e.clientY - downAt[1]) <= 5) demolition.click(e);
+    if (downAt && Math.hypot(e.clientX - downAt[0], e.clientY - downAt[1]) <= tapSlop(e)) demolition.click(e);
     return;
   }
-  if (!downAt || Math.hypot(e.clientX - downAt[0], e.clientY - downAt[1]) > 5) return;
+  if (!downAt || Math.hypot(e.clientX - downAt[0], e.clientY - downAt[1]) > tapSlop(e)) return;
   select(pick(e));
 });
 controls.addEventListener('start', () => { fly = null; });
@@ -713,6 +723,19 @@ $('#search').addEventListener('input', (e) => renderList(e.target.value.trim()))
 $('#search').addEventListener('keydown', (e) => {
   if (e.key === 'Enter') { const first = $('#list li[data-id]'); if (first) select(byId.get(first.dataset.id)); }
 });
+// ---------- 모바일 바텀시트 ----------
+const sidebarEl = $('#sidebar');
+const isSheet = () => innerWidth <= 720;
+function setSheet(expanded) {
+  sidebarEl.classList.toggle('expanded', expanded);
+  $('#sheet-toggle').setAttribute('aria-expanded', String(expanded));
+}
+$('#sheet-toggle').addEventListener('click', () => setSheet(!sidebarEl.classList.contains('expanded')));
+$('#search').addEventListener('focus', () => { if (isSheet()) setSheet(true); });
+// 시트 높이에 맞춰 나침반 · 처음으로 버튼을 띄움
+new ResizeObserver(() => document.documentElement.style.setProperty('--sheet-h', `${sidebarEl.offsetHeight}px`)).observe(sidebarEl);
+$('#list').addEventListener('click', () => { if (isSheet()) { setSheet(false); $('#search').blur(); } });
+
 $('#list').addEventListener('click', (e) => {
   const li = e.target.closest('li[data-id]');
   if (li) select(byId.get(li.dataset.id));
@@ -766,8 +789,11 @@ requestAnimationFrame(tick);
 // 데스크톱에서는 사이드바만큼 화면 중심을 오른쪽으로 밀어 캠퍼스가 가려지지 않게
 function fitViewport() {
   camera.aspect = innerWidth / innerHeight;
-  const shift = innerWidth > 720 && !document.body.classList.contains('exploring') && !document.body.classList.contains('demolishing') ? ($('#sidebar').offsetWidth + 16) / 2 : 0;
-  if (shift) camera.setViewOffset(innerWidth, innerHeight, -shift, 0, innerWidth, innerHeight);
+  const busy = document.body.classList.contains('exploring') || document.body.classList.contains('demolishing');
+  const shift = innerWidth > 720 && !busy ? ($('#sidebar').offsetWidth + 16) / 2 : 0;
+  // 모바일에서 정보창(바텀시트)이 열리면 화면 중심을 그만큼 위로 — 선택한 건물이 가려지지 않게
+  const lift = innerWidth <= 720 && !busy && document.body.classList.contains('info-open') ? $('#info').offsetHeight / 2 : 0;
+  if (shift || lift) camera.setViewOffset(innerWidth, innerHeight, -shift, lift, innerWidth, innerHeight);
   else camera.clearViewOffset();
   camera.updateProjectionMatrix();
   renderer.setSize(innerWidth, innerHeight);

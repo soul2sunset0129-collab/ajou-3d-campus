@@ -2,7 +2,8 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0a4da2">
 <title>아주대 3D 캠퍼스</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
@@ -141,11 +142,41 @@
 
   #loading { position: fixed; inset: 0; display: grid; place-items: center; background: var(--bg); z-index: 10; color: var(--muted); transition: opacity .4s; }
 
+  #sheet-toggle { display: none; }
+
+  /* ---- 모바일: 바텀시트 ---- */
   @media (max-width: 720px) {
-    #sidebar { top: auto; left: 16px; right: 16px; bottom: 16px; width: auto; height: 42vh; }
-    #info { left: 16px; right: 16px; width: auto; }
-    #hud { bottom: calc(42vh + 28px); }
+    html, body { height: 100dvh; }
+    #sidebar { top: auto; left: 8px; right: 8px; bottom: calc(8px + env(safe-area-inset-bottom)); width: auto; max-height: 72dvh; border-radius: 18px; transition: max-height .25s ease; }
+    #sidebar header { padding: 6px 14px 10px; border-bottom: 0; }
+    #sheet-toggle { display: block; width: 100%; height: 22px; border: 0; background: transparent; padding: 0; margin-bottom: 2px; cursor: pointer; touch-action: manipulation; }
+    #sheet-toggle span { display: block; width: 42px; height: 5px; border-radius: 3px; background: var(--line); margin: 0 auto; filter: brightness(.7); }
+    #sidebar h1 { font-size: 16px; }
+    #sidebar .sub { margin: 2px 0 8px; font-size: 11px; }
+    #search { padding: 10px 12px; font-size: 16px; }   /* 16px 이상이어야 iOS 가 입력 시 확대하지 않음 */
+    #sidebar footer { padding: 8px 14px 12px; border-top: 0; grid-template-columns: 1fr 1fr; }
+    #sidebar footer .toggles, #sidebar footer .credit { grid-column: 1 / -1; }
+    #explore, #demolish { padding: 11px 6px; font-size: 13px; }
+    /* 접힌 상태: 검색 + 두 모드 버튼만 */
+    #sidebar:not(.expanded) #list, #sidebar:not(.expanded) footer .toggles, #sidebar:not(.expanded) footer .credit { display: none; }
+    #sidebar:not(.expanded) .sub { display: none; }
+    #sidebar.expanded #list { max-height: 34dvh; }
+    #info { top: auto; left: 8px; right: 8px; bottom: calc(8px + env(safe-area-inset-bottom)); width: auto; max-height: 58dvh; overflow-y: auto; border-radius: 18px; padding: 14px 16px; }
+    body.info-open #sidebar, body.info-open #hud { display: none; }
+    #hud { right: 12px; bottom: calc(var(--sheet-h, 150px) + 20px); }
+    #hud button { width: 44px; height: 44px; }
     #hint { display: none; }
+    .label { font-size: 10px; padding: 1px 5px; }
+    #list li { padding: 11px 10px; }
+    .chip { padding: 8px 12px; font-size: 13px; }
+    /* 탐험 · 폭파 HUD */
+    .hud-top { top: calc(8px + env(safe-area-inset-top)); left: 8px; right: 8px; }
+    .hud-top select { flex: 1; min-width: 0; font-size: 15px; }
+    .demo-top { top: calc(8px + env(safe-area-inset-top)); left: 8px; right: 8px; min-width: 0; padding: 10px 12px; gap: 8px; }
+    .demo-top > b { font-size: 14px; }
+    .demo-row { flex-wrap: wrap; }
+    .demo-hint { white-space: normal; text-align: center; width: calc(100% - 32px); bottom: calc(12px + env(safe-area-inset-bottom)); }
+    #near { top: auto; bottom: calc(160px + env(safe-area-inset-bottom)); }
   }
 </style>
 <script type="importmap">
@@ -163,6 +194,7 @@
 
 <aside id="sidebar" class="panel">
   <header>
+    <button id="sheet-toggle" aria-label="패널 펼치기/접기" aria-expanded="false"><span></span></button>
     <h1><span>아주대학교</span> 3D 캠퍼스</h1>
     <p class="sub">경기도 수원시 영통구 월드컵로 206 · 건물 <b id="count">0</b>동 · 나무 <b id="tree-count">0</b>그루</p>
     <input id="search" type="search" placeholder="건물 검색 (예: 다산관)" autocomplete="off">

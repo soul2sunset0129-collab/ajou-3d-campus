@@ -140,7 +140,7 @@ function pointInPoly([x, y], pts) {
  * @param opts.landmarks  [{x, y, r}] 나무를 심지 않을 원형 영역(광장 등)
  * @param opts.ringPines  [{x, y, r}] 원 둘레에 소나무를 심을 곳(선구자상 광장)
  */
-export function createVegetation(data, { landmarks = [], ringPines = [], pines = [], avenues = [], heightAt = () => 0 } = {}) {
+export function createVegetation(data, { landmarks = [], ringPines = [], pines = [], avenues = [], heightAt = () => 0, density = 1 } = {}) {
   const rand = rng(20261023);
   const allPts = (data.boundaries ?? [{ pts: data.boundary }]).flatMap((bd) => bd.pts);
   const xs = allPts.map((p) => p[0]), ys = allPts.map((p) => p[1]);
@@ -224,7 +224,7 @@ export function createVegetation(data, { landmarks = [], ringPines = [], pines =
       const q = a.outer[(i + 1) % a.outer.length];
       return s + p[0] * q[1] - q[0] * p[1];
     }, 0) / 2);
-    const n = Math.min(Math.round(area / per), 2200);
+    const n = Math.min(Math.round((area / per) * density), 2200);
     for (let k = 0, tries = 0; k < n && tries < n * 4; tries++) {
       const p = [ax0 + rand() * (ax1 - ax0), ay0 + rand() * (ay1 - ay0)];
       if (pointInPoly(p, a.outer) && tryPlant(p[0], p[1], pickWeighted(rand, MIX[a.kind]))) k++;
@@ -233,7 +233,7 @@ export function createVegetation(data, { landmarks = [], ringPines = [], pines =
 
   // 4) 캠퍼스 안 빈 땅 — 드문드문
   // 5) 캠퍼스를 둘러싼 숲 (사진 01) — 경계에서 멀어질수록 듬성듬성
-  const total = (extent.w * extent.h) / 95;
+  const total = ((extent.w * extent.h) / 95) * density;
   for (let k = 0; k < total; k++) {
     const x = extent.minX + rand() * extent.w, y = extent.minY + rand() * extent.h;
     const s = sample(x, y);
