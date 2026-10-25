@@ -5,10 +5,14 @@ import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
 import { createFracture } from './fracture.js';
 
 // floors: 부서지는 층 수, share: 맞은 건물 한 층 면적 중 부서지는 비율(소형 10%, 대형은 두 배)
+// 초대형: 맞을 때마다 건물 층수의 40%(최소 2층)를 절반 넓이로 부수고, 2번(큰 건물은 3번) 맞으면 통째로 무너짐
 const BOMBS = {
   small: { label: '소형', radius: 20, damage: 110, fire: 9, shake: 0.6, floors: 1, share: 0.10, rMin: 3.5, rMax: 12 },
   large: { label: '대형', radius: 42, damage: 320, fire: 20, shake: 1.6, floors: 2, share: 0.20, rMin: 5, rMax: 17 },
+  mega: { label: '초대형', radius: 60, damage: 1e6, fire: 30, shake: 2.6, floors: 0.4, share: 0.5, rMax: 40, collapseHits: [2, 3] },
 };
+// 초대형 몇 번에 무너지나: 바닥 면적 2500 m² 이상이거나 8층 이상이면 3번, 아니면 2번
+const hitsToCollapse = (bd, maxFloors, type) => type.collapseHits[(bd.area ?? 0) >= 2500 || maxFloors >= 8 ? 1 : 0];
 const DROP_HEIGHT = 140, GRAVITY = 60;
 
 function pointInPoly(x, y, pts) {
@@ -120,7 +124,7 @@ export function createDemolition({ scene, camera, renderer, data, terrainMesh, b
     const start = point.clone().add(back).add(new THREE.Vector3(0, DROP_HEIGHT, 0));
     const mesh = new THREE.Mesh(bombGeo, bombMat);
     mesh.castShadow = true;
-    mesh.scale.setScalar(bombType === 'large' ? 1.8 : 1);
+    mesh.scale.setScalar({ small: 1, large: 1.8, mega: 2.8 }[bombType]);
     mesh.position.copy(start);
     // 꼬리 날개(+y)가 날아온 쪽을 향하게
     mesh.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), start.clone().sub(point).normalize());
@@ -156,7 +160,7 @@ export function createDemolition({ scene, camera, renderer, data, terrainMesh, b
       effects.push({ smoke: s, t: -Math.random() * 0.5, life: 6 + Math.random() * 4, vy: 4 + Math.random() * 7, grow: type.fire * (1.6 + Math.random() * 1.6), max: 0.9 });
     }
     // 파편
-    spawnDebris(pos, type === BOMBS.large ? 40 : 22, 0x7d766c, type.fire);
+    spawnDebris(pos, type === BOMBS.mega ? 70 : type === BOMBS.large ? 40 : 22, 0x7d766c, type.fire);
     // 폭발 자국
     const crater = new THREE.Mesh(new THREE.CircleGeometry(type.radius * 0.45, 32).rotateX(-Math.PI / 2),
       new THREE.MeshBasicMaterial({ map: craterTex, transparent: true, depthWrite: false, polygonOffset: true, polygonOffsetFactor: -4 }));
@@ -187,7 +191,13 @@ export function createDemolition({ scene, camera, renderer, data, terrainMesh, b
   }
 
   function partialDamage(bd, point, type) {
-    const removed = fracture.blast(bd, point, type.floors, { share: type.share, rMax: type.rMax });
+    const maxFloors = Math.max(...fracture.voxelize(bd).masses.map((M) => M.floors));
+    const floors = type.floors < 1 ? Math.max(2, Math.ceil(type.floors * maxFloors)) : type.floors;
+    const removed = fracture.blast(bd, point, floors, { share: type.share, rMax: type.rMax });
+    if (type.collapseHits) {
+      bd.megaHits = (bd.megaHits ?? 0) + 1;
+      if (bd.megaHits >= hitsToCollapse(bd, maxFloors, type)) { if (removed.length) addRubble(removed, bd); collapse(bd); updateHud(); return; }
+    }
     if (!removed.length) return;
     // 부서진 칸 자리에서 파편 · 먼지, 바닥엔 잔해
     const sample = removed.filter((_, i) => i % Math.max(1, Math.floor(removed.length / 12)) === 0);
@@ -313,6 +323,7 @@ export function createDemolition({ scene, camera, renderer, data, terrainMesh, b
     for (const bd of buildings) fracture.restore(bd);
     for (const bd of buildings) {
       bd.destroyed = false;
+      bd.megaHits = 0;
       bd.hp = bd.hpMax;
       if (bd.labelObj) bd.labelObj.visible = true;
       for (const e of bd.edges ?? []) e.visible = $('#t-edges')?.getAttribute('aria-pressed') !== 'false';
