@@ -230,6 +230,7 @@ DATA.buildings.forEach((b, bi) => {
   const roofColor = b.roofHex ?? ROOF_COLORS[style];
   const textures = facadeFor(b, totalH, floorH, bi);
   b.meshes = [];
+  b.masses = [];   // 폭파 모드의 부분 파괴용: 덩어리별 외곽 · 높이 · 외벽
   const masses = [{ outer: b.outer, holes: b.holes ?? [], y0: 0, h: baseH, tex: textures, roofShape: parts.length ? null : b.roofShape }]
     .concat(parts.map((p, pi) => ({
       outer: p.polygon, holes: [], y0: baseH, h: p.height - baseH, roofShape: p.roofShape, roofAxisDeg: p.roofAxisDeg,
@@ -262,6 +263,8 @@ DATA.buildings.forEach((b, bi) => {
     scene.add(edges);
     edgeLines.push(edges);
     (b.edges ??= []).push(edges);
+    const massInfo = { outer: m.outer, holes: m.holes, yBase: m.y0 + gY, yRel: m.y0, h: m.h, floorH, tex: m.tex, roofColor, mesh, edges, wall, extra: [] };
+    b.masses.push(massInfo);
     if (m.roofShape) {
       const pr = pitchedRoof(m.outer, m.y0 + m.h + gY, rise, m.roofShape, m.roofAxisDeg);
       const roofMesh = new THREE.Mesh(pr.roof, new THREE.MeshStandardMaterial({ color: roofColor, roughness: 0.7, metalness: 0.2, side: THREE.DoubleSide }));
@@ -273,6 +276,7 @@ DATA.buildings.forEach((b, bi) => {
         scene.add(rm);
         buildingMeshes.push(rm);
         b.meshes.push(rm);
+        massInfo.extra.push(rm);
       }
     }
   }
@@ -311,6 +315,7 @@ DATA.buildings.forEach((b, bi) => {
     roofUnits.userData.base = [mats.rooftop.color.clone()];
     scene.add(roofUnits);
     b.meshes.push(roofUnits);
+    b.roofUnits = roofUnits;
   }
   b.center = toV3(centroid(b.outer), gY + b.totalHeight);
   if (b.name) {
@@ -549,7 +554,7 @@ const demolition = createDemolition({
 });
 $('#demolish').addEventListener('click', () => demolition.enter());
 if (MOBILE) {
-  $('.demo-hint').textContent = '건물이나 땅을 탭하면 폭탄이 떨어져요 · 한 손가락: 이동 · 두 손가락: 회전·확대';
+  $('.demo-hint').textContent = '건물을 탭하면 맞은 자리가 맨 위층부터 한 층씩 부서져요 · 두 손가락: 회전·확대';
   $('#hint').textContent = '한 손가락: 이동 · 두 손가락: 회전·확대 · 건물 탭: 정보';
 }
 

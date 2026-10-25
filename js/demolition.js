@@ -2,10 +2,12 @@
 // 모드를 나가거나 "복구"를 누르면 모든 건물 · 나무가 원래대로 돌아온다.
 import * as THREE from 'three';
 import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
+import { createFracture } from './fracture.js';
 
+// floors: 부서지는 층 수, share: 맞은 건물 한 층 면적 중 부서지는 비율(소형 10%, 대형은 두 배)
 const BOMBS = {
-  small: { label: '소형', radius: 20, damage: 110, fire: 9, shake: 0.6 },
-  large: { label: '대형', radius: 42, damage: 320, fire: 20, shake: 1.6 },
+  small: { label: '소형', radius: 20, damage: 110, fire: 9, shake: 0.6, floors: 1, share: 0.10, rMin: 3.5, rMax: 12 },
+  large: { label: '대형', radius: 42, damage: 320, fire: 20, shake: 1.6, floors: 2, share: 0.20, rMin: 5, rMax: 17 },
 };
 const DROP_HEIGHT = 140, GRAVITY = 60;
 
@@ -50,6 +52,7 @@ export function createDemolition({ scene, camera, renderer, data, terrainMesh, b
   let active = false, bombType = 'small', soundOn = true, audio = null;
   const bombs = [], effects = [], debris = [], collapsing = [], craters = [], rubbles = [];
   let shake = 0;
+  const fracture = createFracture({ scene });
 
   const smokeTex = radialTexture('rgba(255,255,255,0.95)', 'rgba(255,255,255,0)');   // 색은 재질 color 로
   const fireTex = radialTexture('rgba(255,236,170,1)', 'rgba(255,90,10,0)');
@@ -62,7 +65,8 @@ export function createDemolition({ scene, camera, renderer, data, terrainMesh, b
     b.hp = b.hpMax;
   }
   const destroyedCount = () => buildings.filter((b) => b.destroyed).length;
-  const updateHud = () => { $('#demo-count').textContent = `${destroyedCount()} / ${buildings.length}`; };
+  const damagedCount = () => buildings.filter((b) => b.destroyed || fracture.fraction(b) > 0).length;
+  const updateHud = () => { $('#demo-count').textContent = `${damagedCount()}동 피해 · ${destroyedCount()}동 붕괴`; };
 
   // ---- 소리 (WebAudio 로 합성 — 외부 파일 없음) ----
   function ctx() {
@@ -107,19 +111,22 @@ export function createDemolition({ scene, camera, renderer, data, terrainMesh, b
   ].map((g) => (g.index ? g.toNonIndexed() : g)).map((g) => { g.deleteAttribute('uv'); return g; }));
   const bombMat = new THREE.MeshStandardMaterial({ color: 0x3b4148, metalness: 0.6, roughness: 0.35 });
 
-  function drop(x, y) {
+  /** 클릭한 점(벽이면 그 층, 지붕이면 꼭대기 층)을 향해 카메라 쪽 하늘에서 비스듬히 떨어짐 */
+  function drop(point, target) {
     const type = BOMBS[bombType];
+    const x = point.x, y = -point.z;
     const ground = heightAt(x, y);
-    // 맞힌 건물이 있으면 지붕 높이에서 터짐
-    const roofHit = buildings.find((b) => !b.destroyed && pointInPoly(x, y, b.outer));
-    const impactY = roofHit ? (roofHit.ground ?? ground) + (roofHit.totalHeight ?? 0) : ground;
+    const back = new THREE.Vector3(camera.position.x - x, 0, camera.position.z + y).normalize().multiplyScalar(55);
+    const start = point.clone().add(back).add(new THREE.Vector3(0, DROP_HEIGHT, 0));
     const mesh = new THREE.Mesh(bombGeo, bombMat);
     mesh.castShadow = true;
     mesh.scale.setScalar(bombType === 'large' ? 1.8 : 1);
-    mesh.position.set(x + 6, impactY + DROP_HEIGHT, -y);
+    mesh.position.copy(start);
+    // 꼬리 날개(+y)가 날아온 쪽을 향하게
+    mesh.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), start.clone().sub(point).normalize());
     scene.add(mesh);
     const fall = Math.sqrt((2 * DROP_HEIGHT) / GRAVITY);
-    bombs.push({ mesh, x, y, impactY, ground, t: 0, fall, type });
+    bombs.push({ mesh, x, y, impactY: point.y, ground, start, point: point.clone(), target, t: 0, fall, type });
     whistle(fall);
   }
 
@@ -163,18 +170,66 @@ export function createDemolition({ scene, camera, renderer, data, terrainMesh, b
     const dist = camera.position.distanceTo(pos);
     shake = Math.max(shake, type.shake * Math.min(1, 400 / (dist + 60)));
     boom(type === BOMBS.large, dist);
-    // 건물 피해
-    for (const bd of buildings) {
-      if (bd.destroyed) continue;
-      const d = distToPoly(x, y, bd.outer);
-      if (d > type.radius) continue;
-      bd.hp -= type.damage * (1 - d / type.radius) ** 1.3;
-      const ratio = Math.max(0, 1 - bd.hp / bd.hpMax);
-      for (const m of bd.meshes) {   // 그을림
-        [].concat(m.material).forEach((mt, i) => mt.color.copy(m.userData.base?.[i] ?? mt.color).multiplyScalar(1 - 0.65 * ratio));
+    // 건물 피해 — 맞은 층 · 범위만 부서짐
+    const hitB = b.target && !b.target.destroyed ? b.target : null;
+    if (hitB?.masses?.length) partialDamage(hitB, b.point, type);
+    else {
+      // 땅에 떨어지면 가까운 건물의 1층(대형은 2층까지) 옆구리가 부서짐
+      for (const bd of buildings) {
+        if (bd.destroyed || bd === hitB) continue;
+        const d = distToPoly(x, y, bd.outer);
+        if (d > type.radius * 0.35) continue;
+        if (bd.masses?.length) partialDamage(bd, new THREE.Vector3(x, (bd.ground ?? ground) + 0.5, -y), type);
+        else hpDamage(bd, type, d);
       }
-      if (bd.hp <= 0) collapse(bd);
+      if (hitB) hpDamage(hitB, type, 0);   // 노천극장처럼 칸으로 나누지 않는 구조물
     }
+  }
+
+  function partialDamage(bd, point, type) {
+    const removed = fracture.blast(bd, point, type.floors, { share: type.share, rMax: type.rMax });
+    if (!removed.length) return;
+    // 부서진 칸 자리에서 파편 · 먼지, 바닥엔 잔해
+    const sample = removed.filter((_, i) => i % Math.max(1, Math.floor(removed.length / 12)) === 0);
+    for (const c of sample) spawnDebris(new THREE.Vector3(c.x, c.z, -c.y), c.fell ? 2 : 4, 0x8f897f, 6);
+    for (const c of removed.filter((_, i) => i % 2 === 0).slice(0, 40)) {
+      const sp = new THREE.Sprite(new THREE.SpriteMaterial({ map: smokeTex, depthWrite: false, transparent: true, opacity: 0, color: 0xc9c0b0 }));
+      sp.position.set(c.x, c.z, -c.y);
+      scene.add(sp);
+      effects.push({ smoke: sp, t: -Math.random() * 0.6, life: 4 + Math.random() * 3, vy: 1 + Math.random() * 2, grow: 8 + Math.random() * 8, max: 0.7 });
+    }
+    addRubble(removed, bd);
+    if (fracture.fraction(bd) >= 0.8) collapse(bd);   // 대부분 부서지면 나머지도 무너짐
+    updateHud();
+  }
+
+  // 부서진 칸 아래 땅에 잔해 조각
+  function addRubble(removed, bd) {
+    const geos = [];
+    for (const c of removed) {
+      for (let k = 0; k < 2; k++) {
+        const w = 0.8 + Math.random() * 2.4, h = 0.4 + Math.random() * 1.4, d = 0.8 + Math.random() * 2.4;
+        const x = c.x + (Math.random() - 0.5) * 3, y = c.y + (Math.random() - 0.5) * 3;
+        const g = new THREE.BoxGeometry(w, h, d).rotateY(Math.random() * Math.PI).rotateX((Math.random() - 0.5) * 0.6);
+        g.translate(x, Math.max(heightAt(x, y), bd.ground ?? -Infinity) + h * 0.3, -y);
+        geos.push(g.toNonIndexed());
+      }
+    }
+    if (!geos.length) return;
+    const rubble = new THREE.Mesh(mergeGeometries(geos), new THREE.MeshStandardMaterial({ color: 0x8e877c, roughness: 1, flatShading: true }));
+    rubble.castShadow = rubble.receiveShadow = true;
+    scene.add(rubble);
+    rubbles.push(rubble);
+  }
+
+  function hpDamage(bd, type, d) {
+    bd.hp -= type.damage * (1 - d / type.radius) ** 1.3;
+    const ratio = Math.max(0, 1 - bd.hp / bd.hpMax);
+    for (const m of bd.meshes) {   // 그을림
+      [].concat(m.material).forEach((mt, i) => mt.color.copy(m.userData.base?.[i] ?? mt.color).multiplyScalar(1 - 0.65 * ratio));
+    }
+    if (bd.hp <= 0) collapse(bd);
+    updateHud();
   }
 
   function spawnDebris(pos, n, color, spread) {
@@ -195,7 +250,7 @@ export function createDemolition({ scene, camera, renderer, data, terrainMesh, b
     bd.destroyed = true;
     if (bd.labelObj) bd.labelObj.visible = false;   // 라벨 렌더러가 표시 상태를 매 프레임 갱신하므로 객체를 숨김
     for (const e of bd.edges ?? []) e.visible = false;
-    collapsing.push({ bd, t: 0, depth: (bd.totalHeight ?? 10) + 6 });
+    collapsing.push({ bd, meshes: fracture.meshesOf(bd), t: 0, depth: (bd.totalHeight ?? 10) + 6 });
     // 먼지 구름
     const c = bd.outer.reduce((a, p) => [a[0] + p[0] / bd.outer.length, a[1] + p[1] / bd.outer.length], [0, 0]);
     const g = bd.ground ?? heightAt(c[0], c[1]);
@@ -224,9 +279,7 @@ export function createDemolition({ scene, camera, renderer, data, terrainMesh, b
       i++;
     }
     if (geos.length) {
-      const wall = [].concat(bd.meshes[0].material)[1] ?? [].concat(bd.meshes[0].material)[0];
-      const base = new THREE.Color(bd.meshes[0].userData.base?.[1] ?? 0xbdb6aa);
-      const tone = wall.map ? new THREE.Color(0xb3aa9c) : base;
+      const tone = new THREE.Color(0xb3aa9c);
       const rubble = new THREE.Mesh(mergeGeometries(geos), new THREE.MeshStandardMaterial({ color: tone.multiplyScalar(0.75), roughness: 1, flatShading: true }));
       rubble.castShadow = rubble.receiveShadow = true;
       rubble.position.y = -6;
@@ -243,13 +296,21 @@ export function createDemolition({ scene, camera, renderer, data, terrainMesh, b
     if (!active) return;
     const r = renderer.domElement.getBoundingClientRect();
     raycaster.setFromCamera(new THREE.Vector2(((e.clientX - r.left) / r.width) * 2 - 1, -((e.clientY - r.top) / r.height) * 2 + 1), camera);
-    const targets = [...buildingMeshes.filter((m) => m.visible), ...(terrainMesh ? [terrainMesh] : [])];
+    const targets = [...buildingMeshes.filter((m) => m.visible), ...fracture.pickable.filter((m) => m.visible), ...(terrainMesh ? [terrainMesh] : [])];
     const hit = raycaster.intersectObjects(targets, false)[0];
     if (!hit) return;
-    drop(hit.point.x, -hit.point.z);
+    const bd = hit.object.userData.b ?? null;
+    const point = hit.point.clone();
+    if (bd?.masses?.length && !bd.destroyed) {
+      // 위층부터 부서지므로 폭탄은 맞은 자리의 남은 맨 위(지붕)에 떨어짐
+      const top = fracture.topAt(bd, point.x, -point.z);
+      if (top != null) point.y = top;
+    }
+    drop(point, bd);
   }
 
   function restore() {
+    for (const bd of buildings) fracture.restore(bd);
     for (const bd of buildings) {
       bd.destroyed = false;
       bd.hp = bd.hpMax;
@@ -308,9 +369,7 @@ export function createDemolition({ scene, camera, renderer, data, terrainMesh, b
       const b = bombs[i];
       b.t += dt;
       const k = Math.min(1, b.t / b.fall);
-      b.mesh.position.y = b.impactY + DROP_HEIGHT * (1 - k * k);
-      b.mesh.position.x = b.x + 6 * (1 - k);
-      b.mesh.rotation.z = -0.25 * (1 - k);
+      b.mesh.position.lerpVectors(b.start, b.point, k * k);   // 점점 빨라지며 맞은 점으로
       if (k >= 1) { bombs.splice(i, 1); explode(b); }
     }
     for (let i = effects.length - 1; i >= 0; i--) {
@@ -352,9 +411,9 @@ export function createDemolition({ scene, camera, renderer, data, terrainMesh, b
       c.t += dt;
       const k = Math.min(1, c.t / 2.6), sink = c.depth * k * k;
       const jitter = (1 - k) * 0.6;
-      for (const m of c.bd.meshes) m.position.set((Math.random() - 0.5) * jitter, -sink, (Math.random() - 0.5) * jitter);
+      for (const m of c.meshes) m.position.set((Math.random() - 0.5) * jitter, -sink, (Math.random() - 0.5) * jitter);
       if (c.rubble) c.rubble.position.y = -6 + 6 * Math.min(1, k * 1.4);
-      if (k >= 1) { for (const m of c.bd.meshes) m.visible = false; collapsing.splice(i, 1); }
+      if (k >= 1) { for (const m of c.meshes) m.visible = false; collapsing.splice(i, 1); }
     }
     // 화면 흔들림 — 장면 전체를 살짝 흔듦(카메라 조작과 충돌하지 않게)
     if (shake > 0.001) {
